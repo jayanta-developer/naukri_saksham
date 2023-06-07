@@ -1,0 +1,20 @@
+.NavGetStartBtn {
+  background-color: #cf2323;
+  width: 174px;
+  height: 47px;
+  text-align: center;
+  border-radius: 23px;
+  padding: 13px;
+  cursor: pointer;
+  transition: all 1s;
+}
+.redBtnText {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 18px;
+  user-select: none;
+  font-family: Satoshi;
+}
+.NavGetStartBtn:hover {
+  background-color: #ac1c1c;
+}

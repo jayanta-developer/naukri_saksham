@@ -1,7 +1,7 @@
 import React from "react";
 //Components
 // import Home from "./Pages/Home";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/NavBar/index.js";
 // import Works from "./Pages/Works";
 // import Contact from "./Pages/Contact";
 

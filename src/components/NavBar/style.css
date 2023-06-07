@@ -1,0 +1,28 @@
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* border: 1px solid red; */
+}
+.navItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 39%;
+  padding-top: 8px;
+}
+.navLink {
+  margin: 5px;
+  text-decoration: none;
+  color: #2a2a2a;
+  font-weight: 700;
+  font-family: Satoshi !important;
+  transition: all 0.3s;
+}
+.navLink:hover {
+  color: #cf2323;
+  text-decoration: underline #cf2323;
+}
+.logoBox {
+  width: 26%;
+}
