@@ -1,4 +1,12 @@
 * {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: Satoshi !important;
+  margin: 0;
+  padding: 0;
+}
+.homePage {
+  background-image: linear-gradient(
+    rgba(163, 253, 135, 0.479),
+    rgb(255, 255, 255)
+  );
 }

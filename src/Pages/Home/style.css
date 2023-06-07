@@ -1,0 +1,103 @@
+.homeContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 3%;
+}
+.homeBox {
+  /* border: red solid 1px; */
+  width: 45%;
+  height: 650px;
+}
+.btnMediaBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.watchVideoMediaBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+.aboutBox {
+  padding-top: 9%;
+  padding-left: 4%;
+}
+.textBox {
+  /* border: rgb(33, 120, 201) solid 1px; */
+}
+.imageBox {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.playWhiteBtn {
+  height: 66px;
+  position: relative;
+  right: 31%;
+  top: 20%;
+}
+.playBtn {
+  height: 7px;
+  position: relative;
+  top: 38%;
+  right: 52%;
+}
+.mediaText {
+  position: relative;
+  top: 30%;
+  right: 26%;
+  font-weight: 700;
+  color: #3a2a2a;
+}
+.contactBox {
+  border-top: 3px solid #f69400;
+  width: 530px;
+  height: 520px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.12);
+}
+ul li {
+  font-weight: 700;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.nameInputFieldBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.inputField {
+  width: 47%;
+}
+.inputF {
+  border-radius: 5px;
+}
+.contactBoxItem {
+  margin-bottom: 20px;
+}
+.boldFont {
+  font-family: Arial black !important;
+}
+.firstNameLog {
+  position: relative;
+  bottom: 32px;
+  left: 87%;
+}
+.lastNameLog {
+  position: relative;
+  bottom: 32px;
+  left: 87%;
+}
+.emailLog {
+  position: relative;
+}
+.flagLog {
+  position: relative;
+}

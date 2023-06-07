@@ -1,8 +1,16 @@
+.navContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .navBar {
+  width: 88%;
+  min-width: 860px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   /* border: 1px solid red; */
+  padding-top: 1%;
 }
 .navItems {
   display: flex;
@@ -10,6 +18,7 @@
   justify-content: space-between;
   width: 39%;
   padding-top: 8px;
+  min-width: 459px;
 }
 .navLink {
   margin: 5px;
