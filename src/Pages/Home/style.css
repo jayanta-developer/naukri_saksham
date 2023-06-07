@@ -5,9 +5,8 @@
   margin: 3%;
 }
 .homeBox {
-  /* border: red solid 1px; */
   width: 45%;
-  height: 650px;
+  height: 550px;
 }
 .btnMediaBox {
   display: flex;
@@ -25,7 +24,6 @@
   padding-left: 4%;
 }
 .textBox {
-  /* border: rgb(33, 120, 201) solid 1px; */
 }
 .imageBox {
   display: flex;
@@ -45,10 +43,11 @@
   right: 52%;
 }
 .mediaText {
+  width: 100%;
   position: relative;
   top: 30%;
   right: 26%;
-  font-weight: 700;
+  font-weight: 700 !important;
   color: #3a2a2a;
 }
 .contactBox {
@@ -66,7 +65,7 @@
 ul li {
   font-weight: 700;
   font-size: 20px;
-  margin-left: 20px;
+  margin: 0px 0px 9px 35px;
 }
 .nameInputFieldBox {
   display: flex;
@@ -80,7 +79,6 @@ ul li {
   border-radius: 5px;
 }
 .contactBoxItem {
-  margin-bottom: 20px;
 }
 .boldFont {
   font-family: Arial black !important;
@@ -97,7 +95,30 @@ ul li {
 }
 .emailLog {
   position: relative;
+  bottom: 34px;
+  left: 93%;
 }
 .flagLog {
   position: relative;
+  bottom: 49%;
+  left: 93%;
+}
+.PhoneInput {
+  border-radius: 23px;
+  height: 45px;
+  border: rgba(128, 128, 128, 0.438) 1px solid;
+  padding-left: 22px;
+  display: flex;
+  align-items: normal;
+}
+.PhoneInputInput {
+  border: rgba(204, 41, 41, 0) 1px dotted;
+}
+.PhoneInputInput:focus {
+  outline: none;
+}
+.PhoneInputCountryIcon--border {
+  border-radius: 11px;
+  overflow: hidden;
+  height: 22px;
 }

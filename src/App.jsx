@@ -1,8 +1,8 @@
 import React from "react";
 //Components
+import NavBar from "./components/NavBar";
 import Home from "./Pages/Home";
-import NavBar from "./components/NavBar/index.js";
-// import Works from "./Pages/Works";
+import SecondBox from "./Pages/SecondBox";
 // import Contact from "./Pages/Contact";
 import { Box } from "@mui/material";
 import "./style.css";
@@ -12,8 +12,8 @@ export default function App() {
     <Box className="homePage">
       <NavBar />
       <Home />
-      {/* <Works />
-      <Contact /> */}
+      <SecondBox />
+      {/* <Contact /> */}
     </Box>
   );
 }

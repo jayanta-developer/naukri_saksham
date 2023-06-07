@@ -1,0 +1,52 @@
+.secondBox {
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(
+    rgba(208, 247, 197, 0.062),
+    rgb(255, 255, 255)
+  );
+}
+.headers2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.paragraph2 {
+  text-align: center;
+  margin-bottom: 45px;
+}
+.imageBox {
+  width: 100%;
+}
+.imageBoxContent {
+  background-image: url("../../Assets/images/Screenshot\ 2023-06-08\ 010001.png");
+  width: 1300px;
+  height: 628px;
+  border-radius: 32px;
+  color: #ffff;
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+}
+.imageBoxHeader {
+  margin-bottom: 26px;
+}
+.imageBoxUlList {
+  margin-bottom: 26px;
+}
+.boldFont {
+  font-family: Arial black !important;
+}
+.imageBoxLi {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 34px;
+}
+.imageBoxBoyImage {
+  position: relative;
+  left: 34%;
+  bottom: 9vh;
+  width: 93%;
+}

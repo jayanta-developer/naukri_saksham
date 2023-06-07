@@ -7,24 +7,27 @@ import MediaPlayBtn from "../../Assets/images/Vector 76.png";
 import VectorLog from "../../Assets/images/Vector.png";
 import EmailLog from "../../Assets/images/Vector (1).png";
 import CallLog from "../../Assets/images/Vector (2).png";
-import DownLog from "../../Assets/images/Vector 99.png";
-import IndianFlag from "../../Assets/images/Ellipse 325.png";
+
+import "react-phone-number-input/style.css";
+import PhoneInput from "react-phone-number-input";
 
 import "./style.css";
 
 export default function Home() {
+  const [value, setValue] = React.useState();
   return (
     <Box className="homeContainer">
       <Box className="aboutBox homeBox">
         <Box className="textBox">
           <Typography
+            mb={2}
             className="boldFont"
             sx={{ fontWeight: "bolder" }}
             variant="h4"
           >
             NaukriSaksham
           </Typography>
-          <Box className="paragraphText">
+          <Box mb={2} className="paragraphText">
             <ul>
               <li>No Job - No Payment | 100% Placement Guarantee</li>
               <li>Skills First, Job Next, Fees Last - Our Order of Success</li>
@@ -113,18 +116,10 @@ export default function Home() {
             <img className="emailLog" src={EmailLog} alt="" />
           </Box>
           <Box className="contactBoxItem">
-            <img className="flagLog" src={IndianFlag} alt="" />
-            <img className="flagLog" src={DownLog} alt="" />
-            <TextField
-              sx={{ width: "100%" }}
-              placeholder="(+91) 987-654-3210"
-              InputProps={{
-                style: {
-                  borderRadius: "23px",
-                  height: "45px",
-                  width: "470px",
-                },
-              }}
+            <PhoneInput
+              placeholder="Enter phone number"
+              value={value}
+              onChange={setValue}
             />
             <img className="flagLog" src={CallLog} alt="" />
           </Box>
