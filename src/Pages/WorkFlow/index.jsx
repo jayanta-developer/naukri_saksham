@@ -106,11 +106,11 @@ export default function WorkFlow() {
             </Box>
           </Box>
           <Box className="workFlowItemBox">
-            <Typography sx={{ color: "white" }} className="WorkFlowItemBoxCenterText" variant="h5">Electric Vehicle
+            <Typography sx={{ color: "white", marginBottom: "6px" }} className="WorkFlowItemBoxCenterText" variant="h5">Electric Vehicle
               & Design</Typography>
           </Box>
           <Box className="workFlowItemBox">
-            <Typography sx={{ color: "white", fontSize: "16px" }} className="WorkflowPByText">Nulla sed turpis adipiscing mauris sit morbi potenti mauris.</Typography>
+            <Typography sx={{ color: "white", fontSize: "16px", marginBottom: "2px" }} className="WorkflowPByText">Nulla sed turpis adipiscing mauris sit morbi potenti mauris.</Typography>
           </Box>
           <Box className="workFlowItemBox btnBox">
             <BlueButton BtnText="View Details" />
