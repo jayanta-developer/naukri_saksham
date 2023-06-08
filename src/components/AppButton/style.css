@@ -4,6 +4,7 @@
   padding: 10px;
   cursor: pointer;
   transition: all 1s;
+  font-weight: 700 !important;
 }
 .redBtnText {
   color: #ffffff;
@@ -17,4 +18,37 @@
 }
 .NavGetYellowStartBtn:hover {
   background-color: #d37b16 !important;
+}
+.NavGetBlueStartBtn {
+  left: 976px;
+  top: 248px;
+  background: #13488b;
+  border: 1px solid white !important;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 23px;
+  margin-bottom: 8px;
+  padding-top: 8px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 1s;
+}
+.NavGetBlueStartBtn:hover {
+  background: #1f62b9c9;
+}
+.NavGetWhiteStartBtn {
+  left: 1001px;
+  top: 506px;
+  background: #ffffff;
+  border-radius: 18.5px;
+  color: black !important;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 23px;
+  margin-bottom: 8px;
+  padding-top: 8px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 1s;
+}
+.NavGetWhiteStartBtn:hover {
+  background: #d8eaff;
 }

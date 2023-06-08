@@ -34,3 +34,28 @@ export const YellowButton = ({
     </div>
   );
 };
+export const BlueButton = ({
+  BtnText,
+}) => {
+  return (
+    <div
+      className="NavGetBlueStartBtn"
+    >
+      <Typography sx={{ fontFamily: "Satoshi" }} className="redBtnText">
+        {BtnText}
+      </Typography>
+    </div>
+  );
+};
+export const WhiteButton = ({
+  BtnText,
+}) => {
+  return (
+    <div
+      className="NavGetWhiteStartBtn">
+      <Typography sx={{ fontFamily: "Satoshi", color: "black" }} className="redBtnText">
+        {BtnText}
+      </Typography>
+    </div>
+  );
+};

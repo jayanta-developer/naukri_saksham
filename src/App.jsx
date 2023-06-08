@@ -3,7 +3,7 @@ import React from "react";
 import NavBar from "./components/NavBar";
 import Home from "./Pages/Home";
 import SecondBox from "./Pages/SecondBox";
-// import Contact from "./Pages/Contact";
+import WorkFlow from "./Pages/WorkFlow";
 import { Box } from "@mui/material";
 import "./style.css";
 
@@ -13,7 +13,7 @@ export default function App() {
       <NavBar />
       <Home />
       <SecondBox />
-      {/* <Contact /> */}
+      <WorkFlow />
     </Box>
   );
 }
