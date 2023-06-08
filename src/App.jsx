@@ -13,7 +13,7 @@ export default function App() {
       <NavBar />
       <Home />
       <SecondBox />
-      <WorkFlow />
+      {/* <WorkFlow /> */}
     </Box>
   );
 }

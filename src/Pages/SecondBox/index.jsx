@@ -24,19 +24,19 @@ export default function SecondBox() {
             <Box className="imageBoxUlList">
               <ul>
                 <li className="imageBoxLi">Students from any year of undergraduate programs</li>
-                <li className="imageBoxLi">Students from B.Tech, M.Tech, BCA, MCA, BBA, BSc,<br /> MSc, and Diploma programs</li>
-                <li className="imageBoxLi">Recent graduates who have not yet secured a placement<br /> or are unsatisfied with their current placement</li>
+                <li className="imageBoxLi">Students from B.Tech, M.Tech, BCA, MCA, BBA, BSc, MSc, and Diploma programs</li>
+                <li className="imageBoxLi">Recent graduates who have not yet secured a placement or are unsatisfied with their current placement</li>
                 <li className="imageBoxLi">Individuals looking to transition from non-core to core streams</li>
-                <li className="imageBoxLi">Individuals interested in switching from non-IT to the IT<br /> domain.</li>
+                <li className="imageBoxLi">Individuals interested in switching from non-IT to the IT domain.</li>
               </ul>
             </Box>
             <Box className="imageBoxBtn">
               <RedButton BtnText="Get Started" />
             </Box>
           </Box>
-          <Box className="imageBoxAvatar">
+          {/* <Box className="imageBoxAvatar">
             <img className="imageBoxBoyImage" src={ImageBoxAvatar} alt="" />
-          </Box>
+          </Box> */}
         </Box>
       </Box>
     </Box>

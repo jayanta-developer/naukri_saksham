@@ -1,13 +1,10 @@
 import React from "react";
 import { Box, Typography, Button, Container, TextField } from "@mui/material";
 import { RedButton, YellowButton } from "../../components/AppButton";
-import watchMediaAvtar from "../../Assets/images/Ellipse 306.png";
-import MediaWhiteBtn from "../../Assets/images/Ellipse 307.png";
-import MediaPlayBtn from "../../Assets/images/Vector 76.png";
+import MediaImage from "../../Assets/images/MediaGirlImage.png";
 import VectorLog from "../../Assets/images/Vector.png";
 import EmailLog from "../../Assets/images/Vector (1).png";
 import CallLog from "../../Assets/images/Vector (2).png";
-
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 
@@ -36,16 +33,12 @@ export default function Home() {
             </ul>
           </Box>
           <Box className="btnMediaBox">
-            <Box sx={{ paddingTop: "18px" }}>
+            <Box className="mediaBtn">
               <RedButton BtnText="View Certifications" />
             </Box>
             <Box className="watchVideoMediaBox">
-              <Box className="imageBox">
-                <img src={watchMediaAvtar} alt="" />
-                <img className="playWhiteBtn" src={MediaWhiteBtn} alt="" />
-                <img className="playBtn" src={MediaPlayBtn} alt="" />
-              </Box>
-              <Typography className="mediaText">Watch Our Video</Typography>
+              <img className="mediaGirlImage" src={MediaImage} />
+              <Typography sx={{ display: "flex", alignItems: "center" }}>Watch Our Video</Typography>
             </Box>
           </Box>
         </Box>
@@ -53,17 +46,17 @@ export default function Home() {
 
       <Box className="inputBox homeBox">
         <Box className="contactBox">
-          <Box className="contactBoxItem">
+          <Box sx={{ textAlign: "center" }} className="contactBoxItem">
             <Typography
               className="boldFont"
-              sx={{ fontWeight: "bolder", fontSize: "22px" }}
+              sx={{ fontWeight: "bolder", fontSize: "15px" }}
               variant="h4"
             >
               View the Program Package to Access:
             </Typography>
           </Box>
           <Box className="contactBoxItem">
-            <ul>
+            <ul className="contactUl">
               <li>No Job - No Payment</li>
               <li>100% Placement Guarantee</li>
               <li>Skills First, Job Next, Fees Last</li>
@@ -79,7 +72,7 @@ export default function Home() {
                   style: {
                     borderRadius: "23px",
                     height: "45px",
-                    width: "225px",
+                    // width: "225px",
                   },
                 }}
               />
@@ -93,7 +86,7 @@ export default function Home() {
                   style: {
                     borderRadius: "23px",
                     height: "45px",
-                    width: "225px",
+                    // width: "100%",
                   },
                 }}
               />
@@ -109,7 +102,7 @@ export default function Home() {
                 style: {
                   borderRadius: "23px",
                   height: "45px",
-                  width: "470px",
+                  // width: "470px",
                 },
               }}
             />

@@ -5,8 +5,17 @@
   padding: 0;
 }
 .homePage {
+  width: 100%;
   background-image: linear-gradient(
     rgba(163, 253, 135, 0.37),
     rgb(255, 255, 255)
   );
+}
+@media only screen and (min-width: 600px) {
+  .homePage {
+    background-image: linear-gradient(
+      rgba(163, 253, 135, 0.37),
+      rgb(255, 255, 255)
+    );
+  }
 }

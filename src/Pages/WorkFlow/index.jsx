@@ -13,39 +13,9 @@ import valeo from "../../Assets/images/valeo.png"
 import honda from "../../Assets/images/honda.png"
 import volvo from "../../Assets/images/volvo.png"
 import tata from "../../Assets/images/tata.png"
-
-import Cards from "./Cards";
 import "./style.css";
 
 export default function WorkFlow() {
-  const arr1 = [microsoft, Enthire, SitusAMC];
-  const arr2 = [walmart, accenture, valeo];
-  const arr3 = [honda, volvo, tata];
-
-  const workFlowItemBox = (avatarLogo, text, logos) => {
-    return (
-      <Box className="workFlowItem workFlowItem1">
-        <Box className="workFlowItemBox">
-          <Box className="logoBackground">
-            <img className="vector1Logo" src={avatarLogo} />
-          </Box>
-        </Box>
-        <Box className="workFlowItemBox">
-          <Typography className="WorkFlowItemBoxCenterText" variant="h5">{text}</Typography>
-        </Box>
-        <Box className="workFlowItemBox">
-          <Typography className="WorkflowPByText">Powered By</Typography>
-        </Box>
-        <Box className="workFlowItemBox companyLogoBox">
-          <img className="companyLogo" src={microsoft} />
-          <img className="companyLogo companyLogoImg" src={Enthire} />
-          <img className="companyLogo" src={SitusAMC} />
-        </Box>
-      </Box>
-    )
-  }
-
-
   return (
     <Box className="workFlowBox">
       <Box className="workFlowHeader">
