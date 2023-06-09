@@ -10,7 +10,7 @@ export const RedButton = ({
   backgroundColor = "#cf2323",
 }) => {
   return (
-    <div style={{ width, height, backgroundColor }} className="NavGetStartBtn">
+    <div style={{ width, height, backgroundColor }} className="NavGetStartBtn redBtn">
       <Typography sx={{ fontFamily: "Satoshi" }} className="redBtnText">
         {BtnText}
       </Typography>

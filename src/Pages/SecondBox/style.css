@@ -32,6 +32,8 @@
   padding: 5%;
   display: flex;
   flex-direction: row;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .imageBoxHeader {
   margin-bottom: 26px;
@@ -70,6 +72,7 @@
       rgb(255, 255, 255)
     );
     padding-bottom: 100px;
+    margin-top: 6%;
   }
   .headers2 {
     width: 100%;
@@ -82,9 +85,11 @@
   }
   .imageBox {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .imageBoxContent {
-    background-image: url("../../Assets/images/Screenshot\ 2023-06-08\ 010001.png");
+    background-image: url("../../Assets/images/bacground\ with\ photo.png");
     width: 1300px;
     height: 628px;
     border-radius: 32px;
@@ -95,9 +100,15 @@
   }
   .imageBoxHeader {
     margin-bottom: 26px;
+    text-align: left;
   }
   .imageBoxUlList {
     margin-bottom: 26px;
+    padding-right: 19%;
+  }
+  .imageBoxBtn {
+    display: flex;
+    justify-content: left;
   }
   .boldFont {
     font-family: Arial black !important;
