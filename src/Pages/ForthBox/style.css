@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+.placementSubHeading {
+  margin: 10px 0px !important;
+}
+.placementItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+}
+.placementCompanyLogosBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 85px;
+}
+.placementCompanyLogosItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.placementCompanyLogosItem {
+  width: 240px;
+  height: 100px;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(147, 147, 147, 0.25);
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 27px;
+  margin: 0px 10px;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+.placementCompanyLogosItemBlack {
+  width: 240px;
+  height: 100px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 27px;
+  margin: 0px 10px;
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+.archiveBox {
+  /* border: 1px solid red; */
+  width: 100%;
+  position: relative;
+  right: 0vh;
+  margin-top: 96px;
+  border-radius: 56px 0px 0px 0px;
+  background-size: cover;
+  background-image: url("../../Assets/images/AchivmentBg.png");
+}
+.AchievementBackground {
+  position: absolute;
+  right: 0vh;
+  margin-top: 96px;
+  border-radius: 56px 0px 0px 0px;
+}

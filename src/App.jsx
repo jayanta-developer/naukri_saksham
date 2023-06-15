@@ -1,10 +1,13 @@
 import React from "react";
+
+import { Box } from "@mui/material";
 //Components
 import NavBar from "./components/NavBar";
 import Home from "./Pages/Home";
 import SecondBox from "./Pages/SecondBox";
 import WorkFlow from "./Pages/WorkFlow";
-import { Box } from "@mui/material";
+import ForthBox from "./Pages/ForthBox";
+
 import "./style.css";
 
 export default function App() {
@@ -14,6 +17,7 @@ export default function App() {
       <Home />
       <SecondBox />
       <WorkFlow />
+      <ForthBox />
     </Box>
   );
 }
