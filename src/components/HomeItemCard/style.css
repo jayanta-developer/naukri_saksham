@@ -1,0 +1,21 @@
+.homeItemCardBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.homeItemCard {
+  width: 236px;
+  height: 281px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  padding: 0px 18px;
+  margin: 0px 12px;
+}
+.cardLogo {
+  width: 150px;
+  margin-left: 26px;
+}

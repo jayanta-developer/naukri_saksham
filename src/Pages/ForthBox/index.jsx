@@ -14,7 +14,7 @@ import AdobeLogo from "../../Assets/images/ForthBoxCompanyLogos/Adobe.png"
 import AmazonLogo from "../../Assets/images/ForthBoxCompanyLogos/Amazon.png"
 import AchievementBG from "../../Assets/images/AchivmentBg.png"
 
-import { Box, Typography, Button, Container, TextField, Card } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 //components
 import PlacementCard from "../../components/PlacementCard"
 
@@ -76,21 +76,6 @@ export default function ForthBox() {
           </Box>
         </Box>
       </Box>
-
-      <Box className="archiveBox">
-
-        <Typography className="boldFont" sx={{ fontWeight: "bolder", textAlign: "center" }} variant='h4'>Achieve Your Goals With Our Online Courses</Typography>
-
-
-        <Typography sx={{ textAlign: "center" }} variant="subtitle2">
-          Lorem ipsum dolor sit amet consectetur. Nulla sed turpis adipiscing mauris sit
-          morbi potenti mauris. Nulla pharetra facilisi fringilla convallis Lorem ipsum dolor sit amet consectetur.
-          Nulla sed turpis adipiscing mauris sit morbi potenti mauris.
-          Nulla pharetra facilisi fringilla convallis
-        </Typography>
-
-      </Box>
-
       <Box className="reviewBox"></Box>
 
     </Box>

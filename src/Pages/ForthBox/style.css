@@ -47,17 +47,85 @@
 }
 .archiveBox {
   /* border: 1px solid red; */
-  width: 100%;
-  position: relative;
-  right: 0vh;
-  margin-top: 96px;
+  width: 90%;
+  height: 360px;
+  /* float: right; */
+  /* position: relative;
+  right: 0vh; */
+  margin-top: 30px;
   border-radius: 56px 0px 0px 0px;
   background-size: cover;
   background-image: url("../../Assets/images/AchivmentBg.png");
+  padding: 82px;
+  color: #ffff;
+}
+.banarBox {
+  width: 100%;
+  display: flex;
+  justify-content: right;
 }
 .AchievementBackground {
   position: absolute;
   right: 0vh;
   margin-top: 96px;
   border-radius: 56px 0px 0px 0px;
+}
+.ForthBoxCardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* text-align: center; */
+  margin: 126px;
+}
+.cardBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.ForthBoxCard {
+  width: 413px;
+  height: 419px;
+  padding: 23px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 5px 30px rgba(116, 116, 116, 0.25);
+  border-radius: 5px;
+  margin: 0px 16px;
+}
+.profileBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-left: 32px;
+}
+.profilePhoto img {
+  border-radius: 36px;
+}
+.profileInfo {
+  padding: 14px 0px 0px 18px;
+}
+.TextBox {
+  padding-left: 25px;
+}
+.cardFooter {
+  height: 124px;
+  background: #13488b;
+  display: flex;
+  flex-direction: row;
+}
+.footerInrBox {
+  width: 50%;
+  color: #ffff;
+  padding: 16px 0px 0px 25px;
+  display: flex;
+  flex-direction: column;
+}
+.FooterSubText {
+  text-align: left !important;
+}
+.footerCompanyLogo {
+  width: 52%;
+  margin-top: 6px;
 }

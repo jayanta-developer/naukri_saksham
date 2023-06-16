@@ -141,6 +141,16 @@ ul li {
   height: 22px;
 }
 @media only screen and (min-width: 600px) {
+  .HContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(
+      rgba(163, 253, 135, 0.37),
+      rgb(255, 255, 255)
+    );
+    padding-bottom: 95px;
+  }
   .homeContainer {
     display: flex;
     flex-direction: row;
@@ -264,5 +274,11 @@ ul li {
     border-radius: 11px;
     overflow: hidden;
     height: 22px;
+  }
+  .homeItemBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 80px;
   }
 }
