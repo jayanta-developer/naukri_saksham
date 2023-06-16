@@ -1,6 +1,5 @@
 import React from "react";
 
-import { Box } from "@mui/material";
 //Components
 import NavBar from "./components/NavBar";
 import Home from "./Pages/Home";

@@ -3,6 +3,7 @@
   font-family: Satoshi !important;
   margin: 0;
   padding: 0;
+  user-select: none;
 }
 .homePage {
   width: 100%;
@@ -17,5 +18,11 @@
       rgba(163, 253, 135, 0.37),
       rgb(255, 255, 255)
     );
+  }
+  .pointer {
+    cursor: pointer;
+  }
+  .textUnderlineOnHover:hover {
+    text-decoration: underline;
   }
 }
