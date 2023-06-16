@@ -93,6 +93,8 @@
   box-shadow: 0px 5px 30px rgba(116, 116, 116, 0.25);
   border-radius: 5px;
   margin: 0px 16px;
+  box-shadow: 0px 5px 30px rgba(116, 116, 116, 0.25);
+  border-radius: 5px;
 }
 .profileBox {
   display: flex;
@@ -114,6 +116,7 @@
   background: #13488b;
   display: flex;
   flex-direction: row;
+  border-radius: 0px 0px 5px 5px;
 }
 .footerInrBox {
   width: 50%;

@@ -85,7 +85,6 @@ export default function ForthBoxCards() {
           "Associate Software Engineer",
           Bosch
         )}
-
       </Box>
     </Box>
   )

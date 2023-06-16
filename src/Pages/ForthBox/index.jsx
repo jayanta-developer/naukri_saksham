@@ -12,7 +12,6 @@ import GoogleLogo from "../../Assets/images/ForthBoxCompanyLogos/Google.png"
 import FlipkartLogo from "../../Assets/images/ForthBoxCompanyLogos/Flipkart.png"
 import AdobeLogo from "../../Assets/images/ForthBoxCompanyLogos/Adobe.png"
 import AmazonLogo from "../../Assets/images/ForthBoxCompanyLogos/Amazon.png"
-import AchievementBG from "../../Assets/images/AchivmentBg.png"
 
 import { Box, Typography } from "@mui/material";
 //components
