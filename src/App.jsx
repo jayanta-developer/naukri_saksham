@@ -9,6 +9,7 @@ import ForthBox from "./Pages/ForthBox";
 import ForthBoxBanar from "./Pages/ForthBox/ForthBoxBanar";
 import ForthBoxCard from "./Pages/ForthBox/ForthBoxCards";
 import LearningBox from "./Pages/LearningBox";
+import MediaBox from "./Pages/MediaBox";
 import Footer from "./Pages/Footer"
 
 import "./style.css";
@@ -18,12 +19,13 @@ export default function App() {
     <>
       <NavBar />
       <Home />
-      {/* <SecondBox /> */}
       <WorkFlow />
       <ForthBox />
       <ForthBoxBanar />
       <ForthBoxCard />
       <LearningBox />
+      <MediaBox />
+      <SecondBox />
       <Footer />
     </>
   );
