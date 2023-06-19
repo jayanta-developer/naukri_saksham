@@ -10,6 +10,7 @@ import ForthBoxBanar from "./Pages/ForthBox/ForthBoxBanar";
 import ForthBoxCard from "./Pages/ForthBox/ForthBoxCards";
 import LearningBox from "./Pages/LearningBox";
 import MediaBox from "./Pages/MediaBox";
+import CertificateBox from "./Pages/CertificateBox";
 import Footer from "./Pages/Footer"
 
 import "./style.css";
@@ -26,6 +27,7 @@ export default function App() {
       <LearningBox />
       <MediaBox />
       <SecondBox />
+      <CertificateBox />
       <Footer />
     </>
   );

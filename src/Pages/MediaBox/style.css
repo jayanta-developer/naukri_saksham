@@ -2,13 +2,6 @@
   display: flex;
   flex-direction: column;
 }
-/* .videoBox {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  padding: 4% 5%;
-} */
 .videoBox {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

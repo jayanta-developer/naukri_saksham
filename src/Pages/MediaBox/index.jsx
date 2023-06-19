@@ -120,7 +120,7 @@ export default function MediaBox() {
 
         </Box>
         <Box className="coverPhoto">
-          <img src={WhiteGay} />
+          <img style={{ width: "100%" }} src={WhiteGay} />
         </Box>
 
       </Box>
