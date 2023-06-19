@@ -35,7 +35,7 @@ export default function CertificateBox() {
   return (
     <Box className="CertificateBox">
       <Typography mb={3} className="boldFont"
-        sx={{ fontWeight: "bolder", paddingLeft: "23px" }}
+        sx={{ fontWeight: "bolder", }}
         variant="h4">Get Certified</Typography >
 
       <Box className="certificateCards">
@@ -48,7 +48,7 @@ export default function CertificateBox() {
 
       <Box className="certificateMedia">
         <Box className="CcoverPhoto">
-          <img src={coverGirlPhoto} alt="" />
+          <img style={{ width: "100%", maxWidth: "624px" }} src={coverGirlPhoto} alt="" />
         </Box>
         <Box className="CTextBox">
           <Typography mb={3} className="boldFont"
