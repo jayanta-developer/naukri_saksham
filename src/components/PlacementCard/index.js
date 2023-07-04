@@ -9,11 +9,11 @@ export default function PlacementCard({ logo, FirsText, secondText }) {
       <Box className="placementCardLogo">
         <img src={logo} alt="" />
       </Box>
-      <Box className="placementCardText">
+      <Box px={2} className="placementCardText">
         <Typography
           className="boldFont"
           sx={{ fontWeight: "bolder", textAlign: "center" }}
-          variant="h4"
+          variant="h5"
         >
           {FirsText}
         </Typography>

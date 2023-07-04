@@ -8,6 +8,7 @@ import WorkFlow from "./Pages/WorkFlow";
 import ForthBox from "./Pages/ForthBox";
 import ForthBoxBanar from "./Pages/ForthBox/ForthBoxBanar";
 import ForthBoxCard from "./Pages/ForthBox/ForthBoxCards";
+import CompanyLogoBox from "./Pages/ForthBox/CompanyLogoBox"
 import LearningBox from "./Pages/LearningBox";
 import MediaBox from "./Pages/MediaBox";
 import CertificateBox from "./Pages/CertificateBox";
@@ -22,7 +23,8 @@ export default function App() {
       <Home />
       <WorkFlow />
       <ForthBox />
-      <ForthBoxBanar />
+      <CompanyLogoBox />
+      {/* <ForthBoxBanar /> */}
       <ForthBoxCard />
       <LearningBox />
       <MediaBox />

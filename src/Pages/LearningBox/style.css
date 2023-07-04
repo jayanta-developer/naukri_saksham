@@ -1,44 +1,68 @@
 .learningBox {
-  padding: 5% 12% 5% 12%;
+  padding: 5% 4%;
   /* border: 1px solid rgb(166, 21, 202); */
   background: rgba(190, 241, 149, 0.411);
 }
 
 .contentBox {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   /* border: 1px solid red; */
   margin-top: 36px;
 }
-.sideNavBox {
+.contentTab {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.contentTabItem {
+  background: #ffff;
+  width: 116px;
+  height: 34px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  /* border: 1px solid rgb(22, 134, 199); */
-  margin: 0px 10px;
+  margin: 5px;
 }
-.sideNavItem {
-  width: 346px;
-  height: 79px;
-  background: #ffefc7;
-  padding: 30px;
-  /* border: 1px solid red; */
+.contentTabItemOnHover {
+  background: #fc0;
+  width: 116px;
+  height: 34px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5px;
   cursor: pointer;
-  font-weight: 700;
-  transition: color 0.5s;
 }
-.sideNavItem:hover {
-  width: 346px;
-  height: 79px;
-  left: calc(50% - 452px / 2 - 431px);
-  top: 4508px;
-  border-right: 3px solid #a56504;
-  background: #f69400;
-  color: #ffff;
+.contentTabText {
+  margin-top: 10px !important;
 }
-.mediaCoverBox {
-  /* border: 1px solid rgb(0, 255, 106); */
-  margin: 0px 10px;
-  margin: 0px 10px;
-  width: 60%;
+.mediaBox {
+  margin-top: 25px;
+}
+.polygon {
+  position: relative;
+  top: 5px;
+}
+.polygonBlock {
+  display: none;
+}
+.mediaCover {
+  width: 360px;
+  /* height: 512px; */
+  background-image: url(../../Assets/images/Rectangle.png);
+  background-repeat: no-repeat;
+}
+.media_Text {
+  margin-top: 33px;
+}
+.media {
+  width: 357px;
+  padding: 33px 0px 10px 16px;
 }

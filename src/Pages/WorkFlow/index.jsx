@@ -20,7 +20,7 @@ export default function WorkFlow() {
     <Box className="workFlowBox">
       <Box className="workFlowHeader">
         <Typography className="boldFont" sx={{ fontWeight: "bolder", textAlign: "center" }}
-          variant="h4">Building industry ready workforce in <br /> High demand Domains</Typography>
+          variant="h5">Building industry ready workforce in <br /> High demand Domains</Typography>
       </Box>
       <Box className="workFlowItems">
 

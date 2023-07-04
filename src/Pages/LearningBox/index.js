@@ -1,45 +1,92 @@
-import React from "react";
+import React, { useState } from "react";
 import LearningBoxCoverPhoto from "../../Assets/images/student-online-cute-young-guy-studying-computer-glasses-green-shirt-smiling-pointing 1.png";
 import { Box, Typography } from "@mui/material";
+import Polygon from "../../Assets/images/Polygon 1.svg";
+import WhatsAppImage from "../../Assets/images/WhatsApp Image 2023-06-29 at 5.13 1.png";
 
 import "./style.css";
 
 export default function LearningBox() {
+  const [hoveredIndex, setHoveredIndex] = useState(-1);
+
+  const handleMouseEnter = (index) => {
+    setHoveredIndex(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredIndex(-1);
+  };
+
+  const tab = (text, index) => {
+    const className =
+      hoveredIndex === index ? "contentTabItemOnHover" : "contentTabItem";
+    const polygonClass = hoveredIndex === index ? "polygon" : "polygonBlock";
+    const contentText = hoveredIndex === index ? "contentTabText" : "";
+    return (
+      <Box
+        className={className}
+        onMouseEnter={() => handleMouseEnter(index)}
+        onMouseLeave={handleMouseLeave}
+      >
+        <Typography
+          className={contentText}
+          sx={{ fontSize: "13px", fontWeight: "700" }}
+        >
+          {text}
+        </Typography>
+        <img className={polygonClass} src={Polygon} />
+      </Box>
+    );
+  };
+
   return (
     <Box className="learningBox">
       <Typography
+        sx={{
+          fontWeight: "700",
+          textAlign: "center",
+          color: "#DEB511",
+          fontSize: "11px",
+        }}
+      >
+        ONE-STOP LEARNING PLATFORM
+      </Typography>
+      <Typography
         className="boldFont"
         sx={{ fontWeight: "bolder", textAlign: "center" }}
-        variant="h4"
+        variant="h5"
       >
-        How You Will Learn
+        Everything you need to crack your Dream Job
       </Typography>
 
       <Box className="contentBox">
-        <Box className="sideNavBox">
-          <Box className="sideNavItem">Learning Portal</Box>
-          <Box className="sideNavItem">Live Sessions</Box>
-          <Box className="sideNavItem">Time Flexibility</Box>
-          <Box className="sideNavItem">Doubt Solving</Box>
-          <Box className="sideNavItem">Placement Portal</Box>
+        <Box className="contentTab">
+          {tab("Learning Portal", 0)}
+          {tab("Live Sessions", 1)}
+          {tab("Practice Interviews", 2)}
+          {tab("Doubt Solving", 3)}
+          {tab("Placement Portal", 4)}
         </Box>
 
-        <Box className="mediaCoverBox">
-          <Box className="coverPhoto">
-            <img src={LearningBoxCoverPhoto} />
+        <Box className="mediaBox">
+          <Box className="mediaCover">
+            <Box className="media">
+              <img style={{ width: "100%" }} src={WhatsAppImage} />
+            </Box>
           </Box>
-          <Box mt={1} className="textBox">
+          <Box className="media_Text">
             <Typography
               className="boldFont"
               sx={{ fontWeight: "bolder" }}
-              variant="h6"
+              variant="h5"
             >
-              Amplify Your Knowledge with Expert-Led Live Classes
+              Unlimited 1-on-1 Mock Interviews with Mentors from Top Tech
+              Companies
             </Typography>
-            <Typography variant="caption">
-              Engage in weekly live sessions led by our experts to unlock your
-              learning potential. Benefit from direct interaction with our
-              instructors for an unparalleled and enriching learning experience.
+            <Typography mt={3}>
+              Get set for success with endless support! Mentorship sessions,
+              Resume/Project reviews, Mock HR interviews, and Job Readiness
+              sessions all available to you.
             </Typography>
           </Box>
         </Box>

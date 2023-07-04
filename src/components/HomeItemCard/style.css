@@ -1,7 +1,11 @@
 .homeItemCardBox {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  /* justify-content: center; */
+  overflow: scroll;
+  height: 303px;
+  /* align-items: center; */
+  padding: 8px;
 }
 .homeItemCard {
   width: 236px;
@@ -15,7 +19,11 @@
   padding: 0px 18px;
   margin: 0px 12px;
 }
+.homeCardImageBox {
+  padding: 0px;
+  width: 200px;
+}
 .cardLogo {
-  width: 150px;
-  margin-left: 26px;
+  /* width: 150px;
+  margin-left: 26px; */
 }

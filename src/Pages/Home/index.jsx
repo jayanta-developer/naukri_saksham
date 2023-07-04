@@ -133,7 +133,7 @@ export default function Home() {
 
       </Box>
       <Box className="homeItemBox">
-        <Typography mb={4} className="boldFont" sx={{ fontWeight: "bolder", textAlign: "center" }} variant="h4">Why NaukriSaksham</Typography>
+        <Typography mb={4} className="boldFont" sx={{ fontWeight: "bolder", textAlign: "center" }} variant="h5">Why NaukriSaksham</Typography>
         <Box className="homeItemCardBox">
           <HomeItemCard logo={JobSearch} Header="Future Job Market" BottomText="2.5 million jobs in EV, DS, and Full Stack by 2025." />
           <HomeItemCard logo={FectoryHelmet} Header="Misfit Engineers" BottomText="94% student lack the necessary skills due to outdated curriculum." />

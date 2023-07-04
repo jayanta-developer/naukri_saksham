@@ -7,7 +7,7 @@ export const RedButton = ({
   BtnText,
   width = "174px",
   height = "47px",
-  backgroundColor = "#cf2323",
+  backgroundColor = "#FC0",
 }) => {
   return (
     <div style={{ width, height, backgroundColor }} className="NavGetStartBtn redBtn">

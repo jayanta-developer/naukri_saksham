@@ -14,7 +14,7 @@
   font-family: Satoshi;
 }
 .NavGetStartBtn:hover {
-  background-color: #ac1c1c !important;
+  background-color: rgb(219, 175, 0) !important;
 }
 .NavGetYellowStartBtn:hover {
   background-color: #d37b16 !important;

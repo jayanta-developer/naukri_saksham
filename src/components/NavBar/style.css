@@ -2,6 +2,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  background: rgba(163, 253, 135, 0.37);
+  padding-top: 20px;
 }
 .navBar {
   width: 88%;
@@ -27,8 +29,8 @@
   transition: all 0.3s;
 }
 .navLink:hover {
-  color: #cf2323;
-  text-decoration: underline #cf2323;
+  color: #fc0;
+  text-decoration: underline #fc0;
 }
 .logoBox {
   width: 100%;
@@ -70,10 +72,6 @@
     font-weight: 700;
     font-family: Satoshi !important;
     transition: all 0.3s;
-  }
-  .navLink:hover {
-    color: #cf2323;
-    text-decoration: underline #cf2323;
   }
   .logoBox {
     width: 26%;
