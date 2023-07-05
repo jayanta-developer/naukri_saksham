@@ -5,6 +5,8 @@ import MediaImage from "../../Assets/images/MediaGirlImage.png";
 import VectorLog from "../../Assets/images/Vector.png";
 import EmailLog from "../../Assets/images/Vector (1).png";
 import CallLog from "../../Assets/images/Vector (2).png";
+import VectorG from "../../Assets/images/VectorG.svg";
+import VectorD from "../../Assets/images/VectorD.svg";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 //Home card logo
@@ -102,11 +104,20 @@ export default function Home() {
                 <img className="lastNameLog" src={VectorLog} alt="" />
               </Box>
             </Box>
-            <Box className="contactBoxItem">
+
+            <Box className="contactBoxItem home_card_input">
+              <PhoneInput
+                placeholder="Enter phone number"
+                value={value}
+                onChange={setValue}
+              />
+              <img className="flagLog" src={CallLog} alt="" />
+            </Box>
+            <Box className="contactBoxItem home_card_input">
               <TextField
                 sx={{ width: "100%" }}
-                type="email"
-                placeholder="Email Address"
+                type="text"
+                placeholder="College Name"
                 InputProps={{
                   style: {
                     borderRadius: "23px",
@@ -115,18 +126,25 @@ export default function Home() {
                   },
                 }}
               />
-              <img className="emailLog" src={EmailLog} alt="" />
+              <img className="emailLog" src={VectorG} alt="" />
             </Box>
-            <Box className="contactBoxItem">
-              <PhoneInput
-                placeholder="Enter phone number"
-                value={value}
-                onChange={setValue}
+            <Box className="contactBoxItem home_card_input">
+              <TextField
+                sx={{ width: "100%" }}
+                type="text"
+                placeholder="Program"
+                InputProps={{
+                  style: {
+                    borderRadius: "23px",
+                    height: "45px",
+                    // width: "470px",
+                  },
+                }}
               />
-              <img className="flagLog" src={CallLog} alt="" />
+              <img className="emailLog" src={VectorD} alt="" />
             </Box>
             <Box className="contactBoxItem">
-              <YellowButton BtnText="View Program Package" width="100%" />
+              <RedButton BtnText="Enroll Now" width="100%" />
             </Box>
           </Box>
         </Box>

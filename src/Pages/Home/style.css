@@ -102,13 +102,16 @@ ul li {
   flex-direction: row;
   justify-content: space-between;
 } */
-/* .inputField {
-  width: 47%;
-} */
+.inputField {
+  height: 54px;
+}
 .inputF {
   border-radius: 5px;
 }
 .contactBoxItem {
+}
+.home_card_input {
+  height: 54px;
 }
 .boldFont {
   font-family: Arial black !important;
