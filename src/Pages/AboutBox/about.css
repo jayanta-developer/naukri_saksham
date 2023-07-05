@@ -43,6 +43,10 @@
 .Cimage {
   width: 70px;
 }
+.bold__Font {
+  font-family: Arial black !important;
+  text-align: center;
+}
 
 @media only screen and (min-width: 600px) {
   .CertificateBox {
@@ -102,5 +106,8 @@
     flex-direction: column;
     justify-content: center;
     padding-left: 70px;
+  }
+  .bold__Font {
+    text-align: left;
   }
 }

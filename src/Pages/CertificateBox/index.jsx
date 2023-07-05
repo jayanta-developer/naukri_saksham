@@ -16,7 +16,7 @@ export default function CertificateBox() {
         <img style={{ width: "90%" }} src={coverPhoto} />
       </Box>
       <Box className="CertificateText">
-        <Typography mb={3} className="boldFont"
+        <Typography mb={3} className="bold_Font"
           sx={{ fontWeight: "bolder" }}
           variant="h5">Internationally Accrediated Certificate wit</Typography>
         <Typography mb={1} pl={3} sx={{ fontSize: "13px" }}>Over 20+ Points Added in Your Resume</Typography>

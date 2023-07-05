@@ -22,7 +22,7 @@ export default function index() {
             <img style={{ width: "100%", maxWidth: "624px" }} src={coverGirlPhoto} alt="" />
           </Box>
           <Box className="CTextBox">
-            <Typography mb={3} className="boldFont"
+            <Typography mb={3} className="bold__Font"
               sx={{ fontWeight: "bolder" }}
               variant="h5">About Us</Typography>
             <Typography mb={4}>
