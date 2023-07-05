@@ -139,3 +139,22 @@
   width: 52%;
   margin-top: 6px;
 }
+@media only screen and (min-width: 600px) {
+  .placementItems {
+    overflow: unset;
+    justify-content: center;
+  }
+  .cardBox {
+    justify-content: center;
+    overflow: unset;
+  }
+  .companyLogoImage {
+    width: 160px;
+  }
+  .placementCompanyLogosItems {
+    padding: 0px 221px;
+  }
+  .placementCompanyLogosItem {
+    height: 102px;
+  }
+}

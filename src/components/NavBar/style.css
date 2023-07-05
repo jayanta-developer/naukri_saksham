@@ -43,6 +43,7 @@
 
 @media only screen and (min-width: 600px) {
   .navContainer {
+    background: none;
     width: 100%;
     display: flex;
     justify-content: center;

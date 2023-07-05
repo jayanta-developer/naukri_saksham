@@ -55,7 +55,7 @@ export default function MediaBox() {
             <Typography className='YouTubeCoverText'>Watch Fresher to Engineering Data Author Video</Typography>
             <Box className="grayBox"></Box>
           </Box>
-          <Box className="videoItem gridItem5">
+          {/* <Box className="videoItem gridItem5">
             <img className='avatarImage' src={avatar4} />
             <img className='YouTubeLogo' src={YouTubeLogo} />
             <Typography className='YouTubeCoverText'>Watch Fresher to Engineering Data Author Video</Typography>
@@ -72,7 +72,7 @@ export default function MediaBox() {
             <img className='YouTubeLogo' src={YouTubeLogo} />
             <Typography className='YouTubeCoverText'>Watch Fresher to Engineering Data Author Video</Typography>
             <Box className="grayBox"></Box>
-          </Box>
+          </Box> */}
         </Box>
       </Box>
 

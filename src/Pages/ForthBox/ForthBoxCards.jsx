@@ -51,8 +51,8 @@ export default function ForthBoxCards() {
   return (
     <Box my={3} className="ForthBoxCardContainer">
       <Box className="header">
-        <Typography mb={2} className='boldFont' sx={{ fontWeight: "bolder", textAlign: "center" }} variant='h5'>Testimonial</Typography>
-        <Typography mb={3} variant="subtitle2" sx={{ textAlign: "center" }}>Lorem ipsum dolor sit amet consectetur. Nulla sed turpis adipiscing mauris sit morbi potenti mauris.</Typography>
+        <Typography mb={2} className='boldFont' sx={{ fontWeight: "bolder", textAlign: "center" }} variant='h5'>Make Your Parents Proud!</Typography>
+        <Typography mb={3} variant="subtitle2" sx={{ textAlign: "center" }}>What can be more satisfactory than securing a job with the highest CTC in top companies and become financially independent</Typography>
       </Box>
       <Box className="cardBox">
         {card(

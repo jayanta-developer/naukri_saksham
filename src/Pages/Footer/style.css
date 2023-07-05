@@ -8,9 +8,10 @@
 }
 .footerContent {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
-  padding: 90px 182px 45px 101px;
+  padding: 42px 19px 17px 20px;
+  align-items: center;
 }
 .footerText {
   display: flex;
@@ -19,6 +20,7 @@
 .footerTextBoxItem {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 .footerBottomBox {
   display: flex;
@@ -35,10 +37,102 @@
   height: 40px;
   padding-top: 17px;
 }
-
+.footerColHeader {
+  text-align: center;
+}
+.footerRowItem {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footerRowItem p {
+  margin: 3px;
+}
+.ClogBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.cLogo {
+}
+.footerBottomText {
+  font-size: 8px !important;
+}
 .MediaLinks img {
   margin: 0px 5px;
   cursor: pointer;
 }
-.messageLogoOnFooter {
+.footerImage {
+  width: 100%;
+}
+@media only screen and (min-width: 600px) {
+  .footer {
+    background: #213144;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    color: #ffff;
+  }
+  .footerContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 90px 182px 45px 101px;
+    align-items: start;
+  }
+  .footerContent div {
+    margin: 0px 23px;
+  }
+  .footerRowItem {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerColHeader {
+    text-align: start;
+    padding-left: 24px;
+  }
+  .footerRowItem p {
+    margin: 0px;
+    width: 99px;
+  }
+  .footerText {
+    display: flex;
+    flex-direction: row;
+  }
+  .footerTextBoxItem {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  .footerBottomBox {
+    display: flex;
+
+    justify-content: center;
+    padding: 15px 0px;
+  }
+  .footerBottomBoxContent {
+    border-top: 1px solid rgba(196, 196, 196, 0.17);
+    width: 78%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+    padding-top: 17px;
+  }
+
+  .MediaLinks img {
+    margin: 0px 5px;
+    cursor: pointer;
+  }
+  .footerBottomText {
+    font-size: 0.75rem;
+  }
+  .footerImage {
+    width: 100%;
+  }
+  .footerImageBox {
+    width: 68%;
+  }
 }

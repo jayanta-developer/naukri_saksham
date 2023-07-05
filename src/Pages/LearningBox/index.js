@@ -76,7 +76,7 @@ export default function LearningBox() {
           </Box>
           <Box className="media_Text">
             <Typography
-              className="boldFont"
+              className="bold_Font"
               sx={{ fontWeight: "bolder" }}
               variant="h5"
             >

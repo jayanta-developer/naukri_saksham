@@ -1,0 +1,75 @@
+.onboardContainer {
+  background: #efffe2;
+  padding: 20px 0px;
+}
+.onboardBtnBox {
+  display: flex;
+  justify-content: center;
+}
+
+.stepBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stepItem {
+  width: 253px;
+  height: 162px;
+  background: #fff;
+  border-radius: 16px;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+}
+.stepItemLOgo {
+  background: #efffe2;
+  width: 65px;
+  height: 65px;
+  border-radius: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 30px;
+}
+.stepItemLogoBox {
+  /* background: #359cef; */
+  width: 45px;
+  height: 45px;
+  border-radius: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stepItemLogoBox img {
+  width: 60%;
+  height: 60%;
+}
+.onboardCoverItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.onboardCover {
+  width: 80%;
+  margin-bottom: 10px;
+}
+.onboardCover img {
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (min-width: 600px) {
+  .stepBox {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .onboardCoverItem {
+    flex-direction: row;
+    padding: 0px 322px;
+    margin-bottom: 10px;
+  }
+  .onboardCoverItem div {
+    margin: 5px;
+  }
+}

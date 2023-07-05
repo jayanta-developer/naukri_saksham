@@ -11,7 +11,9 @@ import ForthBoxCard from "./Pages/ForthBox/ForthBoxCards";
 import CompanyLogoBox from "./Pages/ForthBox/CompanyLogoBox"
 import LearningBox from "./Pages/LearningBox";
 import MediaBox from "./Pages/MediaBox";
+import Onboarding from "./Pages/Onboarding"
 import CertificateBox from "./Pages/CertificateBox";
+import About from "./Pages/AboutBox"
 import Footer from "./Pages/Footer"
 
 import "./style.css";
@@ -28,8 +30,9 @@ export default function App() {
       <ForthBoxCard />
       <LearningBox />
       <MediaBox />
-      <SecondBox />
+      <Onboarding />
       <CertificateBox />
+      <About />
       <Footer />
     </>
   );
