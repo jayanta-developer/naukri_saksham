@@ -36,7 +36,7 @@ export default function Onboarding() {
                 <img src={step2} />
               </Box>
             </Box>
-            <Typography mb={1} sx={{ color: "#CF2323", fontWeight: "700", fontSize: "11px" }}>STEPS 1</Typography>
+            <Typography mb={1} sx={{ color: "#CF2323", fontWeight: "700", fontSize: "11px" }}>STEPS 2</Typography>
             <Typography sx={{ textAlign: "center", fontWeight: "700" }}>Deposit 100% Refundable<br /> deposit: Rs. 6900/-</Typography>
           </Box>
           <Box m={3} className="stepItem">
@@ -45,7 +45,7 @@ export default function Onboarding() {
                 <img src={step3} />
               </Box>
             </Box>
-            <Typography mb={1} sx={{ color: "#8C29CC", fontWeight: "700", fontSize: "11px" }}>STEPS 1</Typography>
+            <Typography mb={1} sx={{ color: "#8C29CC", fontWeight: "700", fontSize: "11px" }}>STEPS 3</Typography>
             <Typography sx={{ textAlign: "center", fontWeight: "700" }}>Get all above Program<br /> and Placement Features</Typography>
           </Box>
 
@@ -56,7 +56,7 @@ export default function Onboarding() {
 
 
         <Box className="step4">
-          <Typography mb={2} sx={{ color: "#359CEF", fontWeight: "700", fontSize: "20px", textAlign: "center" }}>STEPS 1</Typography>
+          <Typography mb={2} sx={{ color: "#359CEF", fontWeight: "700", fontSize: "20px", textAlign: "center" }}>STEPS 4</Typography>
           <Box className="onboardCoverItem">
             <Box className="onboardCover">
               <img src={cover1} />
