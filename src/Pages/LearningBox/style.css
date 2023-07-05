@@ -103,5 +103,6 @@
     position: relative;
     left: 20px;
     top: 25px;
+    max-width: 532px;
   }
 }
