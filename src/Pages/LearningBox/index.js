@@ -83,7 +83,7 @@ export default function LearningBox() {
               Unlimited 1-on-1 Mock Interviews with Mentors from Top Tech
               Companies
             </Typography>
-            <Typography mt={3}>
+            <Typography className="mediaParagraph" mt={3}>
               Get set for success with endless support! Mentorship sessions,
               Resume/Project reviews, Mock HR interviews, and Job Readiness
               sessions all available to you.

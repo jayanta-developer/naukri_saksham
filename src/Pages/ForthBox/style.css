@@ -40,22 +40,12 @@
   margin: 0px 10px;
   cursor: pointer;
   height: 62px;
+  display: flex;
+  align-items: center;
 }
-/* .placementCompanyLogosItemBlack {  
-  height: 70px;
-  border-radius: 5px;
-  text-align: center;  
-  margin: 0px 10px;
-  cursor: pointer;
-  filter: grayscale(100%);
-} */
 .archiveBox {
-  /* border: 1px solid red; */
   width: 90%;
   height: 360px;
-  /* float: right; */
-  /* position: relative;
-  right: 0vh; */
   margin-top: 30px;
   border-radius: 56px 0px 0px 0px;
   background-size: cover;
