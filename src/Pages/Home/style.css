@@ -8,11 +8,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     rgba(163, 253, 135, 0.37),
     rgb(255, 255, 255)
-  );
+  ); */
+  background-image: url(../../Assets/images/NewImages/stack-old-books-wooden-table-generated-by-ai\ mobile.png);
+  /* background-size: cover; */
+
   /* padding-bottom: 95px; */
+  padding-top: 163px;
 }
 .homeBox {
   width: 100%;
@@ -24,7 +28,7 @@
 .btnMediaBox {
   display: flex;
   flex-direction: column-reverse;
-  /* justify-content: start; */
+  align-items: center;
 }
 .watchVideoMediaBox {
   display: flex;
@@ -34,10 +38,17 @@
 }
 
 .mediaGirlImage {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   border-radius: 60px;
   box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;
+}
+.redPlayBtn {
+  width: 65px;
+  height: 65px;
+  position: relative;
+  right: 34px;
+  top: 10px;
 }
 
 .mediaBtn {
@@ -47,7 +58,7 @@
 }
 .aboutBox {
   padding-top: 9%;
-  padding-left: 4%;
+  color: #fff;
 }
 .textBox {
 }
@@ -114,7 +125,7 @@ ul li {
   height: 54px;
 }
 .boldFont {
-  font-family: Arial black !important;
+  /* font-family: Arial black !important; */
 }
 .firstNameLog {
   position: relative;
@@ -133,7 +144,7 @@ ul li {
 }
 .flagLog {
   position: relative;
-  bottom: 49%;
+  bottom: 61%;
   left: 87%;
 }
 .PhoneInput {
@@ -158,17 +169,23 @@ ul li {
 .homeItemBox {
   margin-top: 85px;
 }
+.inputBoxHeader {
+  font-size: 19px !important;
+}
 
 @media only screen and (min-width: 600px) {
   .HContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: linear-gradient(
+    background-image: url(../../Assets/images/NewImages/stack-old-books-wooden-table-generated-by-ai.png);
+    /* background-image: linear-gradient(
       rgba(163, 253, 135, 0.37),
       rgb(255, 255, 255)
-    );
+    ); */
     padding-bottom: 95px;
+    background-size: cover;
+    padding-top: 38px;
   }
   .homeContainer {
     display: flex;
@@ -195,7 +212,8 @@ ul li {
     padding-top: 9%;
     padding-left: 4%;
   }
-  .textBox {
+  .inputBoxHeader {
+    font-size: 25px !important;
   }
   .homeImageBox {
     display: flex;
@@ -253,7 +271,7 @@ ul li {
   .contactBoxItem {
   }
   .boldFont {
-    font-family: Arial black !important;
+    /* font-family: Arial black !important; */
   }
   .firstNameLog {
     position: relative;
@@ -272,7 +290,7 @@ ul li {
   }
   .flagLog {
     position: relative;
-    bottom: 49%;
+    bottom: 62%;
     left: 93%;
   }
   .PhoneInput {
@@ -299,5 +317,8 @@ ul li {
     flex-direction: column;
     justify-content: space-evenly;
     margin-top: 80px;
+  }
+  .mediaBtn {
+    margin-top: 0px;
   }
 }

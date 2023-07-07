@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography, Button } from "@mui/material";
-import logo from "../../Assets/images/Naukrisaksham 1 1 (1).png";
+import logo from "../../Assets/images/Naukrisaksham 2.png";
 import { RedButton } from "../AppButton";
 
 import "./style.css";

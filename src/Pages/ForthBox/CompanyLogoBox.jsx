@@ -5,15 +5,15 @@ import "./style.css";
 
 import MicrosoftLogo from "../../Assets/images/ForthBoxCompanyLogos/Microsoft.png"
 import GoogleLogo from "../../Assets/images/ForthBoxCompanyLogos/Google.png"
-import FlipkartLogo from "../../Assets/images/ForthBoxCompanyLogos/Flipkart.png"
+import FlipkartLogo from "../../Assets/images/ForthBoxCompanyLogos/flipkart.svg"
 import AdobeLogo from "../../Assets/images/ForthBoxCompanyLogos/Adobe.png"
 import AmazonLogo from "../../Assets/images/ForthBoxCompanyLogos/Amazon.png"
 import intel from "../../Assets/images/ForthBoxCompanyLogos/intel.png"
 import ibm from "../../Assets/images/ForthBoxCompanyLogos/IBM.png"
 import dell from "../../Assets/images/ForthBoxCompanyLogos/DELL.png"
 import HEROelectric from "../../Assets/images/ForthBoxCompanyLogos/HEROelectric.png"
-import Honeywell from "../../Assets/images/ForthBoxCompanyLogos/Honeywell.png"
-import BARCLAYS from "../../Assets/images/ForthBoxCompanyLogos/BARCLAYS.png"
+import Honeywell from "../../Assets/images/ForthBoxCompanyLogos/Honeywell_logo.svg"
+import BARCLAYS from "../../Assets/images/ForthBoxCompanyLogos/barclays-ar21.svg"
 import KUKA from "../../Assets/images/ForthBoxCompanyLogos/KUKA.png"
 import ola from "../../Assets/images/ForthBoxCompanyLogos/OLA electric.png"
 import apple from "../../Assets/images/ForthBoxCompanyLogos/apple.png"
@@ -48,9 +48,9 @@ export default function CompanyLogoBox() {
     <>
       <Box className="placementCompanyLogosBox">
         <Box m={2} className="companiesHeader">
-          <Typography className='boldFont' sx={{ fontSize: "11px", textAlign: "center", color: "#DEB511" }} >Over 200+ Hiring Partners</Typography>
+          <Typography className='boldFont' sx={{ fontSize: "14px", textAlign: "center", color: "#DEB511" }} >Over 200+ Hiring Partners</Typography>
           <Typography className='boldFont' sx={{ fontWeight: "bolder", textAlign: "center" }} variant='h5'>Top MNC's & Startup Hire</Typography>
-          <Typography className='boldFont' sx={{ textAlign: "center", fontSize: "11px", color: "#359CEF" }}>From Us upto 29 Lakhs</Typography>
+          <Typography className='boldFont' sx={{ textAlign: "center", fontSize: "14px", color: "#359CEF" }}>From Us upto 29 Lakhs</Typography>
         </Box>
         <Box className="placementCompanyLogosItems">
           {placementCompanyLogoCard(MicrosoftLogo)}

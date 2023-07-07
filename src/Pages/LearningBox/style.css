@@ -42,6 +42,10 @@
 }
 .contentTabText {
   margin-top: 10px !important;
+  font-size: 11px !important;
+}
+.contentText {
+  font-size: 11px !important;
 }
 .mediaBox {
   margin-top: 25px;
@@ -72,6 +76,9 @@
   left: 15px;
   top: 26px;
 }
+.mediaImage {
+  width: 89%;
+}
 .bold_Font {
   font-family: Arial black !important;
 }
@@ -91,7 +98,14 @@
     min-width: 450px;
   }
   .contentTab {
-    padding: 0px 282px;
+    padding: 0px 153px;
+  }
+  .contentTabItem {
+    width: 165px;
+    border: 1px solid #7f7f7f;
+  }
+  .contentTabItemOnHover {
+    width: 165px;
   }
   .mediaCover {
     width: 100%;
@@ -104,5 +118,14 @@
     left: 20px;
     top: 25px;
     max-width: 532px;
+  }
+  .mediaImage {
+    width: 100%;
+  }
+  .contentText {
+    font-size: 13px !important;
+  }
+  .contentTabText {
+    font-size: 13px !important;
   }
 }

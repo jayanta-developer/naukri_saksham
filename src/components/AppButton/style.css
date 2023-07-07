@@ -4,11 +4,13 @@
   padding: 10px;
   cursor: pointer;
   transition: all 1s;
-  font-weight: 700 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .redBtnText {
-  color: #ffffff;
-  font-weight: 500;
+  color: #000;
+
   font-size: 18px;
   user-select: none;
   font-family: Satoshi;

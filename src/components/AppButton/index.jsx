@@ -41,7 +41,7 @@ export const BlueButton = ({
     <div
       className="NavGetBlueStartBtn"
     >
-      <Typography sx={{ fontFamily: "Satoshi" }} className="redBtnText">
+      <Typography sx={{ fontFamily: "Satoshi", color: "#fff" }} className="redBtnText">
         {BtnText}
       </Typography>
     </div>

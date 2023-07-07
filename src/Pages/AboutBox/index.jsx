@@ -24,15 +24,15 @@ export default function index() {
           <Box className="CTextBox">
             <Typography mb={3} className="bold__Font"
               sx={{ fontWeight: "bolder" }}
-              variant="h5">About Us</Typography>
+              variant="h5">About Capable</Typography>
             <Typography mb={4}>
-              Capabl from Elite Techno Groups, an industry consultant and Ed-Tech backed by 200+ leading MNC's & Startups, is dedicated to creating a top-notch learning ecosystem. Our mission is to bridge the industry-academia gap while considering the complexities of the Indian degree ecosystem.
+              Capable from Elite Techno Groups, an industry consultant and Ed-Tech backed by 200+ leading MNC's & Startups, is dedicated to creating a top-notch learning ecosystem. Our mission is to bridge the industry-academia gap while considering the complexities of the Indian degree ecosystem.
             </Typography>
             <Typography mb={4}>
               Our NaukriSaksham initiatives aim to protect students from the exploitation of commercial Edtech companies that charge exorbitant fees for placement and training. Our pocket-friendly model allows students to learn, secure a job, and pay fees, relieving the financial burden on their parents.
             </Typography>
             <Typography sx={{ color: "#3E8504", fontWeight: "700" }} mb={4}>
-              With Capabl, students become Capable!
+              With Capable, students become Capable!
             </Typography>
           </Box>
         </Box>

@@ -21,17 +21,19 @@ export default function LearningBox() {
     const className =
       hoveredIndex === index ? "contentTabItemOnHover" : "contentTabItem";
     const polygonClass = hoveredIndex === index ? "polygon" : "polygonBlock";
-    const contentText = hoveredIndex === index ? "contentTabText" : "";
+    const contentText =
+      hoveredIndex === index ? "contentTabText" : "contentText";
     return (
       <Box
         className={className}
         onMouseEnter={() => handleMouseEnter(index)}
         onMouseLeave={handleMouseLeave}
+        sx={{
+          boxShadow:
+            "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px",
+        }}
       >
-        <Typography
-          className={contentText}
-          sx={{ fontSize: "13px", fontWeight: "700" }}
-        >
+        <Typography className={contentText} sx={{ fontWeight: "700" }}>
           {text}
         </Typography>
         <img className={polygonClass} src={Polygon} />
@@ -71,7 +73,7 @@ export default function LearningBox() {
         <Box className="mediaBox">
           <Box className="mediaCover">
             <Box className="media">
-              <img style={{ width: "100%" }} src={WhatsAppImage} />
+              <img className="mediaImage" src={WhatsAppImage} />
             </Box>
           </Box>
           <Box className="media_Text">

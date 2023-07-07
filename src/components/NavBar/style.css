@@ -2,8 +2,9 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  background: rgba(163, 253, 135, 0.37);
+  background: none;
   padding-top: 20px;
+  position: absolute;
 }
 .navBar {
   width: 88%;
@@ -23,7 +24,7 @@
 .navLink {
   margin: 5px;
   text-decoration: none;
-  color: #2a2a2a;
+  color: #c1c1c1;
   font-weight: 700;
   font-family: Satoshi !important;
   transition: all 0.3s;
@@ -47,7 +48,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    position: absolute;
   }
   .navBar {
     width: 88%;
@@ -64,12 +64,11 @@
     justify-content: space-between;
     width: 39%;
     padding-top: 8px;
-    min-width: 459px;
+    min-width: 490px;
   }
   .navLink {
     margin: 5px;
     text-decoration: none;
-    color: #2a2a2a;
     font-weight: 700;
     font-family: Satoshi !important;
     transition: all 0.3s;

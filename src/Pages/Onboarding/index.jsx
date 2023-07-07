@@ -57,6 +57,20 @@ export default function Onboarding() {
 
         <Box className="step4">
           <Typography mb={2} sx={{ color: "#359CEF", fontWeight: "700", fontSize: "20px", textAlign: "center" }}>STEPS 4</Typography>
+          <Box className="borderContainer">
+            <Box className='borderBox'>
+              <Box className="leftBorderBox"></Box>
+              <Box className="rightBorderBox rightTopBox"></Box>
+            </Box>
+            <Box className='borderBox'>
+              <Box className="leftBorderBox leftBottomBox">
+                <Box className="leftSBox"></Box>
+              </Box>
+              <Box className="rightBorderBox rightBottomBox">
+                <Box className="rightSBox"></Box>
+              </Box>
+            </Box>
+          </Box>
           <Box className="onboardCoverItem">
             <Box className="onboardCover">
               <img src={cover1} />
@@ -66,7 +80,7 @@ export default function Onboarding() {
             </Box>
           </Box>
         </Box>
-        <Box className="onboardBtnBox"><RedButton BtnText="ENROLL NOW" /></Box>
+        <Box className="onboardBtnBox"><RedButton BtnText="ENROLL NOW" width='275px' /></Box>
       </Box>
     </>
   )

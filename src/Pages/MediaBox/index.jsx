@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import "./style.css";
 import { Box, Typography } from "@mui/material";
 import avatar1 from "../../Assets/images/y1unsplash_wK8zm2vkKXA.png"
@@ -21,9 +21,53 @@ import featureLogo4 from "../../Assets/images/Group 21319.svg"
 import featureLogo5 from "../../Assets/images/Group 21320.svg"
 import featureLogo6 from "../../Assets/images/Group 21370.svg"
 import featureLogo7 from "../../Assets/images/Group 21369.svg"
+import gsap from "gsap";
 
+import RightArrow from "../../Assets/images/RightScroll arrow.svg"
+import LeftArrow from "../../Assets/images/LeftScroll arrow.svg"
 
 export default function MediaBox() {
+  let scrl = useRef(null);
+  const [scrollX, setscrollX] = useState(0);
+  const [scrolEnd, setscrolEnd] = useState(false);
+
+  const slide = (shift) => {
+    scrl.current.scrollLeft += shift;
+    setscrollX(scrollX + shift);
+
+    if (
+      Math.floor(scrl.current.scrollWidth - scrl.current.scrollLeft) <=
+      scrl.current.offsetWidth
+    ) {
+      setscrolEnd(true);
+    } else {
+      setscrolEnd(false);
+    }
+  };
+
+  const anim = (e) => {
+    gsap.from(e.target, { scale: 1 });
+    gsap.to(e.target, { scale: 1.5 });
+  };
+  const anim2 = (e) => {
+    gsap.from(e.target, { scale: 1.5 });
+    gsap.to(e.target, { scale: 1 });
+  };
+
+  const scrollCheck = () => {
+    setscrollX(scrl.current.scrollLeft);
+    if (
+      Math.floor(scrl.current.scrollWidth - scrl.current.scrollLeft) <=
+      scrl.current.offsetWidth
+    ) {
+      setscrolEnd(true);
+    } else {
+      setscrolEnd(false);
+    }
+  };
+
+
+
   return (
     <Box className="mediaContainer">
 
@@ -32,11 +76,18 @@ export default function MediaBox() {
           sx={{ fontWeight: "bolder", textAlign: "center" }}
           variant="h5"
         >Students Defining Our Success</Typography>
-        <Typography sx={{ textAlign: "center", fontSize: "11px" }}>Witness the transformation & Experience the Power of Our Program in Shaping Your Career Path</Typography>
+        <Typography sx={{ textAlign: "center", fontSize: "0.875rem" }}>Witness the transformation & Experience the Power of Our Program in Shaping Your Career Path</Typography>
       </Box>
       <Box className="videoBox">
+        <Box className="YouTubeMediaScrollBtn"
+          onClick={() => slide(-300)}
+          onMouseEnter={(e) => anim(e)}
+          onMouseLeave={(e) => anim2(e)}
+        >
+          <img style={{ width: "20px" }} src={LeftArrow} />
+        </Box>
 
-        <Box className="YouTubeContent">
+        <Box className="YouTubeContent" ref={scrl} onScroll={scrollCheck}>
           <Box className="videoItem gridItem2">
             <img className='avatarImage' src={avatar1} />
             <img className='YouTubeLogo' src={YouTubeLogo} />
@@ -55,7 +106,7 @@ export default function MediaBox() {
             <Typography className='YouTubeCoverText'>Watch Fresher to Engineering Data Author Video</Typography>
             <Box className="grayBox"></Box>
           </Box>
-          {/* <Box className="videoItem gridItem5">
+          <Box className="videoItem gridItem5">
             <img className='avatarImage' src={avatar4} />
             <img className='YouTubeLogo' src={YouTubeLogo} />
             <Typography className='YouTubeCoverText'>Watch Fresher to Engineering Data Author Video</Typography>
@@ -72,7 +123,14 @@ export default function MediaBox() {
             <img className='YouTubeLogo' src={YouTubeLogo} />
             <Typography className='YouTubeCoverText'>Watch Fresher to Engineering Data Author Video</Typography>
             <Box className="grayBox"></Box>
-          </Box> */}
+          </Box>
+        </Box>
+        <Box className="YouTubeMediaScrollBtn"
+          onClick={() => slide(+300)}
+          onMouseEnter={(e) => anim(e)}
+          onMouseLeave={(e) => anim2(e)}
+        >
+          <img style={{ width: "20px" }} src={RightArrow} />
         </Box>
       </Box>
 
@@ -82,13 +140,13 @@ export default function MediaBox() {
             sx={{ fontWeight: "bolder", textAlign: "center" }} variant="h5">
             Program Features
           </Typography>
-          <Typography sx={{ textAlign: "center", fontSize: "11px" }}>
+          <Typography sx={{ textAlign: "center", fontSize: "0.875rem" }}>
             We've Got You Fully Covered, Every Step of the Way From Technical Skills to Placements!
           </Typography>
           <Box className="featuresBox">
 
             <Box className="featuresCard">
-              <Typography variant='h6' sx={{ fontWeight: "700", padding: "30px 0px 10px 30px" }}>Learning Features:</Typography>
+              <Typography variant='h6' sx={{ fontWeight: "700", padding: "30px 0px 10px 0px", textAlign: "center" }}>Learning Features</Typography>
 
               <Box className="featureItem">
                 <img style={{ width: "102px" }} src={featureLogo1} />
@@ -123,7 +181,7 @@ export default function MediaBox() {
 
 
             <Box className="featuresCard card2">
-              <Typography variant='h6' sx={{ fontWeight: "700", padding: "30px 0px 10px 30px" }}>Placement Support:</Typography>
+              <Typography variant='h6' sx={{ fontWeight: "700", padding: "30px 0px 10px 0px", textAlign: "center" }}>Placement Support</Typography>
 
               <Box className="featureItem card2featureItem">
                 <img style={{ width: "102px" }} src={featureLogo1} />

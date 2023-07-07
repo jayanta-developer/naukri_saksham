@@ -3,7 +3,7 @@
   flex-direction: row;
 
   overflow: scroll;
-  height: 303px;
+  height: 320px;
   /* align-items: center; */
   padding: 8px;
 }
@@ -26,6 +26,15 @@
 .cardLogo {
   /* width: 150px;
   margin-left: 26px; */
+}
+.cardHeader p {
+  position: relative;
+  bottom: 36px;
+  font-size: 19px;
+}
+.cardSubText h6 {
+  position: relative;
+  bottom: 28px;
 }
 @media only screen and (min-width: 600px) {
   .homeItemCardBox {

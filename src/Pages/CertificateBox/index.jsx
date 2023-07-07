@@ -13,7 +13,7 @@ export default function CertificateBox() {
   return (
     <Box className="Certificate_Box">
       <Box className="cover">
-        <img style={{ width: "90%" }} src={coverPhoto} />
+        <img style={{ width: "100%" }} src={coverPhoto} />
       </Box>
       <Box className="CertificateText">
         <Typography mb={3} className="bold_Font"

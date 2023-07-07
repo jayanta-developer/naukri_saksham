@@ -15,7 +15,7 @@ import Onboarding from "./Pages/Onboarding"
 import CertificateBox from "./Pages/CertificateBox";
 import About from "./Pages/AboutBox"
 import Footer from "./Pages/Footer"
-
+import ScrollToTopButton from "./components/ScrollToTop"
 import "./style.css";
 
 export default function App() {
@@ -34,6 +34,7 @@ export default function App() {
       <CertificateBox />
       <About />
       <Footer />
+      <ScrollToTopButton />
     </>
   );
 }

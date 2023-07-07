@@ -27,11 +27,14 @@
   .Certificate_Box {
     display: flex;
     justify-content: center;
-    padding: 20px 265px;
+    padding: 120px 120px;
   }
   .bold_Font {
     font-family: Arial black;
     text-align: left;
     padding-left: 21px;
+  }
+  .CertificateText {
+    padding: 60px 0px;
   }
 }

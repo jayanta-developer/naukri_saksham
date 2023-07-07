@@ -8,6 +8,9 @@
   background: #efffe2;
   align-items: center;
 }
+.workFlowHeader {
+  width: 100%;
+}
 .boldFont {
   font-family: Arial black !important;
 }
@@ -98,7 +101,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: center;
 }
 .companyLogo {
   width: 106px;
@@ -123,8 +126,8 @@
   justify-content: center;
 }
 .fortBoxhLogo {
-  width: 33px;
-  height: 22px;
+  width: 52px;
+  height: 52px;
 }
 @media only screen and (min-width: 600px) {
   .workFlowBox {
@@ -135,6 +138,9 @@
     justify-content: space-evenly;
     padding: 20px;
     background: #efffe2;
+  }
+  .workFlowHeader {
+    width: 34%;
   }
   .boldFont {
     font-family: Arial black !important;
@@ -226,12 +232,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: start;
   }
   .companyLogo {
-    width: 106px;
-    height: 22px;
-    margin: 5px 20px 5px 0px;
+    width: 112px;
+    height: 24px;
+    margin: 3px 16px 8px 0px;
     cursor: pointer;
   }
   .companyLogoImg {
@@ -250,7 +255,7 @@
     justify-content: center;
   }
   .fortBoxhLogo {
-    width: 33px;
-    height: 22px;
+    width: 52px;
+    height: 52px;
   }
 }

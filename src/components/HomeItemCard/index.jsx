@@ -12,7 +12,7 @@ export default function HomeItemCard({ logo, Header, BottomText }) {
       <Box className="cardHeader">
         <Typography sx={{ fontWeight: "bolder" }}>{Header}</Typography>
       </Box>
-      <Box className="cardText">
+      <Box className="cardSubText">
         <Typography sx={{ fontSize: "0.9rem" }} variant="subtitle1">{BottomText}</Typography>
       </Box>
     </Box>

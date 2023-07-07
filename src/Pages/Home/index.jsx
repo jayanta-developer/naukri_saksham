@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Typography, Button, Container, TextField } from "@mui/material";
 import { RedButton, YellowButton } from "../../components/AppButton";
 import MediaImage from "../../Assets/images/MediaGirlImage.png";
+import redPlayBtn from "../../Assets/images/redPlay btn.png"
 import VectorLog from "../../Assets/images/Vector.png";
 import EmailLog from "../../Assets/images/Vector (1).png";
 import CallLog from "../../Assets/images/Vector (2).png";
@@ -29,7 +30,6 @@ export default function Home() {
           <Box className="textBox">
             <Typography
               mb={2}
-              className="boldFont"
               sx={{ fontWeight: "bolder" }}
               variant="h4"
             >
@@ -45,11 +45,12 @@ export default function Home() {
             </Box>
             <Box className="btnMediaBox">
               <Box className="mediaBtn">
-                <RedButton BtnText="View Certifications" />
+                <RedButton BtnText="View Certifications" width="200px" />
               </Box>
               <Box className="watchVideoMediaBox">
                 <img className="mediaGirlImage" src={MediaImage} />
-                <Typography sx={{ display: "flex", alignItems: "center" }}>Watch Our Video</Typography>
+                <img className="redPlayBtn" src={redPlayBtn} />
+                <Typography sx={{ minWidth: "123.19px", display: "flex", alignItems: "center", position: "relative", right: "38px" }}>Watch Our Video</Typography>
               </Box>
             </Box>
           </Box>
@@ -59,19 +60,16 @@ export default function Home() {
           <Box className="contactBox">
             <Box sx={{ textAlign: "center" }} className="contactBoxItem">
               <Typography
-                className="boldFont"
-                sx={{ fontWeight: "bolder", fontSize: "15px" }}
+                className="inputBoxHeader"
+                sx={{ fontWeight: "700" }}
                 variant="h4"
               >
-                View the Program Package to Access:
+                Start your Journey to Become<br /> NaukriSaksham
               </Typography>
             </Box>
-            <Box className="contactBoxItem">
-              <ul className="contactUl">
-                <li>No Job - No Payment</li>
-                <li>100% Placement Guarantee</li>
-                <li>Skills First, Job Next, Fees Last</li>
-              </ul>
+            <Box mb={3} className="contactBoxItem">
+              <Typography sx={{ fontSize: "14px", textAlign: "center" }}>Skills First, Job Next, Fees Last</Typography>
+
             </Box>
             <Box className="contactBoxItem nameInputFieldBox">
               <Box className="inputField">
@@ -151,7 +149,7 @@ export default function Home() {
 
       </Box>
       <Box className="homeItemBox">
-        <Typography mb={4} className="boldFont" sx={{ fontWeight: "bolder", textAlign: "center" }} variant="h5">Why NaukriSaksham</Typography>
+        <Typography mb={4} sx={{ fontWeight: "bolder", textAlign: "center", color: "#fff" }} variant="h5">Why NaukriSaksham</Typography>
         <Box className="homeItemCardBox">
           <HomeItemCard logo={JobSearch} Header="Future Job Market" BottomText="2.5 million jobs in EV, DS, and Full Stack by 2025." />
           <HomeItemCard logo={FectoryHelmet} Header="Misfit Engineers" BottomText="94% student lack the necessary skills due to outdated curriculum." />

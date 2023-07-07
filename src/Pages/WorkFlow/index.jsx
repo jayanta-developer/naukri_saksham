@@ -20,10 +20,9 @@ export default function WorkFlow() {
     <Box className="workFlowBox">
       <Box className="workFlowHeader">
         <Typography className="boldFont" sx={{ fontWeight: "bolder", textAlign: "center" }}
-          variant="h5">Building industry ready workforce in <br /> High demand Domains</Typography>
+          variant="h5">Building industry ready workforce in High-demand Domains</Typography>
       </Box>
       <Box className="workFlowItems">
-
 
         <Box className="workFlowItem workFlowItem1">
           <Box className="workFlowItemBox">
@@ -36,7 +35,7 @@ export default function WorkFlow() {
               Development</Typography>
           </Box>
           <Box className="workFlowItemBox">
-            <Typography className="WorkflowPByText">Powered By</Typography>
+            <Typography className="WorkflowPByText">Designed by Expert From</Typography>
           </Box>
           <Box className="workFlowItemBox companyLogoBox">
             <img className="companyLogo" src={microsoft} />
@@ -44,8 +43,6 @@ export default function WorkFlow() {
             <img className="companyLogo" src={SitusAMC} />
           </Box>
         </Box>
-
-
 
         <Box className="workFlowItem workFlowItem2">
           <Box className="workFlowItemBox">
@@ -58,7 +55,7 @@ export default function WorkFlow() {
               AI/ML/Python</Typography>
           </Box>
           <Box className="workFlowItemBox">
-            <Typography className="WorkflowPByText">Powered By</Typography>
+            <Typography className="WorkflowPByText">Designed by Expert From</Typography>
           </Box>
           <Box className="workFlowItemBox companyLogoBox">
             <img className="companyLogo" src={walmart} />
@@ -80,7 +77,7 @@ export default function WorkFlow() {
               & Design</Typography>
           </Box>
           <Box className="workFlowItemBox">
-            <Typography sx={{ color: "white", fontSize: "16px", marginBottom: "2px" }} className="WorkflowPByText">Nulla sed turpis adipiscing mauris sit morbi potenti mauris.</Typography>
+            <Typography sx={{ color: "white", fontSize: "12px", marginBottom: "2px" }} className="WorkflowPByText">Nulla sed turpis adipiscing mauris sit morbi potenti mauris.</Typography>
           </Box>
           <Box className="workFlowItemBox btnBox">
             <BlueButton BtnText="View Details" />
@@ -96,14 +93,14 @@ export default function WorkFlow() {
             </Box>
           </Box>
           <Box className="workFlowItemBox">
-            <Typography className="WorkFlowItemBoxCenterText" variant="h5">Advice Care &
+            <Typography className="WorkFlowItemBoxCenterText" variant="h5">Advance Care &
               <br /> Design</Typography>
           </Box>
           <Box className="workFlowItemBox">
-            <Typography className="WorkflowPByText">Powered By</Typography>
+            <Typography className="WorkflowPByText">Designed by Expert From</Typography>
           </Box>
           <Box className="workFlowItemBox companyLogoBox">
-            <img className="companyLogo fortBoxhLogo" src={honda} />
+            <img style={{ width: "76px" }} className="companyLogo fortBoxhLogo" src={honda} />
             <img className="companyLogo fortBoxhLogo" src={volvo} />
             <img className="companyLogo fortBoxhLogo" src={tata} />
           </Box>
