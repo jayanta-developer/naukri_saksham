@@ -17,6 +17,7 @@ import CertificateBox from "./Pages/CertificateBox";
 import About from "./Pages/AboutBox/Achievement"
 import Footer from "./Pages/Footer"
 import ScrollToTopButton from "./components/ScrollToTop"
+import Call from "./components/MakeCall/Call";
 import "./style.css";
 
 export default function App() {
@@ -37,6 +38,7 @@ export default function App() {
       <About />
       <Footer />
       <ScrollToTopButton />
+      <Call />
     </>
   );
 }
