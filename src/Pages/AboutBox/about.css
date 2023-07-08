@@ -1,3 +1,6 @@
+.certificateCompanyLogoBox {
+  width: 100%;
+}
 .CertificateBox {
   background: rgba(190, 241, 149, 0.411);
   padding: 20px 0px;
@@ -79,7 +82,7 @@
     width: 50%;
   }
   .certificateCompanyLogo {
-    width: 50%;
+    width: 100%;
     justify-content: left;
     overflow: scroll;
     scroll-behavior: smooth;
