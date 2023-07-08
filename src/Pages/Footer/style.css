@@ -127,7 +127,7 @@
     cursor: pointer;
   }
   .footerBottomText {
-    font-size: 0.75rem;
+    font-size: 0.75rem !important;
   }
   .footerImage {
     width: 100%;

@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   padding: 5%;
+  padding-top: 46px;
 }
 .placementSubHeading {
   margin: 10px 0px !important;
@@ -97,20 +98,29 @@
   display: flex;
   flex-direction: row;
   justify-content: left;
-  margin-left: 32px;
+  margin-left: 15px;
+}
+.profilePhoto {
+  width: 80px;
+  height: 80px;
+  border-radius: 52px;
+  overflow: hidden;
+  /* border: 1px solid; */
+  margin-right: 13px;
 }
 .profilePhoto img {
-  border-radius: 36px;
+  width: 100%;
 }
 .profileInfo {
-  padding: 14px 0px 0px 18px;
+  padding: 14px 0px 0px 10px;
+  /* border: 1px solid; */
+  width: 244px;
 }
 .TextBox {
   padding-left: 13px;
 }
 .cardFooter {
   height: 124px;
-  background: #13488b;
   display: flex;
   flex-direction: row;
   border-radius: 0px 0px 5px 5px;
@@ -118,9 +128,15 @@
 .footerInrBox {
   width: 50%;
   color: #ffff;
-  padding: 16px 5px 0px 25px;
+  padding: 11px 5px 0px 25px;
   display: flex;
   flex-direction: column;
+}
+.footerInrBoxBgLight {
+  background: #286bbe;
+}
+.footerInrBoxBgDark {
+  background: #13488b;
 }
 .FooterSubText {
   text-align: left !important;
@@ -129,14 +145,20 @@
   width: 52%;
   margin-top: 6px;
 }
+.ScrollBtn {
+  display: none;
+}
 @media only screen and (min-width: 600px) {
   .placementItems {
     overflow: unset;
     justify-content: center;
   }
   .cardBox {
-    justify-content: center;
-    overflow: unset;
+    justify-content: left;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    height: 423px;
   }
   .companyLogoImage {
     width: 160px;
@@ -146,5 +168,16 @@
   }
   .placementCompanyLogosItem {
     height: 102px;
+  }
+  .scrollContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ScrollBtn {
+    display: block;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
   }
 }

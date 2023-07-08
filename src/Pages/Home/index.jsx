@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Button, Container, TextField } from "@mui/material";
+import { Box, Typography, TextField } from "@mui/material";
 import { RedButton, YellowButton } from "../../components/AppButton";
 import MediaImage from "../../Assets/images/MediaGirlImage.png";
 import redPlayBtn from "../../Assets/images/redPlay btn.png"
@@ -10,15 +10,6 @@ import VectorG from "../../Assets/images/VectorG.svg";
 import VectorD from "../../Assets/images/VectorD.svg";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
-//Home card logo
-import JobSearch from "../../Assets/images/HomeCardLogo/Group 21302.png"
-import FectoryHelmet from "../../Assets/images/HomeCardLogo/FectoryHelmet.png"
-import factory from "../../Assets/images/HomeCardLogo/factory.png"
-import CurencyGraph from "../../Assets/images/HomeCardLogo/CurencyGraph.png"
-import Lock from "../../Assets/images/HomeCardLogo/Lock.png"
-
-import HomeItemCard from "../../components/HomeItemCard";
-
 import "./style.css";
 
 export default function Home() {
@@ -68,7 +59,7 @@ export default function Home() {
               </Typography>
             </Box>
             <Box mb={3} className="contactBoxItem">
-              <Typography sx={{ fontSize: "14px", textAlign: "center" }}>Skills First, Job Next, Fees Last</Typography>
+              <Typography className="contactBoxItemSubHeader" sx={{ fontSize: "14px", textAlign: "center" }}>Skills First, Job Next, Fees Last</Typography>
 
             </Box>
             <Box className="contactBoxItem nameInputFieldBox">
@@ -141,24 +132,11 @@ export default function Home() {
               />
               <img className="emailLog" src={VectorD} alt="" />
             </Box>
-            <Box className="contactBoxItem">
+            <Box id="EnrollBtnBox" className="contactBoxItem">
               <RedButton BtnText="Enroll Now" width="100%" />
             </Box>
           </Box>
         </Box>
-
-      </Box>
-      <Box className="homeItemBox">
-        <Typography mb={4} sx={{ fontWeight: "bolder", textAlign: "center", color: "#fff" }} variant="h5">Why NaukriSaksham</Typography>
-        <Box className="homeItemCardBox">
-          <HomeItemCard logo={JobSearch} Header="Future Job Market" BottomText="2.5 million jobs in EV, DS, and Full Stack by 2025." />
-          <HomeItemCard logo={FectoryHelmet} Header="Misfit Engineers" BottomText="94% student lack the necessary skills due to outdated curriculum." />
-          <HomeItemCard logo={factory} Header="Industry Demands" BottomText="Companies face challenges in finding skilled graduates." />
-          <HomeItemCard logo={CurencyGraph} Header="Financial Burden" BottomText="Students spend 1.2 lakh rupees on upskilling, on top of college fees." />
-          <HomeItemCard logo={Lock} Header="Job Security" BottomText="Neither colleges nor the expensive training programs offer job assurance." />
-
-        </Box>
-
       </Box>
     </Box>
   );

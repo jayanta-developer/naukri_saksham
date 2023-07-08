@@ -20,32 +20,32 @@ export default function Footer() {
         </Box>
         <Box className="footerTextBoxItem">
 
-          <Typography className='footerColHeader' mb={1} variant='h7' sx={{ fontWeight: "bolder" }}>Quick Links</Typography>
+          <Typography className='footerColHeader  poppinsBold' mb={1} variant='h7' sx={{ fontWeight: "bolder" }}>Quick Links</Typography>
           <Box className="footerRowItem">
-            <Typography className="footerText pointer textUnderlineOnHover" mb={1}>
+            <Typography className="footerText pointer textUnderlineOnHover poppins" mb={1}>
               <img style={{ width: "7px", height: "11px", margin: "7px 7px 0px 2px" }} src={Arrow} />
               Home
             </Typography>
-            <Typography className="pointer textUnderlineOnHover" mb={1}>Course</Typography>
-            <Typography className="pointer textUnderlineOnHover" mb={1}>Companies</Typography>
-            <Typography className="pointer textUnderlineOnHover" mb={1}>Resources</Typography>
-            <Typography className="pointer textUnderlineOnHover" mb={1}>About Us</Typography>
-            <Typography className="pointer textUnderlineOnHover" mb={1}>Contact</Typography>
+            <Typography className="pointer textUnderlineOnHover poppins" mb={1}>Course</Typography>
+            <Typography className="pointer textUnderlineOnHover poppins" mb={1}>Companies</Typography>
+            <Typography className="pointer textUnderlineOnHover poppins" mb={1}>Resources</Typography>
+            <Typography className="pointer textUnderlineOnHover poppins" mb={1}>About Us</Typography>
+            <Typography className="pointer textUnderlineOnHover poppins" mb={1}>Contact</Typography>
           </Box>
         </Box>
 
         <Box className="footerTextBoxItem">
-          <Typography className='footerColHeader' mb={1} variant='h7' sx={{ fontWeight: "bolder" }}>Policies</Typography>
+          <Typography className='footerColHeader poppinsBold' mb={1} variant='h7' sx={{ fontWeight: "bolder" }}>Policies</Typography>
           <Box className="footerRowItem">
-            <Typography className="pointer textUnderlineOnHover" mb={1}>Privacy policy</Typography>
-            <Typography className="pointer textUnderlineOnHover" mb={1}>Refund policy</Typography>
-            <Typography className="pointer textUnderlineOnHover" mb={1}>Terms and Condition</Typography>
+            <Typography className="pointer textUnderlineOnHover poppins" mb={1}>Privacy policy</Typography>
+            <Typography className="pointer textUnderlineOnHover poppins" mb={1}>Refund policy</Typography>
+            <Typography className="pointer textUnderlineOnHover poppins" mb={1}>Terms and Condition</Typography>
           </Box>
         </Box>
         <Box className="footerTextBoxItem ClogBox">
 
           <img className='cLogo' src={CompanyLogo2} />
-          <Typography className="pointer" sx={{ lineHeight: "28px", marginTop: "22px" }}>
+          <Typography className="pointer poppins" sx={{ lineHeight: "28px", marginTop: "22px" }}>
             Nulla sed turpis adipiscing
             mauris sit morbi<br /> potenti mauris
             Lorem ipsum dolor sit.</Typography>
@@ -63,7 +63,6 @@ export default function Footer() {
             <img src={TwitterLogo} />
             <img src={InstagramLogo} />
             <img src={LinkedinLogo} />
-            {/* <img className='messageLogoOnFooter' src={MessageLogo} /> */}
           </Box>
 
         </Box>

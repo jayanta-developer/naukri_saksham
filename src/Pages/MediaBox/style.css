@@ -1,3 +1,6 @@
+.mediaContainer {
+  padding: 22px 0px;
+}
 .YouTubeContent {
   display: flex;
   flex-direction: row;
@@ -64,6 +67,9 @@
   display: none;
 }
 @media only screen and (min-width: 600px) {
+  .mediaContainer {
+    padding: 40px 0px;
+  }
   .videoBox {
     display: flex;
     justify-content: center;

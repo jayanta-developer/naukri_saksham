@@ -8,6 +8,9 @@
   justify-content: center;
   align-items: center;
 }
+.NavGetStartBtn p {
+  font-family: "Poppins-Regular";
+}
 .redBtnText {
   color: #000;
   font-size: 18px;

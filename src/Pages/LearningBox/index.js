@@ -22,7 +22,9 @@ export default function LearningBox() {
       hoveredIndex === index ? "contentTabItemOnHover" : "contentTabItem";
     const polygonClass = hoveredIndex === index ? "polygon" : "polygonBlock";
     const contentText =
-      hoveredIndex === index ? "contentTabText" : "contentText";
+      hoveredIndex === index
+        ? "contentTabText poppins"
+        : "contentText poppinsBold";
     return (
       <Box
         className={className}
@@ -44,11 +46,12 @@ export default function LearningBox() {
   return (
     <Box className="learningBox">
       <Typography
+        className="poppins"
         sx={{
           fontWeight: "700",
           textAlign: "center",
           color: "#DEB511",
-          fontSize: "11px",
+          fontSize: "17px",
         }}
       >
         ONE-STOP LEARNING PLATFORM
@@ -81,14 +84,14 @@ export default function LearningBox() {
           </Box>
           <Box className="media_Text">
             <Typography
-              className="bold_Font"
+              className="bold_Font poppinsBold"
               sx={{ fontWeight: "bolder" }}
               variant="h5"
             >
               Unlimited 1-on-1 Mock Interviews with Mentors from Top Tech
               Companies
             </Typography>
-            <Typography className="mediaParagraph" mt={3}>
+            <Typography className="mediaParagraph poppins" mt={3}>
               Get set for success with endless support! Mentorship sessions,
               Resume/Project reviews, Mock HR interviews, and Job Readiness
               sessions all available to you.

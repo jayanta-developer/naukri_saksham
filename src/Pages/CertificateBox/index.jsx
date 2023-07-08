@@ -16,30 +16,30 @@ export default function CertificateBox() {
         <img style={{ width: "100%" }} src={coverPhoto} />
       </Box>
       <Box className="CertificateText">
-        <Typography mb={3} className="bold_Font"
+        <Typography mb={3} className="bold_Font poppinsBold"
           sx={{ fontWeight: "bolder" }}
           variant="h5">Internationally Accrediated Certificate wit</Typography>
-        <Typography mb={1} pl={3} sx={{ fontSize: "13px" }}>Over 20+ Points Added in Your Resume</Typography>
+        <Typography className='poppins' mb={1} pl={3} sx={{ fontSize: "13px" }}>Over 20+ Points Added in Your Resume</Typography>
 
         <Box className="CertificateTextNumList">
           <img src={num1} />
-          <Typography ml={1} sx={{ fontWeight: "700", fontSize: "13px" }}>Earn a certificate for each completed module (Minimum of 6 Certificates)</Typography>
+          <Typography className='poppins' ml={1} sx={{ fontWeight: "700", fontSize: "13px" }}>Earn a certificate for each completed module (Minimum of 6 Certificates)</Typography>
         </Box>
         <Box className="CertificateTextNumList">
           <img src={num2} />
-          <Typography ml={1} sx={{ fontWeight: "700", fontSize: "13px" }}>Access 12 project reports by industry experts (One for each project)</Typography>
+          <Typography className='poppins' ml={1} sx={{ fontWeight: "700", fontSize: "13px" }}>Access 12 project reports by industry experts (One for each project)</Typography>
         </Box>
         <Box className="CertificateTextNumList">
           <img src={num3} />
-          <Typography ml={1} sx={{ fontWeight: "700", fontSize: "13px" }}>Secure a minimum of 2 internship opportunities in the industry</Typography>
+          <Typography className='poppins' ml={1} sx={{ fontWeight: "700", fontSize: "13px" }}>Secure a minimum of 2 internship opportunities in the industry</Typography>
         </Box>
         <Box className="CertificateTextNumList">
           <img src={num4} />
-          <Typography ml={1} sx={{ fontWeight: "700", fontSize: "13px" }}>Obtain a Letter of Recommendation from industry experts</Typography>
+          <Typography className='poppins' ml={1} sx={{ fontWeight: "700", fontSize: "13px" }}>Obtain a Letter of Recommendation from industry experts</Typography>
         </Box>
         <Box className="CertificateTextNumList">
           <img src={num5} />
-          <Typography ml={1} sx={{ fontWeight: "700", fontSize: "13px" }}>Statement of Purpose for higher studies applicants</Typography>
+          <Typography className='poppins' ml={1} sx={{ fontWeight: "700", fontSize: "13px" }}>Statement of Purpose for higher studies applicants</Typography>
         </Box>
 
       </Box>

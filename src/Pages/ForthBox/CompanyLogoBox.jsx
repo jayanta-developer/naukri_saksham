@@ -21,13 +21,10 @@ import TATA from "../../Assets/images/ForthBoxCompanyLogos/TATA.png"
 
 
 export default function CompanyLogoBox() {
-
   const [hoveredIndex, setHoveredIndex] = useState(-1);
-
   const handleMouseEnter = (index) => {
     setHoveredIndex(index);
   };
-
   const handleMouseLeave = () => {
     setHoveredIndex(-1);
   };
@@ -47,10 +44,10 @@ export default function CompanyLogoBox() {
   return (
     <>
       <Box className="placementCompanyLogosBox">
-        <Box m={2} className="companiesHeader">
-          <Typography className='boldFont' sx={{ fontSize: "14px", textAlign: "center", color: "#DEB511" }} >Over 200+ Hiring Partners</Typography>
-          <Typography className='boldFont' sx={{ fontWeight: "bolder", textAlign: "center" }} variant='h5'>Top MNC's & Startup Hire</Typography>
-          <Typography className='boldFont' sx={{ textAlign: "center", fontSize: "14px", color: "#359CEF" }}>From Us upto 29 Lakhs</Typography>
+        <Box mt={7} className="companiesHeader">
+          <Typography className='poppins' sx={{ fontSize: "17px", textAlign: "center", color: "#DEB511" }} >Over 200+ Hiring Partners</Typography>
+          <Typography className='poppinsBold' sx={{ fontWeight: "bolder", textAlign: "center" }} variant='h5'>Top MNC's & Startup Hire</Typography>
+          <Typography className='poppins' sx={{ textAlign: "center", fontSize: "17px", color: "#359CEF" }}>From Us upto 29 Lakhs</Typography>
         </Box>
         <Box className="placementCompanyLogosItems">
           {placementCompanyLogoCard(MicrosoftLogo)}

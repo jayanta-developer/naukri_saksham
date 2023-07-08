@@ -72,11 +72,11 @@ export default function MediaBox() {
     <Box className="mediaContainer">
 
       <Box className="videoItem gridItem1  videoItemText">
-        <Typography mb={2} className="boldFont"
+        <Typography mb={2} className="boldFont poppinsBold"
           sx={{ fontWeight: "bolder", textAlign: "center" }}
           variant="h5"
         >Students Defining Our Success</Typography>
-        <Typography sx={{ textAlign: "center", fontSize: "0.875rem" }}>Witness the transformation & Experience the Power of Our Program in Shaping Your Career Path</Typography>
+        <Typography className='poppins' sx={{ textAlign: "center", fontSize: "0.875rem" }}>Witness the transformation & Experience the Power of Our Program in Shaping Your Career Path</Typography>
       </Box>
       <Box className="videoBox">
         <Box className="YouTubeMediaScrollBtn"
@@ -91,37 +91,37 @@ export default function MediaBox() {
           <Box className="videoItem gridItem2">
             <img className='avatarImage' src={avatar1} />
             <img className='YouTubeLogo' src={YouTubeLogo} />
-            <Typography className='YouTubeCoverText'>Watch Fresher to Engineering Data Author Video</Typography>
+            <Typography className='YouTubeCoverText poppins'>Watch Fresher to Engineering Data Author Video</Typography>
             <Box className="grayBox"></Box>
           </Box>
           <Box className="videoItem gridItem3">
             <img className='avatarImage' src={avatar2} />
             <img className='YouTubeLogo' src={YouTubeLogo} />
-            <Typography className='YouTubeCoverText'>Watch Fresher to Engineering Data Author Video</Typography>
+            <Typography className='YouTubeCoverText poppins'>Watch Fresher to Engineering Data Author Video</Typography>
             <Box className="grayBox"></Box>
           </Box>
           <Box className="videoItem gridItem4">
             <img className='avatarImage' src={avatar3} />
             <img className='YouTubeLogo' src={YouTubeLogo} />
-            <Typography className='YouTubeCoverText'>Watch Fresher to Engineering Data Author Video</Typography>
+            <Typography className='YouTubeCoverText poppins'>Watch Fresher to Engineering Data Author Video</Typography>
             <Box className="grayBox"></Box>
           </Box>
           <Box className="videoItem gridItem5">
             <img className='avatarImage' src={avatar4} />
             <img className='YouTubeLogo' src={YouTubeLogo} />
-            <Typography className='YouTubeCoverText'>Watch Fresher to Engineering Data Author Video</Typography>
+            <Typography className='YouTubeCoverText poppins'>Watch Fresher to Engineering Data Author Video</Typography>
             <Box className="grayBox"></Box>
           </Box>
           <Box className="videoItem gridItem6">
             <img className='avatarImage' src={avatar5} />
             <img className='YouTubeLogo' src={YouTubeLogo} />
-            <Typography className='YouTubeCoverText'>Watch Fresher to Engineering Data Author Video</Typography>
+            <Typography className='YouTubeCoverText poppins'>Watch Fresher to Engineering Data Author Video</Typography>
             <Box className="grayBox"></Box>
           </Box>
           <Box className="videoItem gridItem7">
             <img className='avatarImage' src={avatar6} />
             <img className='YouTubeLogo' src={YouTubeLogo} />
-            <Typography className='YouTubeCoverText'>Watch Fresher to Engineering Data Author Video</Typography>
+            <Typography className='YouTubeCoverText poppins'>Watch Fresher to Engineering Data Author Video</Typography>
             <Box className="grayBox"></Box>
           </Box>
         </Box>
@@ -136,78 +136,78 @@ export default function MediaBox() {
 
       <Box className="MediaTextBox">
         <Box className="textArea">
-          <Typography mb={2} className="boldFont"
+          <Typography mb={2} className="boldFont poppinsBold"
             sx={{ fontWeight: "bolder", textAlign: "center" }} variant="h5">
             Program Features
           </Typography>
-          <Typography sx={{ textAlign: "center", fontSize: "0.875rem" }}>
+          <Typography className='poppins' sx={{ textAlign: "center", fontSize: "0.875rem" }}>
             We've Got You Fully Covered, Every Step of the Way From Technical Skills to Placements!
           </Typography>
           <Box className="featuresBox">
 
             <Box className="featuresCard">
-              <Typography variant='h6' sx={{ fontWeight: "700", padding: "30px 0px 10px 0px", textAlign: "center" }}>Learning Features</Typography>
+              <Typography className='poppinsBold' variant='h6' sx={{ fontWeight: "700", padding: "30px 0px 10px 0px", textAlign: "center" }}>Learning Features</Typography>
 
               <Box className="featureItem">
                 <img style={{ width: "102px" }} src={featureLogo1} />
-                <Typography>6 Month of Learning journey</Typography>
+                <Typography className='poppins'>6 Month of Learning journey</Typography>
               </Box>
               <Box className="featureItem">
                 <img style={{ width: "102px" }} src={featureLogo2} />
-                <Typography>250+ hours of learning</Typography>
+                <Typography className='poppins'>250+ hours of learning</Typography>
               </Box>
               <Box className="featureItem">
                 <img style={{ width: "102px" }} src={featureLogo3} />
-                <Typography>20+ Real Time Projects</Typography>
+                <Typography className='poppins'>20+ Real Time Projects</Typography>
               </Box>
               <Box className="featureItem">
                 <img style={{ width: "102px" }} src={featureLogo4} />
-                <Typography>Weekly Live Sessions with top experts</Typography>
+                <Typography className='poppins'>Weekly Live Sessions with top experts</Typography>
               </Box>
               <Box className="featureItem">
                 <img style={{ width: "102px" }} src={featureLogo5} />
-                <Typography>1-2 Month of Industrial Internship</Typography>
+                <Typography className='poppins'>1-2 Month of Industrial Internship</Typography>
               </Box>
               <Box className="featureItem">
                 <img style={{ width: "102px" }} src={featureLogo6} />
-                <Typography>Lifetime access to capabl Community</Typography>
+                <Typography className='poppins' >Lifetime access to capabl Community</Typography>
               </Box>
               <Box className="featureItem">
                 <img style={{ width: "102px" }} src={featureLogo7} />
-                <Typography>Live Doubt Support</Typography>
+                <Typography className='poppins'>Live Doubt Support</Typography>
               </Box>
 
             </Box>
 
 
             <Box className="featuresCard card2">
-              <Typography variant='h6' sx={{ fontWeight: "700", padding: "30px 0px 10px 0px", textAlign: "center" }}>Placement Support</Typography>
+              <Typography className='poppinsBold' variant='h6' sx={{ fontWeight: "700", padding: "30px 0px 10px 0px", textAlign: "center" }}>Placement Support</Typography>
 
               <Box className="featureItem card2featureItem">
                 <img style={{ width: "102px" }} src={featureLogo1} />
-                <Typography>Aptitude Training</Typography>
+                <Typography className='poppins'>Aptitude Training</Typography>
               </Box>
               <Box className="featureItem card2featureItem">
                 <img style={{ width: "102px" }} src={featureLogo2} />
-                <Typography>Soft Skills Training</Typography>
+                <Typography className='poppins'>Soft Skills Training</Typography>
               </Box>
               <Box className="featureItem card2featureItem">
                 <img style={{ width: "102px" }} src={featureLogo3} />
-                <Typography>Resume Preparation</Typography>
+                <Typography className='poppins'>Resume Preparation</Typography>
               </Box>
               <Box className="featureItem card2featureItem">
                 <img style={{ width: "102px" }} src={featureLogo4} />
-                <Typography>Mock Interviews by Tech and
+                <Typography className='poppins'>Mock Interviews by Tech and
                   HR Panels</Typography>
               </Box>
               <Box className="featureItem card2featureItem">
                 <img style={{ width: "102px" }} src={featureLogo5} />
-                <Typography>Negotiation with companies for
+                <Typography className='poppins'>Negotiation with companies for
                   higher salaries</Typography>
               </Box>
               <Box className="featureItem card2featureItem">
                 <img style={{ width: "102px" }} src={featureLogo6} />
-                <Typography>Access to Placement Portal</Typography>
+                <Typography className='poppins'>Access to Placement Portal</Typography>
               </Box>
             </Box>
           </Box>

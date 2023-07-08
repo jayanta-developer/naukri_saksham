@@ -1,6 +1,6 @@
 .onboardContainer {
   background: #efffe2;
-  padding: 20px 0px;
+  padding: 35px 0px;
 }
 .onboardBtnBox {
   display: flex;
@@ -63,6 +63,9 @@
   display: none;
 }
 @media only screen and (min-width: 600px) {
+  .onboardContainer {
+    padding: 68px 0px;
+  }
   .stepBox {
     flex-direction: row;
     justify-content: center;

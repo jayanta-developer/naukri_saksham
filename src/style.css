@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   user-select: none;
-  font-family: "Poppins-Regular" !important;
+  font-family: "Poppins-Regular";
 }
 .homePage {
   width: 100%;
@@ -21,6 +21,12 @@
     rgba(163, 253, 135, 0.37),
     rgb(255, 255, 255)
   );
+}
+.poppins {
+  font-family: "Poppins-Regular" !important;
+}
+.poppinsBold {
+  font-family: "Poppins-Bold" !important;
 }
 @media only screen and (min-width: 600px) {
   .homePage {

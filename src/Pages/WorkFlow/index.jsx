@@ -19,7 +19,7 @@ export default function WorkFlow() {
   return (
     <Box className="workFlowBox">
       <Box className="workFlowHeader">
-        <Typography className="boldFont" sx={{ fontWeight: "bolder", textAlign: "center" }}
+        <Typography className="bold_Font" sx={{ fontWeight: "bolder", textAlign: "center" }}
           variant="h5">Building industry ready workforce in High-demand Domains</Typography>
       </Box>
       <Box className="workFlowItems">
@@ -31,11 +31,11 @@ export default function WorkFlow() {
             </Box>
           </Box>
           <Box className="workFlowItemBox">
-            <Typography className="WorkFlowItemBoxCenterText" variant="h5">Full Stack
+            <Typography className="WorkFlowItemBoxCenterText poppins" variant="h5">Full Stack
               Development</Typography>
           </Box>
           <Box className="workFlowItemBox">
-            <Typography className="WorkflowPByText">Designed by Expert From</Typography>
+            <Typography className="WorkflowPByText poppins">Designed by Expert From</Typography>
           </Box>
           <Box className="workFlowItemBox companyLogoBox">
             <img className="companyLogo" src={microsoft} />
@@ -51,11 +51,11 @@ export default function WorkFlow() {
             </Box>
           </Box>
           <Box className="workFlowItemBox">
-            <Typography className="WorkFlowItemBoxCenterText" variant="h5">Data Science With
+            <Typography className="WorkFlowItemBoxCenterText poppins" variant="h5">Data Science With
               AI/ML/Python</Typography>
           </Box>
           <Box className="workFlowItemBox">
-            <Typography className="WorkflowPByText">Designed by Expert From</Typography>
+            <Typography className="WorkflowPByText poppins ">Designed by Expert From</Typography>
           </Box>
           <Box className="workFlowItemBox companyLogoBox">
             <img className="companyLogo" src={walmart} />
@@ -73,11 +73,11 @@ export default function WorkFlow() {
             </Box>
           </Box>
           <Box className="workFlowItemBox">
-            <Typography sx={{ color: "white", marginBottom: "6px" }} className="WorkFlowItemBoxCenterText" variant="h5">Electric Vehicle
+            <Typography sx={{ color: "white", marginBottom: "6px" }} className="poppins WorkFlowItemBoxCenterText" variant="h5">Electric Vehicle
               & Design</Typography>
           </Box>
           <Box className="workFlowItemBox">
-            <Typography sx={{ color: "white", fontSize: "12px", marginBottom: "2px" }} className="WorkflowPByText">Nulla sed turpis adipiscing mauris sit morbi potenti mauris.</Typography>
+            <Typography sx={{ color: "white", fontSize: "12px", marginBottom: "2px" }} className="poppins WorkflowPByText">Nulla sed turpis adipiscing mauris sit morbi potenti mauris.</Typography>
           </Box>
           <Box className="workFlowItemBox btnBox">
             <BlueButton BtnText="View Details" />
@@ -93,11 +93,11 @@ export default function WorkFlow() {
             </Box>
           </Box>
           <Box className="workFlowItemBox">
-            <Typography className="WorkFlowItemBoxCenterText" variant="h5">Advance Care &
+            <Typography className="WorkFlowItemBoxCenterText poppins" variant="h5">Advance Care &
               <br /> Design</Typography>
           </Box>
           <Box className="workFlowItemBox">
-            <Typography className="WorkflowPByText">Designed by Expert From</Typography>
+            <Typography className="WorkflowPByText poppins">Designed by Expert From</Typography>
           </Box>
           <Box className="workFlowItemBox companyLogoBox">
             <img style={{ width: "76px" }} className="companyLogo fortBoxhLogo" src={honda} />
@@ -105,8 +105,6 @@ export default function WorkFlow() {
             <img className="companyLogo fortBoxhLogo" src={tata} />
           </Box>
         </Box>
-
-
 
       </Box>
       <Box className="workFlowBtn">
