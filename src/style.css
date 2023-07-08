@@ -1,9 +1,19 @@
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./Assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("./Assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+}
+
 * {
   box-sizing: border-box;
-  font-family: Poppins !important;
   margin: 0;
   padding: 0;
   user-select: none;
+  font-family: "Poppins-Regular" !important;
 }
 .homePage {
   width: 100%;

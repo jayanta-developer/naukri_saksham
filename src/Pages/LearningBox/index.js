@@ -54,8 +54,11 @@ export default function LearningBox() {
         ONE-STOP LEARNING PLATFORM
       </Typography>
       <Typography
-        className="boldFont"
-        sx={{ fontWeight: "bolder", textAlign: "center" }}
+        sx={{
+          fontWeight: "bolder",
+          textAlign: "center",
+          fontFamily: "Poppins-Bold",
+        }}
         variant="h5"
       >
         Everything you need to crack your Dream Job
