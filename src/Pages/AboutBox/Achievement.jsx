@@ -81,7 +81,7 @@ export default function Achievement() {
               Our NaukriSaksham initiatives aim to protect students from the exploitation of commercial Edtech companies that charge exorbitant fees for placement and training. Our pocket-friendly model allows students to learn, secure a job, and pay fees, relieving the financial burden on their parents.
             </Typography>
             <Typography sx={{ color: "#3E8504", fontWeight: "700" }} mb={4} className='poppins'>
-              With Capable, students become Capable!
+              With Capabl, students become Capable!
             </Typography>
           </Box>
         </Box>
