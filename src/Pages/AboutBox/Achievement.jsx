@@ -73,9 +73,9 @@ export default function Achievement() {
           <Box className="CTextBox">
             <Typography mb={3} className="bold__Font poppinsBold"
               sx={{ fontWeight: "bolder" }}
-              variant="h5">About Capable</Typography>
+              variant="h5">About Capabl</Typography>
             <Typography mb={4} className='poppins'>
-              Capable from Elite Techno Groups, an industry consultant and Ed-Tech backed by 200+ leading MNC's & Startups, is dedicated to creating a top-notch learning ecosystem. Our mission is to bridge the industry-academia gap while considering the complexities of the Indian degree ecosystem.
+              Capabl from Elite Techno Groups, an industry consultant and Ed-Tech backed by 200+ leading MNC's & Startups, is dedicated to creating a top-notch learning ecosystem. Our mission is to bridge the industry-academia gap while considering the complexities of the Indian degree ecosystem.
             </Typography>
             <Typography mb={4} className='poppins'>
               Our NaukriSaksham initiatives aim to protect students from the exploitation of commercial Edtech companies that charge exorbitant fees for placement and training. Our pocket-friendly model allows students to learn, secure a job, and pay fees, relieving the financial burden on their parents.
