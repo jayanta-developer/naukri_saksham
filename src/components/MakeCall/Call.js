@@ -1,16 +1,26 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import headset from "../../Assets/images/headset-svgrepo-com.svg";
+import whatSappLogo from "../../Assets/images/whatsapp-icon-logo.png";
+
 import "./style.css";
 
 export default function Call() {
-  const phoneNumber = "9091385148";
+  const whatsappNumber = "9091385148";
+
+  const handleWhatsAppClick = () => {
+    window.open(`https://wa.me/${whatsappNumber}`, "_blank");
+  };
+
   return (
     <>
       <Box className="headsetIconBox">
-        <a href={`tel:${phoneNumber}`}>
-          <img src={headset} alt="Phone Icon" />
-        </a>
+        <img
+          onClick={handleWhatsAppClick}
+          src={whatSappLogo}
+          alt="Phone Icon"
+          style={{ cursor: "pointer" }}
+        />
       </Box>
     </>
   );

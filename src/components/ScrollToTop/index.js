@@ -35,7 +35,7 @@ const ScrollToTopButton = () => {
       onClick={scrollToTop}
     >
       {/* <img className="goUpArrow" src={upArrow} /> */}
-      <Typography className="goUpArrowText">Enroll Now</Typography>
+      <Typography className="goUpArrowText poppinsBold">Enroll Now</Typography>
     </div>
   );
 };

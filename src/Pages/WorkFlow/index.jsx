@@ -96,12 +96,8 @@ export default function WorkFlow() {
             <Typography sx={{ color: "white", marginBottom: "6px" }} className="poppins WorkFlowItemBoxCenterText" variant="h5">Electric Vehicle
               & Design</Typography>
           </Box>
-          <Box className="workFlowItemBox">
-            <Typography sx={{ color: "white", fontSize: "12px", marginBottom: "2px" }} className="poppins WorkflowPByText">Nulla sed turpis adipiscing mauris sit morbi potenti mauris.</Typography>
-          </Box>
-          <Box className="workFlowItemBox btnBox">
+          <Box sx={{ marginTop: "50px" }} className="workFlowItemBox btnBox">
             <BlueButton BtnText="View Details" />
-            <WhiteButton BtnText="Download Syllabus" />
           </Box>
         </Box>
 

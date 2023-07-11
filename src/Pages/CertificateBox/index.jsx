@@ -18,8 +18,7 @@ export default function CertificateBox() {
       <Box className="CertificateText">
         <Typography mb={3} className="bold_Font poppinsBold"
           sx={{ fontWeight: "bolder" }}
-          variant="h5">Internationally Accrediated Certificate wit</Typography>
-        <Typography className='poppins' mb={1} pl={3} sx={{ fontSize: "13px" }}>Over 20+ Points Added in Your Resume</Typography>
+          variant="h5">Internationally Accrediated Certificate with  Over 20+ Points Added in Your Resume</Typography>
 
         <Box className="CertificateTextNumList">
           <img src={num1} />

@@ -35,4 +35,7 @@
   .CertificateText {
     padding: 60px 0px;
   }
+  .cover {
+    width: 95%;
+  }
 }

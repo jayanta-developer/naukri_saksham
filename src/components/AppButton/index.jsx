@@ -11,7 +11,7 @@ export const RedButton = ({
 }) => {
   return (
     <div style={{ width, height, backgroundColor }} className="NavGetStartBtn redBtn">
-      <Typography className="redBtnText">
+      <Typography className="redBtnText poppinsBold">
         {BtnText}
       </Typography>
     </div>
@@ -28,7 +28,7 @@ export const YellowButton = ({
       style={{ width, height, backgroundColor }}
       className="NavGetStartBtn NavGetYellowStartBtn"
     >
-      <Typography className="redBtnText">
+      <Typography className="redBtnText poppinsBold">
         {BtnText}
       </Typography>
     </div>
@@ -41,7 +41,7 @@ export const BlueButton = ({
     <div
       className="NavGetBlueStartBtn"
     >
-      <Typography sx={{ color: "#fff" }} className="redBtnText">
+      <Typography sx={{ color: "#fff" }} className="redBtnText poppinsBold">
         {BtnText}
       </Typography>
     </div>
