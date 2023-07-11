@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { Box, Typography, Button, Container, TextField, Card } from "@mui/material";
 import { RedButton, BlueButton, WhiteButton } from "../../components/AppButton";
 import vector1 from "../../Assets/images/Vector (3).png"
@@ -15,16 +16,35 @@ import volvo from "../../Assets/images/volvo.png"
 import tata from "../../Assets/images/tata.png"
 import "./style.css";
 
+import { FullStackDevelopment, DataScienceBox, ElectricVehicleBox, AdvanceCarBox } from "../../components/Popup";
+
 export default function WorkFlow() {
+  const [fullStackBox, setFullStackBox] = useState(false)
+  const [dataScienceBox, setDataScienceBox] = useState(false)
+  const [electricVehicleBox, setElectricVehicleBox] = useState(false)
+  const [advanceCarBox, setAdvanceCarBox] = useState(false)
+
+  const handelClose = () => {
+    setFullStackBox(false)
+    setDataScienceBox(false)
+    setElectricVehicleBox(false)
+    setAdvanceCarBox(false)
+  }
+
+
   return (
     <Box className="workFlowBox">
+      <Box className="FContainer" sx={{ display: fullStackBox ? "block" : "none" }}>{FullStackDevelopment(handelClose)}</Box>
+      <Box className="FContainer" sx={{ display: dataScienceBox ? "block" : "none" }}>{DataScienceBox(handelClose)}</Box>
+      <Box className="FContainer" sx={{ display: electricVehicleBox ? "block" : "none" }}>{ElectricVehicleBox(handelClose)}</Box>
+      <Box className="FContainer" sx={{ display: advanceCarBox ? "block" : "none" }}>{AdvanceCarBox(handelClose)}</Box>
       <Box className="workFlowHeader">
         <Typography className="bold_Font" sx={{ fontWeight: "bolder", textAlign: "center" }}
           variant="h5">Building industry ready workforce in High-demand Domains</Typography>
       </Box>
       <Box className="workFlowItems">
 
-        <Box className="workFlowItem workFlowItem1">
+        <Box onClick={() => setFullStackBox(true)} className="workFlowItem workFlowItem1">
           <Box className="workFlowItemBox">
             <Box className="logoBG logoBackground1">
               <img className="vector1Logo" src={vector1} />
@@ -44,7 +64,7 @@ export default function WorkFlow() {
           </Box>
         </Box>
 
-        <Box className="workFlowItem workFlowItem2">
+        <Box onClick={() => setDataScienceBox(true)} className="workFlowItem workFlowItem2">
           <Box className="workFlowItemBox">
             <Box className="logoBG logoBackground2">
               <img className="vector1Logo" src={vector2} />
@@ -66,7 +86,7 @@ export default function WorkFlow() {
 
 
 
-        <Box className="workFlowItem workFlowItem3">
+        <Box onClick={() => setElectricVehicleBox(true)} className="workFlowItem workFlowItem3">
           <Box className="workFlowItemBox">
             <Box className="logoBG logoBackground3">
               <img className="vector1Logo" src={vector3} />
@@ -86,7 +106,7 @@ export default function WorkFlow() {
         </Box>
 
 
-        <Box className="workFlowItem workFlowItem4">
+        <Box onClick={() => setAdvanceCarBox(true)} className="workFlowItem workFlowItem4">
           <Box className="workFlowItemBox">
             <Box className="logoBG logoBackground4">
               <img className="vector1Logo" src={vector4} />

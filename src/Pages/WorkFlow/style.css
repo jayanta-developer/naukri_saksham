@@ -127,6 +127,11 @@
 .bold_Font {
   font-family: "Poppins-Bold" !important;
 }
+.FContainer {
+  width: 100%;
+  position: relative;
+  right: 21px;
+}
 @media only screen and (min-width: 600px) {
   .workFlowBox {
     width: 100%;

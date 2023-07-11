@@ -85,7 +85,6 @@ export default function ForthBoxCards() {
           <Typography className='poppins' variant='subtitle1' sx={{ textAlign: "left", fontSize: "13px" }}>{cardSubText}</Typography>
         </Box>
 
-
         <Box className="cardFooter">
           <Box className="footerInrBox footerInrBoxBgLight">
             <Typography className='poppinsBold' sx={{ textAlign: "left", fontWeight: "bolder" }}>Before</Typography>
@@ -114,7 +113,6 @@ export default function ForthBoxCards() {
       </Box>
     )
   }
-
 
   return (
     <Box my={3} className="ForthBoxCardContainer">
@@ -204,12 +202,10 @@ export default function ForthBoxCards() {
         <Typography mb={2} className="poppins" sx={{ fontWeight: "700", textAlign: "center", color: "#DEB511", fontSize: "17px", }}>Our Ratings</Typography>
         <Typography mb={3} className="poppinsBold" sx={{ fontWeight: "bolder", textAlign: "center", }} variant="h5">The Voice of Our Success</Typography>
         <Box className="ratingItemBox">
-
           {RatingCard(googleLogo, "4.8")}
           {RatingCard(ambitionBox, "4.4")}
           {RatingCard(studocu, "4.4")}
           {RatingCard(facebook, "4.8")}
-
         </Box>
       </Box>
     </Box>
