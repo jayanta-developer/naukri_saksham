@@ -87,6 +87,7 @@
     overflow: scroll;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    overflow-y: hidden;
   }
   .AchieveContainer {
     display: flex;

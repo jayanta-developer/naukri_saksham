@@ -157,8 +157,9 @@
     justify-content: left;
     overflow: scroll;
     scroll-behavior: smooth;
-    overflow-x: hidden;
     height: 423px;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
   .companyLogoImage {
     width: 160px;
