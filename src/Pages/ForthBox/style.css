@@ -148,6 +148,37 @@
 .ScrollBtn {
   display: none;
 }
+.ratingBox {
+  display: flex;
+  flex-direction: column;
+  padding: 19px 0px;
+}
+.ratingItemBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  overflow: scroll;
+  height: 235px;
+}
+.ratingItemBox > * {
+  flex: 0 0 302px;
+}
+.ratingItem {
+  width: 302px;
+  height: 175px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  justify-content: center;
+  margin: 17px 20px;
+}
+.ratingStars {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 @media only screen and (min-width: 600px) {
   .placementItems {
     overflow: unset;
@@ -180,5 +211,12 @@
     font-size: 20px;
     margin: 10px;
     cursor: pointer;
+  }
+  .ratingBox {
+    padding: 42px 0px;
+  }
+  .ratingItemBox {
+    justify-content: center;
+    height: 223px;
   }
 }

@@ -16,6 +16,12 @@ import Infomerica from "../../Assets/images/Infomericainc.png"
 import Amazon from "../../Assets/images/amazon-penis.jpg"
 import Intel from "../../Assets/images/Intel_logo_(2020,_light_blue).svg.png"
 
+import googleLogo from "../../Assets/images/RatingLogos/ANSYS.png"
+import ambitionBox from "../../Assets/images/RatingLogos/2TaM9vv4FScR0ragiBoxUJPsPYQ1617288791562_200x200 1.png"
+import studocu from "../../Assets/images/RatingLogos/image 146.png";
+import facebook from "../../Assets/images/RatingLogos/Facebook-Logo 1.png";
+import starts from "../../Assets/images/RatingLogos/starts.svg";
+
 import RightArrow from "../../Assets/images/RightScroll arrow.svg"
 import LeftArrow from "../../Assets/images/LeftScroll arrow.svg"
 
@@ -95,6 +101,19 @@ export default function ForthBoxCards() {
     )
   }
 
+  const RatingCard = (logo, rating) => {
+    return (
+      <Box className="ratingItem">
+        <Box className="ratingItemLogo">
+          <img src={logo} />
+        </Box>
+        <Box className="ratingStars">
+          <img src={starts} />
+          <Typography ml={1}>Rating: {rating}</Typography>
+        </Box>
+      </Box>
+    )
+  }
 
 
   return (
@@ -179,6 +198,18 @@ export default function ForthBoxCards() {
           onMouseLeave={(e) => anim2(e)}
         >
           <img style={{ width: "20px" }} src={RightArrow} />
+        </Box>
+      </Box>
+      <Box className="ratingBox">
+        <Typography mb={2} className="poppins" sx={{ fontWeight: "700", textAlign: "center", color: "#DEB511", fontSize: "17px", }}>Our Ratings</Typography>
+        <Typography mb={3} className="poppinsBold" sx={{ fontWeight: "bolder", textAlign: "center", }} variant="h5">The Voice of Our Success</Typography>
+        <Box className="ratingItemBox">
+
+          {RatingCard(googleLogo, "4.8")}
+          {RatingCard(ambitionBox, "4.4")}
+          {RatingCard(studocu, "4.4")}
+          {RatingCard(facebook, "4.8")}
+
         </Box>
       </Box>
     </Box>
