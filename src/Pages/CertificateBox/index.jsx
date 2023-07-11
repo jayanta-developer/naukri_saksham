@@ -9,9 +9,15 @@ import num3 from "../../Assets/images/num3.png"
 import num4 from "../../Assets/images/num4.png"
 import num5 from "../../Assets/images/num5.png"
 
-export default function CertificateBox() {
+export const handleCertificateBoxScroll = () => {
+  const certificateBox = document.getElementById('certificateBox');
+  certificateBox.scrollIntoView({ behavior: 'smooth' });
+};
+
+
+export const CertificateBox = () => {
   return (
-    <Box className="Certificate_Box">
+    <Box className="Certificate_Box" id="certificateBox">
       <Box className="cover">
         <img style={{ width: "100%" }} src={coverPhoto} />
       </Box>

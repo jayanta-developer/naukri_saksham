@@ -12,10 +12,10 @@ import CompanyLogoBox from "./Pages/ForthBox/CompanyLogoBox"
 import LearningBox from "./Pages/LearningBox";
 import MediaBox from "./Pages/MediaBox";
 import Onboarding from "./Pages/Onboarding"
-import CertificateBox from "./Pages/CertificateBox";
+import { CertificateBox } from "./Pages/CertificateBox";
 import About from "./Pages/AboutBox/Achievement"
 import Footer from "./Pages/Footer"
-import ScrollToTopButton from "./components/ScrollToTop"
+import { ScrollToTopButton } from "./components/ScrollToTop"
 import Call from "./components/MakeCall/Call";
 import "./style.css";
 

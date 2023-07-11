@@ -8,9 +8,10 @@ export const RedButton = ({
   width = "174px",
   height = "47px",
   backgroundColor = "#FC0",
+  onClick
 }) => {
   return (
-    <div style={{ width, height, backgroundColor }} className="NavGetStartBtn redBtn">
+    <div onClick={onClick} style={{ width, height, backgroundColor }} className="NavGetStartBtn redBtn">
       <Typography className="redBtnText poppinsBold">
         {BtnText}
       </Typography>

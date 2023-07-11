@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Typography, Button, Container, TextField } from "@mui/material";
+import { scrollToTop } from "../../components/ScrollToTop"
 import "./onboarding.css";
 import { RedButton } from '../../components/AppButton';
 import step1 from "../../Assets/images/StepLogo1.png"
@@ -80,7 +81,7 @@ export default function Onboarding() {
             </Box>
           </Box>
         </Box>
-        <Box className="onboardBtnBox"><RedButton BtnText="ENROLL NOW" width='275px' /></Box>
+        <Box className="onboardBtnBox"><RedButton onClick={scrollToTop} BtnText="ENROLL NOW" width='275px' /></Box>
       </Box>
     </>
   )

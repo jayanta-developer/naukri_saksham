@@ -10,6 +10,7 @@ import VectorG from "../../Assets/images/VectorG.svg";
 import VectorD from "../../Assets/images/VectorD.svg";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
+import { handleCertificateBoxScroll } from "../CertificateBox"
 import "./style.css";
 
 export default function Home() {
@@ -36,7 +37,7 @@ export default function Home() {
             </Box>
             <Box className="btnMediaBox">
               <Box className="mediaBtn">
-                <RedButton BtnText="View Certifications" width="200px" />
+                <RedButton onClick={handleCertificateBoxScroll} BtnText="View Certifications" width="200px" />
               </Box>
               <Box className="watchVideoMediaBox">
                 <img className="mediaGirlImage" src={MediaImage} />
