@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 //Components
 import NavBar from "./components/NavBar";
@@ -18,14 +18,16 @@ import Footer from "./Pages/Footer"
 import { ScrollToTopButton } from "./components/ScrollToTop"
 import Call from "./components/MakeCall/Call";
 import "./style.css";
+import Enroll from "./components/EnrollBox/Enroll"
 
 export default function App() {
+  const [enrollBox, setEnrollBox] = useState(false);
   return (
     <>
-      <NavBar />
+      <NavBar setEnrollBox={setEnrollBox} />
       <Home />
       <FeatureCards />
-      <WorkFlow />
+      <WorkFlow setEnrollBox={setEnrollBox} />
       <ForthBox />
       <CompanyLogoBox />
       <ForthBoxCard />
@@ -37,6 +39,7 @@ export default function App() {
       <Footer />
       <ScrollToTopButton />
       <Call />
+      <Enroll enrollBox={enrollBox} setEnrollBox={setEnrollBox} />
     </>
   );
 }

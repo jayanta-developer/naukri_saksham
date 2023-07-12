@@ -159,8 +159,6 @@
   justify-content: left;
   overflow: scroll;
   height: 235px;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 .ratingItemBox > * {
   flex: 0 0 302px;
@@ -220,5 +218,7 @@
   .ratingItemBox {
     justify-content: center;
     height: 223px;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
 }

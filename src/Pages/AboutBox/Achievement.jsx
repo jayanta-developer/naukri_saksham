@@ -23,6 +23,11 @@ import India from "../../Assets/images/india_pavilion_logo_01.jpg"
 import EdTech from "../../Assets/images/EdTech.png"
 import NITI from "../../Assets/images/niti-aayog-logo-vector.png"
 
+export const handleAboutBoxScroll = () => {
+  const videosBox = document.getElementById('AboutBox');
+  videosBox.scrollIntoView({ behavior: 'smooth' });
+};
+
 export default function Achievement() {
   let scrl = useRef(null);
   const [scrollX, setscrollX] = useState(0);
@@ -65,7 +70,7 @@ export default function Achievement() {
 
   return (
     <>
-      <Box className="CertificateBox">
+      <Box className="CertificateBox" id="AboutBox">
         <Box className="certificateMedia">
           <Box className="CcoverPhoto">
             <img style={{ width: "100%", maxWidth: "624px" }} src={coverGirlPhoto} alt="" />

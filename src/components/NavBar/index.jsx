@@ -5,8 +5,9 @@ import { RedButton } from "../AppButton";
 
 import "./style.css";
 import "../../Assets/fonts.css";
+import { handleAboutBoxScroll } from "../../Pages/AboutBox/Achievement"
 
-export default function NavBar() {
+export default function NavBar({ setEnrollBox }) {
   return (
     <Box className="navContainer">
       <Box className="navBar">
@@ -32,7 +33,7 @@ export default function NavBar() {
             {" "}
             <Box className="navItem">Resources</Box>
           </a>
-          <a className="navLink" href="#">
+          <a style={{ cursor: "pointer" }} onClick={handleAboutBoxScroll} className="navLink" >
             {" "}
             <Box className="navItem">About Us</Box>
           </a>
@@ -42,7 +43,7 @@ export default function NavBar() {
           </a>
         </Box>
         <Box className="buttonBox">
-          <RedButton BtnText="Get Started" />
+          <RedButton onClick={() => setEnrollBox(true)} BtnText="Get Started" />
         </Box>
       </Box>
     </Box>

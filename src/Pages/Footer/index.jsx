@@ -9,6 +9,7 @@ import LinkedinLogo from "../../Assets/images/LVector (4).png"
 import Arrow from "../../Assets/images/footerHomeArrow.png"
 import MessageLogo from "../../Assets/images/MessageLogo.png"
 import "./style.css";
+import { handleAboutBoxScroll } from "../AboutBox/Achievement";
 
 
 export default function Footer() {
@@ -29,7 +30,7 @@ export default function Footer() {
             <Typography className="pointer textUnderlineOnHover poppins" mb={1}>Course</Typography>
             <Typography className="pointer textUnderlineOnHover poppins" mb={1}>Companies</Typography>
             <Typography className="pointer textUnderlineOnHover poppins" mb={1}>Resources</Typography>
-            <Typography className="pointer textUnderlineOnHover poppins" mb={1}>About Us</Typography>
+            <Typography onClick={handleAboutBoxScroll} className="pointer textUnderlineOnHover poppins" mb={1}>About Us</Typography>
             <Typography className="pointer textUnderlineOnHover poppins" mb={1}>Contact</Typography>
           </Box>
         </Box>
@@ -59,10 +60,10 @@ export default function Footer() {
         <Box className="footerBottomBoxContent">
           <Typography className='footerBottomText'>© Copyright 2023 <spam style={{ color: "#FFCC00" }}>NaukriSaksham</spam> All Rights Reserved.</Typography>
           <Box className="MediaLinks">
-            <img src={FacebookLogo} />
-            <img src={TwitterLogo} />
-            <img src={InstagramLogo} />
-            <img src={LinkedinLogo} />
+            <a href="https://www.facebook.com/CapablfromEtgroups" target="_blank"> <img src={FacebookLogo} /></a>
+            <a href="https://twitter.com/ETgroups" target="_blank"><img src={TwitterLogo} /></a>
+            <a href="https://www.instagram.com/capabl.india" target="_blank"> <img src={InstagramLogo} /></a>
+            <a href="https://www.linkedin.com/company/cabapl-elite-techno-groups" target="_blank"><img src={LinkedinLogo} /></a>
           </Box>
 
         </Box>

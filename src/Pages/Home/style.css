@@ -28,6 +28,7 @@
   justify-content: start;
   flex-direction: row;
   padding-left: 7vh;
+  cursor: pointer;
 }
 
 .mediaGirlImage {

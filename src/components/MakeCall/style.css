@@ -1,12 +1,12 @@
 .headsetIconBox img {
-  width: 40px;
+  width: 55px;
   position: fixed;
   bottom: 75px;
-  right: 18px;
+  right: 9px;
 }
 @media only screen and (min-width: 600px) {
   .headsetIconBox img {
     bottom: 87px;
-    right: 45px;
+    right: 38px;
   }
 }

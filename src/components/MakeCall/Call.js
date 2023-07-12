@@ -6,7 +6,7 @@ import whatSappLogo from "../../Assets/images/whatsapp-icon-logo.png";
 import "./style.css";
 
 export default function Call() {
-  const whatsappNumber = "9091385148";
+  const whatsappNumber = "+917795940242";
 
   const handleWhatsAppClick = () => {
     window.open(`https://wa.me/${whatsappNumber}`, "_blank");

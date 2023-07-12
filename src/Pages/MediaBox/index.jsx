@@ -26,6 +26,12 @@ import gsap from "gsap";
 import RightArrow from "../../Assets/images/RightScroll arrow.svg"
 import LeftArrow from "../../Assets/images/LeftScroll arrow.svg"
 
+
+export const handleVideoBoxScroll = () => {
+  const videosBox = document.getElementById('videosBox');
+  videosBox.scrollIntoView({ behavior: 'smooth' });
+};
+
 export default function MediaBox() {
   let scrl = useRef(null);
   const [scrollX, setscrollX] = useState(0);
@@ -69,7 +75,7 @@ export default function MediaBox() {
 
 
   return (
-    <Box className="mediaContainer">
+    <Box className="mediaContainer" id="videosBox">
 
       <Box className="videoItem gridItem1  videoItemText">
         <Typography mb={2} className="boldFont poppinsBold"

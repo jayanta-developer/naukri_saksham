@@ -9,9 +9,6 @@
   justify-content: center;
 }
 .cross {
-  position: relative;
-  bottom: 25px;
-  left: 32px;
   cursor: pointer;
 }
 .popupBox {
@@ -31,10 +28,11 @@
 .popupBoxHeader {
   width: 100%;
   margin-bottom: 23px;
-  padding: 15px;
+  padding: 0px 18px 0px 30px;
   border-bottom: 1px solid #80808047;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .content_Box {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -85,7 +83,7 @@
   overflow: scroll;
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: center;
   height: 140px;
 }
 .projectItems > * {
@@ -116,6 +114,7 @@
   flex-direction: row;
   overflow: scroll;
   padding: 3px 0px;
+  justify-content: left;
 }
 .expertItems > * {
   flex: 0 0 330px;
@@ -163,35 +162,14 @@
 .expertCardFooter {
   padding: 6px 15px;
 }
-.crossFllStack {
-  left: 12%;
-}
-.crossDataSc {
-  left: 2%;
-}
-.crossElectric {
-  left: 9%;
-}
-.crossAdvance {
-  left: 18%;
-}
 @media only screen and (min-width: 600px) {
+  .content_Box {
+    min-width: 705px;
+  }
   .popupBox {
     width: 51%;
     margin-top: 6px;
     min-width: 768px;
-  }
-  .crossFllStack {
-    left: 56%;
-  }
-  .crossDataSc {
-    left: 42%;
-  }
-  .crossElectric {
-    left: 54%;
-  }
-  .crossAdvance {
-    left: 59%;
   }
   .SoftwareLearn {
     /* justify-content: left; */
@@ -225,5 +203,10 @@
   }
   .projectItems > * {
     flex: 0 0 219px;
+  }
+  .expertItems {
+    justify-content: space-evenly;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
 }

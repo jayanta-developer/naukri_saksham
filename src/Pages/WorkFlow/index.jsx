@@ -18,7 +18,7 @@ import "./style.css";
 
 import { FullStackDevelopment, DataScienceBox, ElectricVehicleBox, AdvanceCarBox } from "../../components/Popup";
 
-export default function WorkFlow() {
+export default function WorkFlow({ setEnrollBox }) {
   const [fullStackBox, setFullStackBox] = useState(false)
   const [dataScienceBox, setDataScienceBox] = useState(false)
   const [electricVehicleBox, setElectricVehicleBox] = useState(false)
@@ -124,7 +124,7 @@ export default function WorkFlow() {
 
       </Box>
       <Box className="workFlowBtn">
-        <RedButton BtnText="Get Started" />
+        <RedButton onClick={() => setEnrollBox(true)} BtnText="Get Started" />
       </Box>
     </Box>
   )
