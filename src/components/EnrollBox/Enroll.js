@@ -30,7 +30,7 @@ export default function Enroll({ enrollBox, setEnrollBox }) {
           <Box className="contact_Box">
             <img
               onClick={handelClose}
-              className="cross"
+              className="cross enrollCrossBtn"
               style={{ width: "42px" }}
               src={cross}
             />

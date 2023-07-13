@@ -20,6 +20,11 @@
   background: #ffffff;
   box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.12);
 }
+.enrollCrossBtn {
+  position: relative;
+  left: 92%;
+  bottom: 3%;
+}
 @media only screen and (min-width: 600px) {
   .contact_Box {
     border-top: 3px solid #f69400;
@@ -32,5 +37,9 @@
     border-radius: 15px;
     background: #ffffff;
     box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.12);
+  }
+  .enrollCrossBtn {
+    left: 96%;
+    bottom: 7%;
   }
 }
