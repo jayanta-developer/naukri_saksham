@@ -96,10 +96,11 @@
   }
   .contentTabItem {
     width: 165px;
-    border: 1px solid #7f7f7f;
+    height: 43px;
   }
   .contentTabItemOnHover {
     width: 165px;
+    height: 43px;
   }
   .mediaCover {
     width: 100%;
@@ -121,5 +122,8 @@
   }
   .contentTabText {
     font-size: 13px !important;
+  }
+  .polygon {
+    top: 10px;
   }
 }
