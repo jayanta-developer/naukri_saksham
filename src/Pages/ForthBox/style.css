@@ -4,19 +4,24 @@
   padding: 5%;
   padding-top: 46px;
 }
+.placementHeading {
+  font-size: 42px !important;
+}
 .placementSubHeading {
   margin: 10px 0px !important;
+  font-family: Satoshi !important;
+  font-size: 22px !important;
 }
 .placementItems {
   display: flex;
   flex-direction: row;
   margin-top: 40px;
   overflow: scroll;
-  height: 187px;
+  height: 250px;
   padding-top: 5px;
 }
 .placementItems > * {
-  flex: 0 0 153px;
+  flex: 0 0 240px;
 }
 .companyLogoImage {
   width: 77px;
@@ -26,7 +31,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  /* margin-top: 85px; */
   background: #efffe2;
 }
 .placementCompanyLogosItems {
@@ -72,18 +76,15 @@
   /* text-align: center; */
 }
 .cardBox {
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: left;
   overflow: scroll;
 }
 .cardBox > * {
-  flex: 0 0 374px;
+  flex: 0 0 413px;
 }
 .ForthBoxCard {
-  width: 413px;
-  height: 419px;
   padding: 23px 0px 0px 0px;
   display: flex;
   flex-direction: column;
@@ -105,7 +106,6 @@
   height: 80px;
   border-radius: 52px;
   overflow: hidden;
-  /* border: 1px solid; */
   margin-right: 13px;
 }
 .profilePhoto img {
@@ -113,11 +113,10 @@
 }
 .profileInfo {
   padding: 14px 0px 0px 10px;
-  /* border: 1px solid; */
-  width: 244px;
+  width: 319px;
 }
 .TextBox {
-  padding-left: 13px;
+  padding: 18px 22px 0px 22px;
 }
 .cardFooter {
   height: 124px;
@@ -128,7 +127,7 @@
 .footerInrBox {
   width: 50%;
   color: #ffff;
-  padding: 11px 5px 0px 25px;
+  padding: 11px 5px 8px 25px;
   display: flex;
   flex-direction: column;
 }
@@ -143,7 +142,6 @@
 }
 .footerCompanyLogo {
   width: 52%;
-  margin-top: 6px;
 }
 .ScrollBtn {
   display: none;
@@ -151,7 +149,7 @@
 .ratingBox {
   display: flex;
   flex-direction: column;
-  padding: 19px 0px;
+  padding-top: 55px;
 }
 .ratingItemBox {
   display: flex;
@@ -185,26 +183,29 @@
     justify-content: center;
   }
   .cardBox {
+    width: 1335px;
     justify-content: left;
     overflow: scroll;
     scroll-behavior: smooth;
-    height: 423px;
+    height: 507px;
     overflow-x: hidden;
     overflow-y: hidden;
   }
   .companyLogoImage {
-    width: 160px;
+    width: 95%;
   }
   .placementCompanyLogosItems {
-    padding: 0px 221px;
+    padding: 0px 130px;
   }
   .placementCompanyLogosItem {
-    height: 102px;
+    width: 226px;
+    height: 113px;
   }
   .scrollContainer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
   .ScrollBtn {
     display: block;
@@ -220,5 +221,26 @@
     height: 223px;
     overflow-x: hidden;
     overflow-y: hidden;
+  }
+  .placementItems > * {
+    flex: 0 0 240px;
+  }
+  .arrowBox {
+    display: flex;
+    flex-direction: row;
+  }
+  .arrowDisabled {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  .placementCompanyLogosBox {
+    height: 587px;
+  }
+  .whiteArrow {
+    width: 47px;
+    position: relative;
+    left: 191px;
+    top: 74px;
   }
 }

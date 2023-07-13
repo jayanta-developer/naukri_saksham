@@ -73,16 +73,19 @@ export default function MediaBox() {
   };
 
 
-
   return (
     <Box className="mediaContainer" id="videosBox">
 
       <Box className="videoItem gridItem1  videoItemText">
         <Typography mb={2} className="boldFont poppinsBold"
-          sx={{ fontWeight: "bolder", textAlign: "center" }}
+          sx={{ fontWeight: "700", textAlign: "center", fontSize: "42px" }}
           variant="h5"
-        >Students Defining Our Success</Typography>
-        <Typography className='poppins' sx={{ textAlign: "center", fontSize: "0.875rem" }}>Witness the transformation & Experience the Power of Our Program in Shaping Your Career Path</Typography>
+        >Students Defining Our Success
+        </Typography>
+        <Typography
+          sx={{ textAlign: "center", fontSize: "22px", fontWeight: "400", fontFamily: "Satoshi" }}>
+          Witness the transformation & Experience the Power of Our Program in Shaping Your Career Path
+        </Typography>
       </Box>
       <Box className="videoBox">
         <Box className="YouTubeMediaScrollBtn"
@@ -97,37 +100,37 @@ export default function MediaBox() {
           <Box className="videoItem gridItem2">
             <img className='avatarImage' src={avatar1} />
             <img className='YouTubeLogo' src={YouTubeLogo} />
-            <Typography className='YouTubeCoverText poppins'>Watch Fresher to Engineering Data Author Video</Typography>
+            <Typography className='YouTubeCoverText poppins'>Watch Fresher to Engineering <br /> Data Author Video</Typography>
             <Box className="grayBox"></Box>
           </Box>
           <Box className="videoItem gridItem3">
             <img className='avatarImage' src={avatar2} />
             <img className='YouTubeLogo' src={YouTubeLogo} />
-            <Typography className='YouTubeCoverText poppins'>Watch Fresher to Engineering Data Author Video</Typography>
+            <Typography className='YouTubeCoverText poppins'>Watch Fresher to Engineering <br /> Data Author Video</Typography>
             <Box className="grayBox"></Box>
           </Box>
           <Box className="videoItem gridItem4">
             <img className='avatarImage' src={avatar3} />
             <img className='YouTubeLogo' src={YouTubeLogo} />
-            <Typography className='YouTubeCoverText poppins'>Watch Fresher to Engineering Data Author Video</Typography>
+            <Typography className='YouTubeCoverText poppins'>Watch Fresher to Engineering <br /> Data Author Video</Typography>
             <Box className="grayBox"></Box>
           </Box>
           <Box className="videoItem gridItem5">
             <img className='avatarImage' src={avatar4} />
             <img className='YouTubeLogo' src={YouTubeLogo} />
-            <Typography className='YouTubeCoverText poppins'>Watch Fresher to Engineering Data Author Video</Typography>
+            <Typography className='YouTubeCoverText poppins'>Watch Fresher to Engineering <br /> Data Author Video</Typography>
             <Box className="grayBox"></Box>
           </Box>
           <Box className="videoItem gridItem6">
             <img className='avatarImage' src={avatar5} />
             <img className='YouTubeLogo' src={YouTubeLogo} />
-            <Typography className='YouTubeCoverText poppins'>Watch Fresher to Engineering Data Author Video</Typography>
+            <Typography className='YouTubeCoverText poppins'>Watch Fresher to Engineering <br /> Data Author Video</Typography>
             <Box className="grayBox"></Box>
           </Box>
           <Box className="videoItem gridItem7">
             <img className='avatarImage' src={avatar6} />
             <img className='YouTubeLogo' src={YouTubeLogo} />
-            <Typography className='YouTubeCoverText poppins'>Watch Fresher to Engineering Data Author Video</Typography>
+            <Typography className='YouTubeCoverText poppins'>Watch Fresher to Engineering <br /> Data Author Video</Typography>
             <Box className="grayBox"></Box>
           </Box>
         </Box>

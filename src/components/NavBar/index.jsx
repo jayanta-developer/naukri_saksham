@@ -43,7 +43,7 @@ export default function NavBar({ setEnrollBox }) {
           </a>
         </Box>
         <Box className="buttonBox">
-          <RedButton onClick={() => setEnrollBox(true)} BtnText="Get Started" />
+          <RedButton onClick={() => setEnrollBox(true)} BtnText="Get Started" textClass="poppins" />
         </Box>
       </Box>
     </Box>

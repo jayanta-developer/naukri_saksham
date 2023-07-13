@@ -13,8 +13,8 @@ import Boeing from "../../Assets/images/Boning.png"
 import Mercedes from "../../Assets/images/Mercedes.png"
 import Bosch from "../../Assets/images/BoschLogo.png"
 import Infomerica from "../../Assets/images/Infomericainc.png"
-import Amazon from "../../Assets/images/amazon-penis.jpg"
-import Intel from "../../Assets/images/Intel_logo_(2020,_light_blue).svg.png"
+import Amazon from "../../Assets/images/amazonFooter.svg"
+import Intel from "../../Assets/images/intel.png"
 
 import googleLogo from "../../Assets/images/RatingLogos/ANSYS.png"
 import ambitionBox from "../../Assets/images/RatingLogos/2TaM9vv4FScR0ragiBoxUJPsPYQ1617288791562_200x200 1.png"
@@ -22,15 +22,27 @@ import studocu from "../../Assets/images/RatingLogos/image 146.png";
 import facebook from "../../Assets/images/RatingLogos/Facebook-Logo 1.png";
 import starts from "../../Assets/images/RatingLogos/starts.svg";
 
-import RightArrow from "../../Assets/images/RightScroll arrow.svg"
-import LeftArrow from "../../Assets/images/LeftScroll arrow.svg"
+import RightArrow from "../../Assets/images/arrow.png"
+import LeftArrow from "../../Assets/images/arrow - Copy.png"
+import WhiteArrow from "../../Assets/images/White Arrow.svg"
+
 
 export default function ForthBoxCards() {
   let scrl = useRef(null);
   const [scrollX, setscrollX] = useState(0);
   const [scrolEnd, setscrolEnd] = useState(false);
+  const [scrolLeftEnd, setScrolLeftEnd] = useState(false);
+
 
   const slide = (shift) => {
+    if (scrl.current.scrollLeft === 0) {
+      setScrolLeftEnd(true)
+    } else {
+      setScrolLeftEnd(false)
+    }
+
+
+
     scrl.current.scrollLeft += shift;
     setscrollX(scrollX + shift);
 
@@ -75,14 +87,15 @@ export default function ForthBoxCards() {
             <img src={avatar} alt="" />
           </Box>
           <Box className="profileInfo">
-            <Typography className='poppinsBold' sx={{ textAlign: "left", fontWeight: "bolder" }} variant='h5'>{name}</Typography>
-            <Typography className='poppins' variant='caption' sx={{ fontWeight: "700" }}>{subtitle}</Typography>
+            <Typography className='poppins' sx={{ textAlign: "left", fontWeight: "600", fontSize: "24px" }} variant='h5'>{name}</Typography>
+            <Typography className='poppins' variant='caption' sx={{ fontWeight: "400", fontSize: "14px" }}>{subtitle}</Typography>
           </Box>
         </Box>
 
         <Box className="TextBox">
-          <Typography className='poppins' mb={1} sx={{ fontWeight: "bolder", textAlign: "left", color: "#13488b", fontSize: "18px" }}>{cardText}</Typography>
-          <Typography className='poppins' variant='subtitle1' sx={{ textAlign: "left", fontSize: "13px" }}>{cardSubText}</Typography>
+          {/* <img className='whiteArrow' src={WhiteArrow} /> */}
+          <Typography mb={1} sx={{ fontWeight: "700", textAlign: "left", color: "#13488b", fontSize: "18px", fontFamily: "Satoshi" }}>{cardText}</Typography>
+          <Typography className='poppins' variant='subtitle1' sx={{ fontWeight: "400", color: "#5A5A5A;", textAlign: "left", fontSize: "18px", fontFamily: "Satoshi" }}>{cardSubText}</Typography>
         </Box>
 
         <Box className="cardFooter">
@@ -103,7 +116,7 @@ export default function ForthBoxCards() {
   const RatingCard = (logo, rating) => {
     return (
       <Box className="ratingItem">
-        <Box className="ratingItemLogo">
+        <Box mb={2} className="ratingItemLogo">
           <img src={logo} />
         </Box>
         <Box className="ratingStars">
@@ -117,48 +130,11 @@ export default function ForthBoxCards() {
   return (
     <Box my={3} className="ForthBoxCardContainer">
       <Box className="header">
-        <Typography mb={2} mt={5} className='poppinsBold' sx={{ fontWeight: "bolder", textAlign: "center" }} variant='h5'>Make Your Parents Proud!</Typography>
-        <Typography mb={3} variant="subtitle2" className='poppins' sx={{ textAlign: "center" }}>What can be more satisfactory than securing a job with the highest CTC in top companies and become financially independent</Typography>
+        <Typography mb={2} mt={5} className='poppinsBold' sx={{ fontWeight: "700", textAlign: "center", fontSize: "42px" }} variant='h5'>Make Your Parents Proud!</Typography>
+        <Typography mb={3} variant="subtitle2" sx={{ textAlign: "center", fontFamily: "Satoshi", fontSize: "22px", fontWeight: "400" }}>What can be more satisfactory than securing a job with the highest CTC in top companies and become financially independent</Typography>
       </Box>
       <Box className="scrollContainer">
-        <Box className="ScrollBtn"
-          onClick={() => slide(-300)}
-          onMouseEnter={(e) => anim(e)}
-          onMouseLeave={(e) => anim2(e)}
-        >
-          <img style={{ width: "20px" }} src={LeftArrow} />
-        </Box>
         <Box className="cardBox" ref={scrl} onScroll={scrollCheck}>
-          {card(
-            avatar1,
-            "Balaji Elumalai",
-            "Engineering Data Author Boeing",
-            "From Fresher to Engineering Data Author",
-            "By doing all the real world projects at Capabl, you gain a lot of confidence about solving real world problems. If you work on Capabl projects, you’ll be able to crack interviews.",
-            "Rajllakshmi College of engineering(Batch 2018 - 2022)",
-            "Engineering Data Author",
-            Boeing
-          )}
-          {card(
-            avatar2,
-            "Gaurav Jiwanani",
-            "CAE Analyst Mercedes-Beng",
-            "From SDE to CAE Analyst",
-            "Capabl program was a game changer, We learned from industry experts who taught through hands on industry projects. As a result, i was able to secure my dream job. I highly recommend this Program!",
-            "Senior Design Engineer",
-            "CAE Analyst",
-            Mercedes
-          )}
-          {card(
-            avatar3,
-            "Tejas Hegde",
-            "Associate Software Engineer Bosch Global Software Technology",
-            "From Intern to Associate Software Engineer",
-            "The modules and tasks were similar to what we would do in a real job. Apart from a great resume, my problem-solving skills improved a lot too.",
-            "Research Intern",
-            "Associate Software Engineer",
-            Bosch
-          )}
           {card(
             avatar4,
             "Kumar Charan M",
@@ -189,18 +165,57 @@ export default function ForthBoxCards() {
             "Software Development Engineer",
             Intel
           )}
+          {card(
+            avatar1,
+            "Balaji Elumalai",
+            "Engineering Data Author Boeing",
+            "From Fresher to Engineering Data Author",
+            "By doing all the real world projects at Capabl, you gain a lot of confidence about solving real world problems. If you work on Capabl projects, you’ll be able to crack interviews.",
+            "Rajllakshmi College of engineering(Batch 2018 - 2022)",
+            "Engineering Data Author",
+            Boeing
+          )}
+          {card(
+            avatar2,
+            "Gaurav Jiwanani",
+            "CAE Analyst Mercedes-Beng",
+            "From SDE to CAE Analyst",
+            "Capabl program was a game changer, We learned from industry experts who taught through hands on industry projects. As a result, i was able to secure my dream job. I highly recommend this Program!",
+            "Senior Design Engineer",
+            "CAE Analyst",
+            Mercedes
+          )}
+          {card(
+            avatar3,
+            "Tejas Hegde",
+            "Associate Software Engineer Bosch Global Software Technology",
+            "From Intern to Associate Software Engineer",
+            "The modules and tasks were similar to what we would do in a real job. Apart from a great resume, my problem-solving skills improved a lot too.",
+            "Research Intern",
+            "Associate Software Engineer",
+            Bosch
+          )}
+
         </Box>
-        <Box className="ScrollBtn"
-          onClick={() => slide(+300)}
-          onMouseEnter={(e) => anim(e)}
-          onMouseLeave={(e) => anim2(e)}
-        >
-          <img style={{ width: "20px" }} src={RightArrow} />
+        <Box className="arrowBox">
+          <Box className={`ScrollBtn${scrolLeftEnd ? ' arrowDisabled' : ''}`}
+            onClick={() => slide(-300)}
+            onMouseEnter={(e) => anim(e)}
+            onMouseLeave={(e) => anim2(e)}
+          >
+            <img style={{ width: "40px" }} src={LeftArrow} />
+          </Box>
+          <Box className={`ScrollBtn${scrolEnd ? ' arrowDisabled' : ''}`}
+            onClick={() => slide(+300)}
+            onMouseEnter={(e) => anim(e)}
+            onMouseLeave={(e) => anim2(e)}>
+            <img style={{ width: "40px" }} src={RightArrow} />
+          </Box>
         </Box>
       </Box>
       <Box className="ratingBox">
-        <Typography mb={2} className="poppins" sx={{ fontWeight: "700", textAlign: "center", color: "#DEB511", fontSize: "17px", }}>Our Ratings</Typography>
-        <Typography mb={3} className="poppinsBold" sx={{ fontWeight: "bolder", textAlign: "center", }} variant="h5">The Voice of Our Success</Typography>
+        <Typography mb={2} className="poppinsBold" sx={{ fontWeight: "700", textAlign: "center", color: "#DEB511", fontSize: "23px", }}>Our Ratings</Typography>
+        <Typography mb={3} className="poppinsBold" sx={{ fontWeight: "700", textAlign: "center", fontSize: "42px" }} variant="h5">The Voice of Our Success</Typography>
         <Box className="ratingItemBox">
           {RatingCard(googleLogo, "4.8 / 5")}
           {RatingCard(ambitionBox, "4.4 / 5")}

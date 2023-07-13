@@ -16,10 +16,10 @@ export default function FeatureCards() {
     <>
       <Box className="homeItemBox">
         <Typography
-          className="header"
+          className="header poppinsBold"
           mb={3}
           mt={4}
-          sx={{ fontWeight: "bolder", textAlign: "center", color: "#000" }}
+          sx={{ fontWeight: "700", textAlign: "center", color: "#000" }}
           variant="h5"
         >
           Why NaukriSaksham

@@ -39,7 +39,7 @@ export default function WorkFlow({ setEnrollBox }) {
       <Box className="FContainer" sx={{ display: electricVehicleBox ? "block" : "none" }}>{ElectricVehicleBox(handelClose)}</Box>
       <Box className="FContainer" sx={{ display: advanceCarBox ? "block" : "none" }}>{AdvanceCarBox(handelClose)}</Box>
       <Box className="workFlowHeader">
-        <Typography className="bold_Font" sx={{ fontWeight: "bolder", textAlign: "center" }}
+        <Typography className="bold_Font poppinsBold" sx={{ fontWeight: "700", textAlign: "center" }}
           variant="h5">Building industry ready workforce in High-demand Domains</Typography>
       </Box>
       <Box className="workFlowItems">
@@ -55,7 +55,7 @@ export default function WorkFlow({ setEnrollBox }) {
               Development</Typography>
           </Box>
           <Box className="workFlowItemBox">
-            <Typography className="WorkflowPByText poppins">Designed by Expert From</Typography>
+            <Typography className="WorkflowPByText ">Designed by Expert From</Typography>
           </Box>
           <Box className="workFlowItemBox companyLogoBox">
             <img className="companyLogo" src={microsoft} />
@@ -75,7 +75,7 @@ export default function WorkFlow({ setEnrollBox }) {
               AI/ML/Python</Typography>
           </Box>
           <Box className="workFlowItemBox">
-            <Typography className="WorkflowPByText poppins ">Designed by Expert From</Typography>
+            <Typography className="WorkflowPByText  ">Designed by Expert From</Typography>
           </Box>
           <Box className="workFlowItemBox companyLogoBox">
             <img className="companyLogo" src={walmart} />
@@ -113,7 +113,7 @@ export default function WorkFlow({ setEnrollBox }) {
               <br /> Design</Typography>
           </Box>
           <Box className="workFlowItemBox">
-            <Typography className="WorkflowPByText poppins">Designed by Expert From</Typography>
+            <Typography className="WorkflowPByText">Designed by Expert From</Typography>
           </Box>
           <Box className="workFlowItemBox companyLogoBox">
             <img style={{ width: "76px" }} className="companyLogo fortBoxhLogo" src={honda} />
@@ -124,7 +124,7 @@ export default function WorkFlow({ setEnrollBox }) {
 
       </Box>
       <Box className="workFlowBtn">
-        <RedButton onClick={() => setEnrollBox(true)} BtnText="Get Started" />
+        <RedButton onClick={() => setEnrollBox(true)} BtnText="Get Started" width="243px" />
       </Box>
     </Box>
   )

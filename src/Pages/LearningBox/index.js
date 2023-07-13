@@ -58,7 +58,7 @@ export default function LearningBox() {
     const polygonClass = selectedTab === index ? "polygon" : "polygonBlock";
     const contentText =
       selectedTab === index
-        ? "contentTabText poppins"
+        ? "contentTabText poppinsBold"
         : "contentText poppinsBold";
     return (
       <Box
@@ -69,7 +69,14 @@ export default function LearningBox() {
             "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px",
         }}
       >
-        <Typography className={contentText} sx={{ fontWeight: "700" }}>
+        <Typography
+          className={contentText}
+          sx={{
+            fontWeight: "600",
+            fontSize: "18px",
+            fontFamily: "Poppins-Bold",
+          }}
+        >
           {text}
         </Typography>
         <img className={polygonClass} src={Polygon} />
@@ -80,25 +87,27 @@ export default function LearningBox() {
   return (
     <Box className="learningBox">
       <Typography
-        className="poppins"
+        className="poppinsBold"
         sx={{
           fontWeight: "700",
           textAlign: "center",
           color: "#DEB511",
-          fontSize: "17px",
+          fontSize: "23px",
         }}
       >
         ONE-STOP LEARNING PLATFORM
       </Typography>
       <Typography
+        className="poppinsBold"
         sx={{
-          fontWeight: "bolder",
+          fontWeight: "700",
           textAlign: "center",
-          fontFamily: "Poppins-Bold",
+          fontSize: "42px",
         }}
         variant="h5"
       >
-        Everything you need to crack your Dream Job
+        Everything you need to crack
+        <br /> your Dream Job
       </Typography>
 
       <Box className="contentBox">
@@ -118,13 +127,21 @@ export default function LearningBox() {
           </Box>
           <Box className="media_Text">
             <Typography
-              className="bold_Font poppinsBold"
-              sx={{ fontWeight: "bolder" }}
+              className="poppinsBold"
+              sx={{ fontWeight: "700", fontSize: "35px" }}
               variant="h5"
             >
               {mediaText[selectedTab].text}
             </Typography>
-            <Typography className="mediaParagraph poppins" mt={3}>
+            <Typography
+              className="mediaParagraph"
+              mt={3}
+              sx={{
+                fontWeight: "400",
+                fontSize: "23px",
+                fontFamily: "Satoshi",
+              }}
+            >
               {mediaText[selectedTab].subText}
             </Typography>
           </Box>

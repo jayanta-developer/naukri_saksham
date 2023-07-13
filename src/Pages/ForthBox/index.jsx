@@ -18,8 +18,8 @@ export default function ForthBox() {
     <Box className="container">
       <Box className="placementBox">
         <Box className="placementHeadingBox">
-          <Typography className="placementHeading boldFont poppinsBold" sx={{ fontWeight: "bolder", textAlign: "center" }} variant='h5'>Impact Created</Typography>
-          <Typography className="placementSubHeading poppins" sx={{ textAlign: "center" }} variant="subtitle2">
+          <Typography className="placementHeading poppinsBold" sx={{ fontWeight: "700", textAlign: "center" }} variant='h5'>Impact Created</Typography>
+          <Typography className="placementSubHeading" sx={{ textAlign: "center" }} variant="subtitle2">
             NaukriSaksham is a results-oriented and proactive initiative,
             committed to ensuring students achieve unparalleled career success.
           </Typography>

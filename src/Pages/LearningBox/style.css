@@ -1,7 +1,8 @@
 .learningBox {
   padding: 5% 4%;
   /* border: 1px solid rgb(166, 21, 202); */
-  background: rgba(190, 241, 149, 0.411);
+  /* background-color: rgba(190, 241, 149, 0.411); */
+  background: url(../../Assets/images/learningBg.png);
 }
 
 .contentBox {
@@ -19,8 +20,8 @@
 }
 .contentTabItem {
   background: #ffff;
-  width: 116px;
-  height: 34px;
+  width: 165px;
+  height: 43px;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -31,8 +32,8 @@
 }
 .contentTabItemOnHover {
   background: #fc0;
-  width: 116px;
-  height: 34px;
+  width: 165px;
+  height: 43px;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -42,10 +43,10 @@
 }
 .contentTabText {
   margin-top: 10px !important;
-  font-size: 11px !important;
+  font-size: 14px !important;
 }
 .contentText {
-  font-size: 11px !important;
+  font-size: 14px !important;
 }
 .mediaBox {
   margin-top: 25px;
@@ -53,7 +54,7 @@
 }
 .polygon {
   position: relative;
-  top: 5px;
+  top: 7px;
 }
 .polygonBlock {
   display: none;
@@ -68,7 +69,6 @@
   margin-top: 33px;
 }
 .mediaParagraph {
-  padding-left: 24px;
 }
 .media {
   width: 100%;
@@ -85,22 +85,27 @@
     flex-direction: row;
     justify-content: center;
     padding: 0px 291px;
+    margin-top: 66px;
+    min-height: 354px;
   }
   .media_Text {
-    padding: 74px 0px 74px 23px;
-    width: 77%;
-    min-width: 450px;
+    padding: 74px 0px 74px 101px;
+    width: 98%;
+    min-width: 705px;
   }
   .contentTab {
-    padding: 0px 153px;
+    /* padding: 0px 153px; */
+    justify-content: center;
   }
   .contentTabItem {
-    width: 165px;
-    height: 43px;
+    width: 235px;
+    height: 56px;
+    margin: 0px 14px;
   }
   .contentTabItemOnHover {
-    width: 165px;
-    height: 43px;
+    width: 235px;
+    height: 56px;
+    margin: 0px 10px;
   }
   .mediaCover {
     width: 100%;
@@ -118,12 +123,12 @@
     width: 100%;
   }
   .contentText {
-    font-size: 13px !important;
+    font-size: 18px !important;
   }
   .contentTabText {
-    font-size: 13px !important;
+    font-size: 18px !important;
   }
   .polygon {
-    top: 10px;
+    top: 14px;
   }
 }

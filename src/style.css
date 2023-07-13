@@ -41,4 +41,8 @@
   .textUnderlineOnHover:hover {
     text-decoration: underline;
   }
+  body {
+    padding-right: 0 !important;
+    overflow: unset !important;
+  }
 }

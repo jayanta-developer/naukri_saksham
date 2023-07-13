@@ -45,9 +45,9 @@ export default function CompanyLogoBox() {
     <>
       <Box className="placementCompanyLogosBox">
         <Box mt={7} className="companiesHeader">
-          <Typography className='poppins' sx={{ fontSize: "17px", textAlign: "center", color: "#DEB511" }} >Over 200+ Hiring Partners</Typography>
-          <Typography className='poppinsBold' sx={{ fontWeight: "bolder", textAlign: "center" }} variant='h5'>Top MNC's & Startup Hire</Typography>
-          <Typography className='poppins' sx={{ textAlign: "center", fontSize: "17px", color: "#359CEF" }}>From Us upto 29 Lakhs</Typography>
+          <Typography className='poppins' sx={{ fontSize: "23px", textAlign: "center", color: "#DEB511", fontWeight: "700" }} >Over 200+ Hiring Partners</Typography>
+          <Typography className='poppinsBold' sx={{ fontWeight: "700", textAlign: "center", fontSize: "42px" }} variant='h5'>Top MNC's & Startup Hire</Typography>
+          <Typography className='poppins' sx={{ textAlign: "center", fontSize: "22px", color: "#359CEF", fontWeight: "500" }}>From Us upto 29 Lakhs</Typography>
         </Box>
         <Box className="placementCompanyLogosItems">
           {placementCompanyLogoCard(MicrosoftLogo)}

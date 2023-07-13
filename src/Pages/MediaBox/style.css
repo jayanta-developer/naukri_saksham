@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: row;
   overflow: scroll;
-  height: 440px;
+  height: 463px;
 }
 .videoItem {
   margin: 14px;
@@ -83,6 +83,7 @@
     scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-y: hidden;
+    height: 524px;
   }
   .YouTubeMediaScrollBtn {
     display: block;
@@ -101,5 +102,18 @@
   }
   .MediaTextBox {
     padding: 20px 0px;
+  }
+  .avatarImage {
+    width: 100%;
+  }
+  .YouTubeContent > * {
+    flex: 0 0 414px;
+  }
+  .YouTubeLogo {
+    bottom: 272px;
+    left: 191px;
+  }
+  .YouTubeCoverText {
+    bottom: 248px;
   }
 }

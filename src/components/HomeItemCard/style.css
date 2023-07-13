@@ -8,8 +8,8 @@
   padding: 8px;
 }
 .homeItemCard {
-  width: 236px;
-  height: 281px;
+  width: 246px;
+  height: 300;
   display: flex;
   flex-direction: column;
   text-align: center;

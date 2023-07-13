@@ -27,11 +27,13 @@
   text-decoration: none;
   color: #c1c1c1;
   font-weight: 700;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 .navLink:hover {
   color: #fc0;
-  text-decoration: underline #fc0;
+  border-bottom: 2px solid #fc0;
+  padding-bottom: 2px;
+  display: inline-block;
 }
 .logoBox {
   width: 100%;
@@ -74,5 +76,6 @@
   }
   .logoBox {
     width: 26%;
+    text-align: left;
   }
 }
