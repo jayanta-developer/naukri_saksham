@@ -13,7 +13,8 @@ import LearningBox from "./Pages/LearningBox";
 import MediaBox from "./Pages/MediaBox";
 import Onboarding from "./Pages/Onboarding"
 import { CertificateBox } from "./Pages/CertificateBox";
-import About from "./Pages/AboutBox/Achievement"
+import About from "./Pages/AboutBox/Achievement";
+import LastCompanyLogoBox from "./Pages/AboutBox/LastCompanyLogoBox"
 import Footer from "./Pages/Footer"
 import { ScrollToTopButton } from "./components/ScrollToTop"
 import Call from "./components/MakeCall/Call";
@@ -36,6 +37,7 @@ export default function App() {
       <Onboarding />
       <CertificateBox />
       <About />
+      <LastCompanyLogoBox />
       <Footer />
       <ScrollToTopButton />
       <Call />

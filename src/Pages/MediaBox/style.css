@@ -37,6 +37,7 @@
   flex-direction: column;
   padding: 13px;
   align-items: center;
+  margin-top: 30px;
 }
 .featuresCard {
   width: 95%;
@@ -54,17 +55,20 @@
   align-items: center;
   overflow: hidden;
 }
-.featureItem p {
-  font-size: 15px !important;
-}
 .card2 {
   background: #124692;
 }
-.card2featureItem {
-  height: 53px !important;
+.featureItem {
+  height: 48px !important;
 }
 .YouTubeMediaScrollBtn {
   display: none;
+}
+.featureItem img {
+  width: 102px;
+}
+.featuresCardHeader {
+  padding-top: 12px;
 }
 @media only screen and (min-width: 600px) {
   .mediaContainer {
@@ -74,9 +78,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
   .YouTubeContent {
-    width: 100%;
+    width: 1318px;
     flex-direction: row;
     overflow: scroll;
     justify-content: left;
@@ -97,7 +102,8 @@
     justify-content: center;
   }
   .featuresCard {
-    width: 388px;
+    width: 635px;
+    height: 616px;
     margin: 0px 10px;
   }
   .MediaTextBox {
@@ -115,5 +121,19 @@
   }
   .YouTubeCoverText {
     bottom: 248px;
+  }
+  .featureCardItemText {
+    font-family: "Satoshi" !important;
+    font-size: 21px !important;
+    font-weight: 400 !important;
+  }
+  .featureItem img {
+    width: 145px;
+  }
+  .featureItem {
+    height: 74px !important;
+  }
+  .featuresCardHeader {
+    padding-top: 30px;
   }
 }
