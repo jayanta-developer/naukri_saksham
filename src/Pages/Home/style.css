@@ -4,7 +4,7 @@
   justify-content: center;
   background-image: url(../../Assets/images/NewImages/stack-old-books-wooden-table-generated-by-ai\ mobile.png);
   padding-top: 77px;
-  height: 1204px;
+  height: 1310px;
 }
 .homeContainer {
   display: flex;
@@ -50,7 +50,7 @@
   margin-top: 23px;
 }
 .aboutBox {
-  padding-top: 19%;
+  padding-top: 51%;
   color: #fff;
   margin-bottom: 28px;
 }
@@ -176,13 +176,49 @@ ul li {
 #EnrollBtnBox div {
   margin-top: 17px;
 }
+.firstLine {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.g {
+  font-size: 27px !important;
+  margin-bottom: 0px !important;
+}
+.v {
+  font-size: 23px !important;
+}
+.secondLineText {
+  font-size: 26px !important;
+}
+.forthLineText {
+  text-align: center;
+}
+
 @media only screen and (min-width: 600px) {
+  .firstLine {
+    justify-content: left;
+  }
+  .g {
+    font-size: 38px !important;
+    margin-bottom: 0px !important;
+  }
+  .v {
+    font-size: 40px !important;
+  }
+  .secondLineText {
+    font-size: 47px !important;
+  }
+  .forthLineText {
+    text-align: left;
+  }
   .HContainer {
     background-image: url(../../Assets/images/NewImages/stack-old-books-wooden-table-generated-by-ai.png);
     background-size: cover;
     min-height: 100vh;
     padding-top: 0;
     height: 0;
+    min-height: 888px;
   }
   .homeContainer {
     display: flex;

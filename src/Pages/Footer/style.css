@@ -74,6 +74,7 @@
   justify-content: center;
 }
 .footerLefttext {
+  width: 100% !important;
   text-align: center;
   padding: 0px 45px;
 }
@@ -161,6 +162,7 @@
     width: 100%;
   }
   .footerLefttext {
+    width: 119% !important;
     padding-left: 30%;
     text-align: left;
   }

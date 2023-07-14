@@ -75,12 +75,22 @@ export default function Home() {
               NaukriSaksham
             </Typography>
             <Box mb={2} className="paragraphText">
-              <ul>
-                <li>No Job - No Payment | 100% Placement Guarantee</li>
-                <li>Skills First, Job Next, Fees Last - Our Order of Success</li>
-                <li>Relieve Your Parents: No More Burden after College Fees</li>
-                <li>Degree Alone Won't Get You the Job, But We Will!</li>
-              </ul>
+              <Box className="firstLine">
+                <Typography className="g" variant="h4" sx={{ margin: "0px 3px" }}>Skill</Typography>
+                <Typography className="poppins v" sx={{ fontSize: "40px", margin: "0px 3px" }}>first,</Typography>
+                <Typography className="g" variant="h4" sx={{ margin: "0px 3px" }}> Job</Typography>
+                <Typography className="poppins v" sx={{ fontSize: "40px", margin: "0px 3px" }}>next,</Typography>
+                <Typography className="g" variant="h4" sx={{ margin: "0px 3px" }}>Fees</Typography>
+                <Typography className="poppins v" sx={{ fontSize: "40px", margin: "0px 3px" }}>last</Typography>
+              </Box>
+              <Box className="secondLine">
+                <Typography className="secondLineText poppinsBold" variant="h4" sx={{ color: "rgb(255, 204, 0)}" }}>Our path to success!</Typography>
+              </Box>
+              <Box className="forthLine">
+                <Typography className="poppins forthLineText" variant="h6">Be Naukrisaksham through</Typography>
+                <Typography className="poppins forthLineText" variant="h6">Full stack | Data Science/ML/AI | Electric Vehicles</Typography>
+              </Box>
+
             </Box>
             <Box className="btnMediaBox">
               {/* <Box className="mediaBtn">
