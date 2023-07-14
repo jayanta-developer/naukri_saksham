@@ -5,9 +5,9 @@ import "./style.css";
 import avatar1 from "../../Assets/images/image 106.png"
 import avatar2 from "../../Assets/images/image 112.png"
 import avatar3 from "../../Assets/images/image 105.png"
-import avatar4 from "../../Assets/images/Circle-Profile-PNG.webp"
-import avatar5 from "../../Assets/images/images.jpeg"
-import avatar6 from "../../Assets/images/348-3481514_circle-profile-girl-hd-png-download.png"
+import avatar4 from "../../Assets/images/NewImages/image 128.png"
+import avatar5 from "../../Assets/images/NewImages/image 128 (1).png"
+import avatar6 from "../../Assets/images/NewImages/image 128 (2).png"
 
 import Boeing from "../../Assets/images/Boning.png"
 import Mercedes from "../../Assets/images/Mercedes.png"
@@ -81,6 +81,7 @@ export default function ForthBoxCards() {
   const card = (avatar, name, subtitle, cardText, cardSubText, footerSubText1, footerSubText2, footerLogo) => {
     return (
       <Box className="ForthBoxCard">
+        <img className='whiteArrow' src={WhiteArrow} />
 
         <Box className="profileBox">
           <Box className="profilePhoto">
@@ -93,7 +94,6 @@ export default function ForthBoxCards() {
         </Box>
 
         <Box className="TextBox">
-          {/* <img className='whiteArrow' src={WhiteArrow} /> */}
           <Typography mb={1} sx={{ fontWeight: "700", textAlign: "left", color: "#13488b", fontSize: "18px", fontFamily: "Satoshi" }}>{cardText}</Typography>
           <Typography className='poppins' variant='subtitle1' sx={{ fontWeight: "400", color: "#5A5A5A;", textAlign: "left", fontSize: "18px", fontFamily: "Satoshi" }}>{cardSubText}</Typography>
         </Box>
@@ -217,10 +217,10 @@ export default function ForthBoxCards() {
         <Typography mb={2} className="poppinsBold" sx={{ fontWeight: "700", textAlign: "center", color: "#DEB511", fontSize: "23px", }}>Our Ratings</Typography>
         <Typography mb={3} className="poppinsBold" sx={{ fontWeight: "700", textAlign: "center", fontSize: "42px" }} variant="h5">The Voice of Our Success</Typography>
         <Box className="ratingItemBox">
-          {RatingCard(googleLogo, "4.8 / 5")}
-          {RatingCard(ambitionBox, "4.4 / 5")}
-          {RatingCard(studocu, "4.4 / 5")}
-          {RatingCard(facebook, "4.8 / 5")}
+          {RatingCard(googleLogo, "4.8/5")}
+          {RatingCard(ambitionBox, "4.4/5")}
+          {RatingCard(studocu, "4.4/5")}
+          {RatingCard(facebook, "4.8/5")}
         </Box>
       </Box>
     </Box>

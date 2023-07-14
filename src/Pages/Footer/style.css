@@ -57,7 +57,10 @@
 .cLogo {
 }
 .footerBottomText {
-  font-size: 8px !important;
+  /* font-size: 8px !important; */
+  font-size: 10px !important;
+  font-weight: 400 !important;
+  font-family: "Satoshi" !important;
 }
 .MediaLinks img {
   margin: 0px 10px;
@@ -70,22 +73,29 @@
   display: flex;
   justify-content: center;
 }
+.footerLefttext {
+  text-align: center;
+  padding: 0px 45px;
+}
 @media only screen and (min-width: 600px) {
   .footer {
     background: #213144;
     width: 100%;
-    height: auto;
+    /* height: auto; */
     display: flex;
     flex-direction: column;
     color: #ffff;
+    height: 435px;
   }
   .footerContent {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 90px 182px 45px 101px;
+    padding: 4% 11% 0% 17%;
     align-items: start;
+    height: 82%;
   }
+
   .footerContent div {
     margin: 0px 23px;
   }
@@ -99,7 +109,14 @@
   }
   .footerRowItem p {
     margin: 0px;
-    width: 99px;
+    margin-bottom: 11px;
+    width: 113px;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    font-family: "Satoshi" !important;
+  }
+  #pp {
+    width: 173px;
   }
   .footerText {
     display: flex;
@@ -111,8 +128,8 @@
     margin-bottom: 0px;
   }
   .footerBottomBox {
+    width: 100%;
     display: flex;
-
     justify-content: center;
     padding: 15px 0px;
   }
@@ -131,12 +148,20 @@
     cursor: pointer;
   }
   .footerBottomText {
-    font-size: 0.75rem !important;
+    font-size: 18px !important;
+    font-weight: 400;
+    font-family: "Satoshi";
   }
   .footerImage {
     width: 100%;
+    max-width: 456px;
+    min-width: 450px;
   }
   .footerImageBox {
-    width: 68%;
+    width: 100%;
+  }
+  .footerLefttext {
+    padding-left: 30%;
+    text-align: left;
   }
 }

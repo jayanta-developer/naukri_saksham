@@ -3,7 +3,7 @@
   height: 100vh;
   background: #3b3a3aed;
   position: fixed;
-  z-index: 9999;
+  z-index: 5;
   top: 0;
   display: flex;
   justify-content: center;
@@ -22,8 +22,8 @@
 }
 .enrollCrossBtn {
   position: relative;
-  left: 92%;
-  bottom: 3%;
+  left: 94%;
+  bottom: 125%;
 }
 @media only screen and (min-width: 600px) {
   .contact_Box {
@@ -40,6 +40,9 @@
   }
   .enrollCrossBtn {
     left: 96%;
-    bottom: 7%;
+    bottom: 116%;
+  }
+  .menu-years {
+    z-index: 9999;
   }
 }

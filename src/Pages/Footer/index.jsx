@@ -21,7 +21,7 @@ export default function Footer() {
         </Box>
         <Box className="footerTextBoxItem">
 
-          <Typography className='footerColHeader  poppinsBold' mb={1} variant='h7' sx={{ fontWeight: "bolder" }}>Quick Links</Typography>
+          <Typography className='footerColHeader  poppins' mb={1} variant='h7' sx={{ fontWeight: "600", fontSize: "22px" }}>Quick Links</Typography>
           <Box className="footerRowItem">
             <Typography className="footerText pointer textUnderlineOnHover poppins" mb={1}>
               <img style={{ width: "7px", height: "11px", margin: "7px 7px 0px 2px" }} src={Arrow} />
@@ -36,21 +36,20 @@ export default function Footer() {
         </Box>
 
         <Box className="footerTextBoxItem">
-          <Typography className='footerColHeader poppinsBold' mb={1} variant='h7' sx={{ fontWeight: "bolder" }}>Policies</Typography>
+          <Typography className='footerColHeader poppins' mb={1} variant='h7' sx={{ fontWeight: "600", fontSize: "22px" }}>Policies</Typography>
           <Box className="footerRowItem">
             <Typography className="pointer textUnderlineOnHover poppins" mb={1}>Privacy policy</Typography>
             <Typography className="pointer textUnderlineOnHover poppins" mb={1}>Refund policy</Typography>
-            <Typography className="pointer textUnderlineOnHover poppins" mb={1}>Terms and Condition</Typography>
+            <Typography id="pp" sx={{ width: "173px" }} className="pointer textUnderlineOnHover poppins" mb={1}>Terms and Condition</Typography>
           </Box>
         </Box>
         <Box className="footerTextBoxItem ClogBox">
 
           <img className='cLogo' src={CompanyLogo2} />
-          <Typography className="pointer poppins" sx={{ lineHeight: "28px", marginTop: "22px" }}>
-            Nulla sed turpis adipiscing
-            mauris sit morbi<br /> potenti mauris
+          <Typography className="pointer poppins footerLefttext" sx={{ lineHeight: "28px", marginTop: "22px", width: "119%", fontFamily: "Satoshi", fontSize: "18px", fontWeight: "400" }}>
+            Nulla sed turpis adipiscing<br />
+            mauris sit morbi potenti mauris
             Lorem ipsum dolor sit.</Typography>
-
         </Box>
 
       </Box>

@@ -85,7 +85,6 @@
   flex: 0 0 413px;
 }
 .ForthBoxCard {
-  padding: 23px 0px 0px 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -177,6 +176,12 @@
   flex-direction: row;
   justify-content: center;
 }
+.whiteArrow {
+  width: 40px;
+  position: relative;
+  left: 195px;
+  top: 405px;
+}
 @media only screen and (min-width: 600px) {
   .placementItems {
     overflow: unset;
@@ -238,9 +243,9 @@
     height: 587px;
   }
   .whiteArrow {
-    width: 47px;
+    width: 40px;
     position: relative;
-    left: 191px;
-    top: 74px;
+    left: 195px;
+    top: 447px;
   }
 }

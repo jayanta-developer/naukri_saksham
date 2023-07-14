@@ -1,6 +1,14 @@
 import React, { useState } from "react";
-import { Box, Typography, TextField } from "@mui/material";
 import { RedButton, YellowButton } from "../AppButton";
+import {
+  Box,
+  Typography,
+  TextField,
+  MenuItem,
+  Select,
+  InputLabel,
+  FormControl,
+} from "@mui/material";
 
 import "../../Pages/Home/style.css";
 import "./style.css";
@@ -17,26 +25,66 @@ import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 
 export default function Enroll({ enrollBox, setEnrollBox }) {
-  const [value, setValue] = useState();
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [value, setValue] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    collegeName: "",
+    years: "",
+    program: "",
+  });
+
+  console.log(value);
+  console.log(phoneNumber);
+
+  const GaduationYears = ["2023", "2024", "2025", "2026", "2027", "2028"];
+  const program = [
+    "Full Stack Development",
+    "Data Science & ML/AI",
+    "Electric Vehicles",
+    "CAE Design",
+  ];
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setValue((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const handlePhoneNumberChange = (value) => {
+    setPhoneNumber(value);
+  };
+
+  const submit = () => {
+    const isAnyValueEmpty = Object.values(value).some((val) => val === "");
+
+    if (!phoneNumber) {
+      console.log("phoneNumber is empty");
+      return;
+    }
+
+    if (isAnyValueEmpty) {
+      // At least one value is empty
+      console.log("Some values are empty");
+      return;
+    } else {
+    }
+  };
 
   const handelClose = () => {
     setEnrollBox(false);
   };
-
   return (
     <>
       <Box sx={{ display: enrollBox ? "flex" : "none" }} className="graBox">
-        <Box className="inputBox homeBox">
-          <Box className="contact_Box">
-            <img
-              onClick={handelClose}
-              className="cross enrollCrossBtn"
-              style={{ width: "42px" }}
-              src={cross}
-            />
+        <Box className="inputBox homeBox homePopupBox">
+          <Box className="contactBox">
             <Box sx={{ textAlign: "center" }} className="contactBoxItem">
               <Typography
-                className="inputBoxHeader"
+                className="inputBoxHeader poppinsBold"
                 sx={{ fontWeight: "700" }}
                 variant="h4"
               >
@@ -44,17 +92,24 @@ export default function Enroll({ enrollBox, setEnrollBox }) {
                 <br /> NaukriSaksham
               </Typography>
             </Box>
-            <Box mb={3} className="contactBoxItem">
+            <Box className="contactBoxItem">
               <Typography
                 className="contactBoxItemSubHeader"
-                sx={{ fontSize: "14px", textAlign: "center" }}
+                sx={{ fontSize: "16px", textAlign: "center" }}
               >
                 Skills First, Job Next, Fees Last
               </Typography>
+              <img
+                onClick={handelClose}
+                className="cross enrollCrossBtn"
+                style={{ width: "42px" }}
+                src={cross}
+              />
             </Box>
-            <Box className="contactBoxItem nameInputFieldBox">
+            <Box mb={1} className="contactBoxItem nameInputFieldBox">
               <Box className="inputField">
                 <TextField
+                  name="firstName"
                   className="inputF"
                   sx={{ width: "100%" }}
                   placeholder="First Name"
@@ -65,11 +120,14 @@ export default function Enroll({ enrollBox, setEnrollBox }) {
                       // width: "225px",
                     },
                   }}
+                  value={value.firstName}
+                  onChange={handleChange}
                 />
                 <img className="firstNameLog" src={VectorLog} alt="" />
               </Box>
               <Box className="inputField">
                 <TextField
+                  name="lastName"
                   sx={{ width: "100%" }}
                   placeholder="Last Name"
                   InputProps={{
@@ -79,21 +137,49 @@ export default function Enroll({ enrollBox, setEnrollBox }) {
                       // width: "100%",
                     },
                   }}
+                  value={value.lastName}
+                  onChange={handleChange}
                 />
                 <img className="lastNameLog" src={VectorLog} alt="" />
               </Box>
             </Box>
 
-            <Box className="contactBoxItem home_card_input">
+            <Box mb={1} className="contactBoxItem home_card_input">
               <PhoneInput
                 placeholder="Enter phone number"
-                value={value}
-                onChange={setValue}
+                value={phoneNumber}
+                onChange={handlePhoneNumberChange}
+                defaultCountry="IN" // Set the default country code (e.g., "US" for United States)
+                // Any additional props you want to pass to the PhoneInput component
               />
               <img className="flagLog" src={CallLog} alt="" />
             </Box>
-            <Box className="contactBoxItem home_card_input">
+            <Box mb={1} className="contactBoxItem home_card_input">
               <TextField
+                name="email"
+                sx={{ width: "100%" }}
+                type="text"
+                placeholder="Email"
+                InputProps={{
+                  style: {
+                    borderRadius: "23px",
+                    height: "45px",
+                    // width: "470px",
+                  },
+                }}
+                value={value.email}
+                onChange={handleChange}
+              />
+              <img
+                className="emailLog"
+                style={{ width: "15px" }}
+                src={EmailLog}
+                alt=""
+              />
+            </Box>
+            <Box mb={1} className="contactBoxItem home_card_input">
+              <TextField
+                name="collegeName"
                 sx={{ width: "100%" }}
                 type="text"
                 placeholder="College Name"
@@ -101,29 +187,68 @@ export default function Enroll({ enrollBox, setEnrollBox }) {
                   style: {
                     borderRadius: "23px",
                     height: "45px",
-                    // width: "470px",
                   },
                 }}
+                value={value.collegeName}
+                onChange={handleChange}
               />
-              <img className="emailLog" src={VectorG} alt="" />
+              <img
+                className="emailLog"
+                style={{ width: "15px" }}
+                src={VectorG}
+                alt=""
+              />
             </Box>
-            <Box className="contactBoxItem home_card_input">
-              <TextField
-                sx={{ width: "100%" }}
-                type="text"
-                placeholder="Program"
-                InputProps={{
-                  style: {
-                    borderRadius: "23px",
-                    height: "45px",
-                    // width: "470px",
-                  },
+            <FormControl fullWidth style={{ marginBottom: "8px" }}>
+              <InputLabel id="demo-simple-select-label" style={{ top: "-5px" }}>
+                Graduation year
+              </InputLabel>
+              <Select
+                name="years"
+                style={{
+                  height: "45px",
+                  borderRadius: "24px",
+                  marginBottom: "9px",
                 }}
-              />
-              <img className="emailLog" src={VectorD} alt="" />
-            </Box>
+                labelId="demo-simple-select-label"
+                id="demo-simple-select"
+                value={value.years}
+                onChange={handleChange}
+              >
+                {GaduationYears.map((el) => (
+                  <MenuItem key={el} value={el}>
+                    {el}
+                  </MenuItem>
+                ))}
+              </Select>
+            </FormControl>
+            <FormControl fullWidth style={{ marginBottom: "8px" }}>
+              <InputLabel id="demo-simple-select-label" style={{ top: "-5px" }}>
+                Program
+              </InputLabel>
+              <Select
+                name="program"
+                style={{ height: "45px", borderRadius: "24px" }}
+                labelId="demo-simple-select-label"
+                id="demo-simple-select"
+                value={value.program}
+                onChange={handleChange}
+              >
+                {program.map((el) => (
+                  <MenuItem key={el} value={el}>
+                    {el}
+                  </MenuItem>
+                ))}
+              </Select>
+            </FormControl>
+
             <Box id="EnrollBtnBox" className="contactBoxItem">
-              <RedButton BtnText="Enroll Now" width="100%" />
+              <RedButton
+                onClick={submit}
+                BtnText="Enroll Now"
+                width="100%"
+                textClass="poppinsBold"
+              />
             </Box>
           </Box>
         </Box>

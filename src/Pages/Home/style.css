@@ -91,7 +91,7 @@
 .contactBox {
   border-top: 3px solid #f69400;
   width: 92%;
-  height: 622px;
+  height: 644px;
   display: flex;
   flex-direction: column;
   padding: 21px;
@@ -248,7 +248,7 @@ ul li {
   .contactBox {
     border-top: 3px solid #f69400;
     width: 530px;
-    height: 565px;
+    height: 578px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
