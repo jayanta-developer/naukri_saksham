@@ -38,9 +38,11 @@ export const YellowButton = ({
 };
 export const BlueButton = ({
   BtnText,
+  onClick
 }) => {
   return (
     <div
+      onClick={onClick}
       className="NavGetBlueStartBtn"
     >
       <Typography sx={{ color: "#fff" }} className="redBtnText poppinsBold">
@@ -61,3 +63,24 @@ export const WhiteButton = ({
     </div>
   );
 };
+
+
+
+export const WorkFlowBtn = ({
+  BtnText,
+  BorderColor,
+  onClick
+}) => {
+  return (
+    <div
+      onClick={onClick}
+      style={{ borderColor: BorderColor }}
+      className="workFlow_Btn"
+    >
+      <Typography sx={{ color: "#0897aa" }} className="redBtnText poppinsBold">
+        {BtnText}
+      </Typography>
+    </div>
+  );
+
+}

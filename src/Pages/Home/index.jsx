@@ -87,19 +87,16 @@ export default function Home() {
                 <Typography className="secondLineText poppinsBold" variant="h4" sx={{ color: "rgb(255, 204, 0)}" }}>Our path to success!</Typography>
               </Box>
               <Box className="forthLine">
-                <Typography className="poppins forthLineText" variant="h6">Be Naukrisaksham through</Typography>
+                <Typography className="poppins forthLineText" variant="h6">Be Naukrisaksham in</Typography>
                 <Typography className="poppins forthLineText" variant="h6">Full stack | Data Science/ML/AI | Electric Vehicles</Typography>
               </Box>
 
             </Box>
             <Box className="btnMediaBox">
-              {/* <Box className="mediaBtn">
-                <RedButton onClick={handleCertificateBoxScroll} BtnText="View Certifications" width="200px" />
-              </Box> */}
               <Box onClick={handleVideoBoxScroll} className="watchVideoMediaBox">
                 <img className="mediaGirlImage" src={MediaImage} />
                 <img className="redPlayBtn" src={redPlayBtn} />
-                <Typography sx={{ minWidth: "123.19px", display: "flex", alignItems: "center", position: "relative", right: "38px" }}>Watch Our Video</Typography>
+                <Typography sx={{ minWidth: "123.19px", display: "flex", alignItems: "center", position: "relative", right: "38px", fontSize: "25px" }}>Watch Our Video</Typography>
               </Box>
             </Box>
           </Box>
@@ -120,42 +117,23 @@ export default function Home() {
               <Typography className="contactBoxItemSubHeader" sx={{ fontSize: "16px", textAlign: "center" }}>Skills First, Job Next, Fees Last</Typography>
 
             </Box>
-            <Box mb={1} className="contactBoxItem nameInputFieldBox">
-              <Box className="inputField">
-                <TextField
-                  name="firstName"
-                  className="inputF"
-                  sx={{ width: "100%" }}
-                  placeholder="First Name"
-                  InputProps={{
-                    style: {
-                      borderRadius: "23px",
-                      height: "45px",
-                      // width: "225px",
-                    },
-                  }}
-                  value={value.firstName}
-                  onChange={handleChange}
-                />
-                <img className="firstNameLog" src={VectorLog} alt="" />
-              </Box>
-              <Box className="inputField">
-                <TextField
-                  name="lastName"
-                  sx={{ width: "100%" }}
-                  placeholder="Last Name"
-                  InputProps={{
-                    style: {
-                      borderRadius: "23px",
-                      height: "45px",
-                      // width: "100%",
-                    },
-                  }}
-                  value={value.lastName}
-                  onChange={handleChange}
-                />
-                <img className="lastNameLog" src={VectorLog} alt="" />
-              </Box>
+            <Box mb={1} className="contactBoxItem home_card_input">
+              <TextField
+                name="name"
+                className="inputF"
+                sx={{ width: "100%" }}
+                placeholder="Name"
+                InputProps={{
+                  style: {
+                    borderRadius: "23px",
+                    height: "45px",
+                    // width: "225px",
+                  },
+                }}
+                value={value.firstName}
+                onChange={handleChange}
+              />
+              <img className="firstNameLog" src={VectorLog} alt="" />
             </Box>
 
             <Box mb={1} className="contactBoxItem home_card_input">
@@ -212,6 +190,7 @@ export default function Home() {
                 id="demo-simple-select"
                 value={value.years}
                 onChange={handleChange}
+                label="Graduation year"
               >
                 {
                   GaduationYears.map(el => (
@@ -221,7 +200,7 @@ export default function Home() {
               </Select>
             </FormControl>
             <FormControl fullWidth style={{ marginBottom: "8px" }}>
-              <InputLabel id="demo-simple-select-label" style={{ top: "-5px" }}>Program</InputLabel>
+              <InputLabel id="demo-simple-select-label" style={{ top: "-5px" }}>Select Program</InputLabel>
               <Select
                 name="program"
                 style={{ height: '45px', borderRadius: '24px' }}
@@ -229,6 +208,7 @@ export default function Home() {
                 id="demo-simple-select"
                 value={value.program}
                 onChange={handleChange}
+                label="Select Program"
               >
                 {program.map(el => (
                   <MenuItem key={el} value={el}>{el}</MenuItem>

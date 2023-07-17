@@ -19,7 +19,6 @@ export default function Onboarding() {
           sx={{ fontWeight: "700", textAlign: "center", fontSize: "42px" }}
           variant="h5"
         >Process of Onboarding</Typography>
-        <Typography mb={5} sx={{ fontSize: "22px", textAlign: "center", fontWeight: "400", fontFamily: "Satoshi" }}>Lorem ipsum dolor sit amet consectetur. Nulla sed turpis adipiscing mauris sit morbi potenti mauris.</Typography>
         <Box className="stepBox">
 
           <Box className="stepItem">
@@ -49,10 +48,6 @@ export default function Onboarding() {
             <Typography className='poppinsBold CardSteps' sx={{ color: "#8C29CC", fontWeight: "700", fontSize: "16px" }}>STEPS 3</Typography>
             <Typography className='poppins' sx={{ textAlign: "center", fontWeight: "500", fontSize: "26px", lineHeight: "27px" }}>Get all above Program<br /> and Placement Features</Typography>
           </Box>
-
-
-
-
         </Box>
 
 

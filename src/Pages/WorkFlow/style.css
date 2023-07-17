@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   padding: 20px;
-  background: #efffe2;
+  background: #a1a1a18f;
   align-items: center;
 }
 .workFlowHeader {
@@ -160,7 +160,6 @@
     flex-direction: column;
     justify-content: space-evenly;
     padding: 20px;
-    background: #efffe2;
   }
   .workFlowHeader {
     width: 65%;
@@ -184,6 +183,9 @@
     box-sizing: border-box;
     margin: 0px 15px 0px 15px;
     cursor: pointer;
+  }
+  .workFlowItem3 {
+    justify-content: start;
   }
 
   .logoBG {

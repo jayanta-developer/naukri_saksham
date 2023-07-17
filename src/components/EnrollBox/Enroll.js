@@ -106,42 +106,23 @@ export default function Enroll({ enrollBox, setEnrollBox }) {
                 src={cross}
               />
             </Box>
-            <Box mb={1} className="contactBoxItem nameInputFieldBox">
-              <Box className="inputField">
-                <TextField
-                  name="firstName"
-                  className="inputF"
-                  sx={{ width: "100%" }}
-                  placeholder="First Name"
-                  InputProps={{
-                    style: {
-                      borderRadius: "23px",
-                      height: "45px",
-                      // width: "225px",
-                    },
-                  }}
-                  value={value.firstName}
-                  onChange={handleChange}
-                />
-                <img className="firstNameLog" src={VectorLog} alt="" />
-              </Box>
-              <Box className="inputField">
-                <TextField
-                  name="lastName"
-                  sx={{ width: "100%" }}
-                  placeholder="Last Name"
-                  InputProps={{
-                    style: {
-                      borderRadius: "23px",
-                      height: "45px",
-                      // width: "100%",
-                    },
-                  }}
-                  value={value.lastName}
-                  onChange={handleChange}
-                />
-                <img className="lastNameLog" src={VectorLog} alt="" />
-              </Box>
+            <Box mb={1} className="contactBoxItem home_card_input">
+              <TextField
+                name="name"
+                className="inputF"
+                sx={{ width: "100%" }}
+                placeholder="Name"
+                InputProps={{
+                  style: {
+                    borderRadius: "23px",
+                    height: "45px",
+                    // width: "225px",
+                  },
+                }}
+                value={value.firstName}
+                onChange={handleChange}
+              />
+              <img className="firstNameLog" src={VectorLog} alt="" />
             </Box>
 
             <Box mb={1} className="contactBoxItem home_card_input">

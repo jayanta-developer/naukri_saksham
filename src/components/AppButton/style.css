@@ -59,3 +59,15 @@
   /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
 }
+.workFlow_Btn {
+  left: 976px;
+  top: 248px;
+  background: #13478b00;
+  border: 1px solid;
+  /* box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1); */
+  border-radius: 23px;
+  margin-bottom: 8px;
+  padding-top: 8px;
+  height: 40px;
+  cursor: pointer;
+}

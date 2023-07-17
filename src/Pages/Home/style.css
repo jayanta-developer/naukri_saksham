@@ -50,7 +50,7 @@
   margin-top: 23px;
 }
 .aboutBox {
-  padding-top: 51%;
+  padding-top: 10%;
   color: #fff;
   margin-bottom: 28px;
 }
@@ -217,7 +217,7 @@ ul li {
     background-size: cover;
     min-height: 100vh;
     padding-top: 0;
-    height: 0;
+    height: 100vh;
     min-height: 1070px;
   }
   .homeContainer {
@@ -242,15 +242,17 @@ ul li {
     display: flex;
     flex-direction: row;
     justify-content: start;
+    margin-top: 35px;
   }
   .watchVideoMediaBox {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
+    margin-top: 11px;
   }
   .aboutBox {
-    padding-top: 9%;
+    padding-top: 0%;
     padding-left: 4%;
   }
   .inputBoxHeader {
@@ -285,6 +287,7 @@ ul li {
     border-top: 3px solid #f69400;
     width: 530px;
     height: 578px;
+    max-height: 578px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -314,7 +317,7 @@ ul li {
   .firstNameLog {
     position: relative;
     bottom: 32px;
-    left: 87%;
+    left: 94%;
   }
   .lastNameLog {
     position: relative;
@@ -329,7 +332,7 @@ ul li {
   .flagLog {
     position: relative;
     bottom: 62%;
-    left: 93%;
+    left: 94%;
   }
   .PhoneInput {
     border-radius: 23px;

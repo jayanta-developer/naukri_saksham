@@ -70,6 +70,9 @@
 .featuresCardHeader {
   padding-top: 12px;
 }
+.card2featureItem {
+  margin-bottom: 10px;
+}
 @media only screen and (min-width: 600px) {
   .mediaContainer {
     padding: 40px 0px;
@@ -81,14 +84,14 @@
     flex-direction: column;
   }
   .YouTubeContent {
-    width: 1318px;
+    width: 1289px;
     flex-direction: row;
     overflow: scroll;
     justify-content: left;
     scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-y: hidden;
-    height: 524px;
+    height: 411px;
   }
   .YouTubeMediaScrollBtn {
     display: block;
@@ -113,14 +116,14 @@
     width: 100%;
   }
   .YouTubeContent > * {
-    flex: 0 0 414px;
+    flex: 0 0 294px;
   }
   .YouTubeLogo {
-    bottom: 272px;
-    left: 191px;
+    bottom: 210px;
+    left: 130px;
   }
   .YouTubeCoverText {
-    bottom: 248px;
+    bottom: 204px;
   }
   .featureCardItemText {
     font-family: "Satoshi" !important;
@@ -135,5 +138,8 @@
   }
   .featuresCardHeader {
     padding-top: 30px;
+  }
+  .card2featureItem {
+    margin-bottom: 15px;
   }
 }

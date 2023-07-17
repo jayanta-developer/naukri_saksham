@@ -121,7 +121,7 @@ export default function ForthBoxCards() {
         </Box>
         <Box className="ratingStars">
           <img src={starts} />
-          <Typography ml={1}>Rating: {rating}</Typography>
+          <Typography className='poppins' sx={{ fontWeight: "600" }} ml={1}>Rating: {rating}</Typography>
         </Box>
       </Box>
     )
