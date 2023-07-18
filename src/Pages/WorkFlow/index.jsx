@@ -76,8 +76,10 @@ export default function WorkFlow({ setEnrollBox }) {
           <Box className="workFlowItemBox">
             <Typography className="WorkflowPByText ">Designed by Expert From</Typography>
           </Box>
-          <Box sx={{ marginTop: "16px", display: hoveredItems[1] ? "block" : "none" }} className="workFlowItemBox btnBox">
-            <WorkFlowBtn onClick={() => setFullStackBox(true)} BtnText="View Details" BorderColor="#7de126" />
+          <Box className="hoverBtnBox">
+            <Box sx={{ marginTop: "16px", display: hoveredItems[1] ? "block" : "none" }} className="workFlowItemBox btnBox">
+              <WorkFlowBtn onClick={() => setFullStackBox(true)} BtnText="View Details" BorderColor="#7de126" />
+            </Box>
           </Box>
           <Box className="workFlowItemBox companyLogoBox">
             <img className="companyLogo" src={microsoft} />
@@ -102,8 +104,10 @@ export default function WorkFlow({ setEnrollBox }) {
           <Box className="workFlowItemBox">
             <Typography className="WorkflowPByText  ">Designed by Expert From</Typography>
           </Box>
-          <Box sx={{ marginTop: "16px", display: hoveredItems[2] ? "block" : "none" }} className="workFlowItemBox btnBox">
-            <WorkFlowBtn onClick={() => setDataScienceBox(true)} BtnText="View Details" BorderColor="#dc5cfff2" />
+          <Box className="hoverBtnBox">
+            <Box sx={{ marginTop: "16px", display: hoveredItems[2] ? "block" : "none" }} className="workFlowItemBox btnBox">
+              <WorkFlowBtn onClick={() => setDataScienceBox(true)} BtnText="View Details" BorderColor="#dc5cfff2" />
+            </Box>
           </Box>
           <Box className="workFlowItemBox companyLogoBox">
             <img className="companyLogo" src={walmart} />
@@ -127,8 +131,10 @@ export default function WorkFlow({ setEnrollBox }) {
             <Typography sx={{ color: "white", marginBottom: "6px" }} className="poppins WorkFlowItemBoxCenterText" variant="h5">Electric Vehicle
               & Design</Typography>
           </Box>
-          <Box sx={{ marginTop: "50px", display: hoveredItems[3] ? "block" : "none" }} className="workFlowItemBox btnBox">
-            <BlueButton onClick={() => setElectricVehicleBox(true)} BtnText="View Details" />
+          <Box className="hoverBtnBox">
+            <Box sx={{ marginTop: "50px", display: hoveredItems[3] ? "block" : "none" }} className="workFlowItemBox btnBox">
+              <BlueButton onClick={() => setElectricVehicleBox(true)} BtnText="View Details" />
+            </Box>
           </Box>
         </Box>
 
@@ -149,8 +155,10 @@ export default function WorkFlow({ setEnrollBox }) {
           <Box className="workFlowItemBox">
             <Typography className="WorkflowPByText">Designed by Expert From</Typography>
           </Box>
-          <Box sx={{ marginTop: "16px", display: hoveredItems[4] ? "block" : "none" }} className="workFlowItemBox btnBox">
-            <WorkFlowBtn onClick={() => setAdvanceCarBox(true)} BtnText="View Details" BorderColor="#d37d68" />
+          <Box className="hoverBtnBox">
+            <Box sx={{ marginTop: "16px", display: hoveredItems[4] ? "block" : "none" }} className="workFlowItemBox btnBox">
+              <WorkFlowBtn onClick={() => setAdvanceCarBox(true)} BtnText="View Details" BorderColor="#d37d68" />
+            </Box>
           </Box>
           <Box className="workFlowItemBox companyLogoBox">
             <img style={{ width: "76px" }} className="companyLogo fortBoxhLogo" src={honda} />

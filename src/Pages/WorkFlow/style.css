@@ -243,4 +243,7 @@
     width: 52px;
     height: 52px;
   }
+  .hoverBtnBox {
+    height: 60px;
+  }
 }
