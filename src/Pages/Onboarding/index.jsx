@@ -11,7 +11,7 @@ import cover2 from "../../Assets/images/Group 21357.png"
 
 
 
-export default function Onboarding() {
+export default function Onboarding({ setEnrollBox }) {
   return (
     <>
       <Box className="onboardContainer">
@@ -76,7 +76,7 @@ export default function Onboarding() {
             </Box>
           </Box>
         </Box>
-        <Box className="onboardBtnBox"><RedButton onClick={scrollToTop} BtnText="ENROLL NOW" width='329px' /></Box>
+        <Box className="onboardBtnBox"><RedButton onClick={() => setEnrollBox(true)} BtnText="ENROLL NOW" width='329px' /></Box>
       </Box>
     </>
   )

@@ -46,7 +46,7 @@ export const BlueButton = ({
       onClick={onClick}
       className="NavGetBlueStartBtn"
     >
-      <Typography sx={{ color: "#fff" }} className="redBtnText poppinsBold">
+      <Typography sx={{ color: "#fff", fontSize: "18px" }} className=" poppinsBold">
         {BtnText}
       </Typography>
     </div>
@@ -78,7 +78,7 @@ export const WorkFlowBtn = ({
       style={{ borderColor: BorderColor }}
       className="workFlow_Btn"
     >
-      <Typography sx={{ color: "#0897aa" }} className="redBtnText poppinsBold">
+      <Typography sx={{ color: "#0897aa", fontSize: "18px" }} className="poppinsBold">
         {BtnText}
       </Typography>
     </div>

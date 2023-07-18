@@ -5,6 +5,7 @@
   background-image: url(../../Assets/images/NewImages/stack-old-books-wooden-table-generated-by-ai\ mobile.png);
   padding-top: 77px;
   height: 1310px;
+  background-attachment: fixed;
 }
 .homeContainer {
   display: flex;

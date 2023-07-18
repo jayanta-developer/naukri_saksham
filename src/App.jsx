@@ -34,7 +34,7 @@ export default function App() {
       <ForthBoxCard />
       <LearningBox />
       <MediaBox />
-      <Onboarding />
+      <Onboarding setEnrollBox={setEnrollBox} />
       <CertificateBox />
       <About />
       <LastCompanyLogoBox />

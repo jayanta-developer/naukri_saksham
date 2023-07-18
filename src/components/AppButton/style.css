@@ -29,11 +29,12 @@
   border: 1px solid white !important;
   box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
   border-radius: 23px;
-  margin-bottom: 8px;
-  padding-top: 8px;
-  height: 40px;
-  cursor: pointer;
   transition: all 1s;
+  height: 42px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .NavGetBlueStartBtn:hover {
   background: #1f62b9c9;
@@ -66,10 +67,11 @@
   border: 1px solid;
   /* box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1); */
   border-radius: 23px;
-  margin-bottom: 8px;
-  padding-top: 8px;
-  height: 40px;
+  height: 42px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media only screen and (min-width: 600px) {
   .redBtnText {
