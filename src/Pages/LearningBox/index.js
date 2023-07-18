@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import LearningBoxCoverPhoto from "../../Assets/images/student-online-cute-young-guy-studying-computer-glasses-green-shirt-smiling-pointing 1.png";
 import { Box, Typography } from "@mui/material";
 import Polygon from "../../Assets/images/Polygon 1.svg";
-import WhatsAppImage from "../../Assets/images/WhatsApp Image 2023-06-29 at 5.13 1.png";
+import WhatsAppImage from "../../Assets/images/Our Portal.png";
 import LiveSessions from "../../Assets/images/Live Session.png";
 import PracticeInterviews from "../../Assets/images/Practice Interview.png";
 import DoubtSolving from "../../Assets/images/Doubt Solving.png";

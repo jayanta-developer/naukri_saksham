@@ -9,11 +9,12 @@ export const RedButton = ({
   height = "47px",
   backgroundColor = "#FC0",
   onClick,
-  textClass
+  textClass,
+  textSize
 }) => {
   return (
     <div onClick={onClick} style={{ width, height, backgroundColor }} className="NavGetStartBtn redBtn">
-      <Typography className={`redBtnText ${textClass}`}>
+      <Typography sx={{ fontSize: textSize }} className={`redBtnText ${textClass}`}>
         {BtnText}
       </Typography>
     </div>

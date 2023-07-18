@@ -15,7 +15,7 @@ import { handleAboutBoxScroll } from "../AboutBox/Achievement";
 export default function Footer() {
   return (
     <Box className="footer">
-      <Box className="footerContent">
+      {/* <Box className="footerContent">
         <Box className="footerTextBoxItem footerImageBox">
           <img className='footerImage' src={FooterCoverPhoto} />
         </Box>
@@ -52,6 +52,17 @@ export default function Footer() {
             Lorem ipsum dolor sit.</Typography>
         </Box>
 
+      </Box> */}
+
+      <Box className="footerContent">
+        <img className='cLogo' src={CompanyLogo2} />
+        <Box className="footerItems">
+          <a href=""><Typography>Terms</Typography></a>
+          <a href=""><Typography>Privacy Policy</Typography></a>
+          <a href=""><Typography>Refund Policy</Typography></a>
+          <a href=""><Typography>Cookies</Typography></a>
+          <a href=""><Typography>Sitemap</Typography></a>
+        </Box>
       </Box>
 
       <Box className="footerBottomBox">

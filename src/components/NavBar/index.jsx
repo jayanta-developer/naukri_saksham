@@ -17,33 +17,29 @@ export default function NavBar({ setEnrollBox }) {
           </a>
         </Box>
         <Box className="navItems">
-          <a className="navLink" href="#">
-            {" "}
-            <Box className="navItem">Home</Box>
-          </a>
-          <a className="navLink" href="#">
-            {" "}
-            <Box className="navItem">Course </Box>
-          </a>
-          <a className="navLink" href="#">
-            {" "}
-            <Box className="navItem">Companies</Box>
-          </a>
-          <a className="navLink" href="#">
-            {" "}
-            <Box className="navItem">Resources</Box>
-          </a>
           <a style={{ cursor: "pointer" }} onClick={handleAboutBoxScroll} className="navLink" >
             {" "}
             <Box className="navItem">About Us</Box>
           </a>
           <a className="navLink" href="#">
             {" "}
-            <Box className="navItem">Contact</Box>
+            <Box className="navItem">Placements</Box>
           </a>
+          <a className="navLink" href="#">
+            {" "}
+            <Box className="navItem">Programs</Box>
+          </a>
+          <a className="navLink" href="#">
+            {" "}
+            <Box className="navItem">Capabl Club</Box>
+          </a>
+          {/* <a className="navLink" href="#">
+            {" "}
+            <Box className="navItem">Contact</Box>
+          </a> */}
         </Box>
         <Box className="buttonBox">
-          <RedButton onClick={() => setEnrollBox(true)} BtnText="Get Started" textClass="poppins" />
+          <RedButton textSize="" onClick={() => setEnrollBox(true)} BtnText="Get Started" textClass="poppins" />
         </Box>
       </Box>
     </Box>

@@ -372,4 +372,11 @@ ul li {
   .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
     padding: 11.5px 14px !important;
   }
+  .mediaGirlImage {
+    width: 80px;
+    height: 80px;
+  }
+  .redPlayBtn {
+    top: 19px;
+  }
 }

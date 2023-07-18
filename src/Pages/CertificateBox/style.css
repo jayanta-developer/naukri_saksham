@@ -52,4 +52,7 @@
     /* display: flex; */
     justify-content: right;
   }
+  .CertificateTextNumList {
+    margin-bottom: 14px;
+  }
 }
