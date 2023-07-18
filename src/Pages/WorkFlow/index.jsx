@@ -14,6 +14,9 @@ import valeo from "../../Assets/images/valeo.png"
 import honda from "../../Assets/images/honda.png"
 import volvo from "../../Assets/images/volvo.png"
 import tata from "../../Assets/images/tata.png"
+import ION from "../../Assets/images/NewImages/download.png"
+import mahindra from "../../Assets/images/NewImages/FbV6NXbaAAAmqlA.png"
+import ampere from "../../Assets/images/NewImages/image001.png"
 import "./style.css";
 
 import { FullStackDevelopment, DataScienceBox, ElectricVehicleBox, AdvanceCarBox } from "../../components/Popup";
@@ -127,14 +130,19 @@ export default function WorkFlow({ setEnrollBox }) {
               <img className="vector1Logo" src={vector3} />
             </Box>
           </Box>
-          <Box mt={5} mb={1} className="workFlowItemBox">
-            <Typography sx={{ color: "white", marginBottom: "6px" }} className="poppins WorkFlowItemBoxCenterText" variant="h5">Electric Vehicle
+          <Box sx={{ marginTop: "10px", marginBottom: "42px" }} className="workFlowItemBox">
+            <Typography sx={{ marginBottom: "6px" }} className="poppins WorkFlowItemBoxCenterText" variant="h5">Electric Vehicle
               & Design</Typography>
           </Box>
-          <Box className="hoverBtnBox">
-            <Box sx={{ marginTop: "50px", display: hoveredItems[3] ? "block" : "none" }} className="workFlowItemBox btnBox">
+          <Box className="hoverBtnBox h3">
+            <Box sx={{ marginBottom: "15px", display: hoveredItems[3] ? "block" : "none" }} className="workFlowItemBox btnBox">
               <BlueButton onClick={() => setElectricVehicleBox(true)} BtnText="View Details" />
             </Box>
+          </Box>
+          <Box className="workFlowItemBox companyLogoBox">
+            <img style={{ height: "18px" }} className="companyLogo" src={ION} />
+            <img className="companyLogo companyLogoImg" src={mahindra} />
+            <img style={{ height: "35px" }} className="companyLogo" src={ampere} />
           </Box>
         </Box>
 

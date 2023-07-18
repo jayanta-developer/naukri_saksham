@@ -79,10 +79,19 @@
 }
 
 .workFlowItem3 {
-  background: #13488b;
-  /* box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1); */
-  border: 2px solid #13488b;
+  background: linear-gradient(131deg, #1678f8fb 8%, transparent 55.04%);
+}
+
+.workFlowItem3::before {
+  background: #95b8e5;
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
   border-radius: 10px;
+  z-index: -1;
 }
 
 .logoBG {
@@ -221,7 +230,7 @@
   }
   .companyLogo {
     width: 112px;
-    margin: 3px 16px 8px 0px;
+    /* margin: 3px 16px 8px 0px; */
     cursor: pointer;
   }
   .companyLogoImg {
@@ -245,5 +254,8 @@
   }
   .hoverBtnBox {
     height: 60px;
+  }
+  .h3 {
+    height: 42px !important;
   }
 }
