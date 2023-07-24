@@ -27,7 +27,6 @@ export default function WorkFlow({ setEnrollBox }) {
   const [electricVehicleBox, setElectricVehicleBox] = useState(false)
   const [advanceCarBox, setAdvanceCarBox] = useState(false)
   const [hoveredItems, setHoveredItems] = useState({});
-  console.log(hoveredItems);
   const handelClose = () => {
     setFullStackBox(false)
     setDataScienceBox(false)
@@ -59,13 +58,14 @@ export default function WorkFlow({ setEnrollBox }) {
       <Box className="FContainer" sx={{ display: advanceCarBox ? "block" : "none" }}>{AdvanceCarBox(handelClose)}</Box>
       <Box className="workFlowHeader">
         <Typography className="bold_Font poppinsBold" sx={{ fontWeight: "700", textAlign: "center" }}
-          variant="h5">Building industry ready workforce in High-demand Domains</Typography>
+          variant="h5">Building industry ready workforce in <br />High-demand Domains</Typography>
       </Box>
       <Box className="workFlowItems">
 
         <Box className="workFlowItem workFlowItem1"
           onMouseEnter={() => handleMouseEnter(1)}
           onMouseLeave={() => handleMouseLeave(1)}
+          onClick={() => setFullStackBox(true)}
         >
           <Box className="workFlowItemBox">
             <Box className="logoBG logoBackground1">
@@ -81,7 +81,7 @@ export default function WorkFlow({ setEnrollBox }) {
           </Box>
           <Box className="hoverBtnBox">
             <Box sx={{ marginTop: "16px", display: hoveredItems[1] ? "block" : "none" }} className="workFlowItemBox btnBox">
-              <WorkFlowBtn onClick={() => setFullStackBox(true)} BtnText="View Details" BorderColor="#7de126" />
+              <WorkFlowBtn backgroundColor="#acff65" BtnText="View Details" BorderColor="#7de126" />
             </Box>
           </Box>
           <Box className="workFlowItemBox companyLogoBox">
@@ -94,6 +94,7 @@ export default function WorkFlow({ setEnrollBox }) {
         <Box className="workFlowItem workFlowItem2"
           onMouseEnter={() => handleMouseEnter(2)}
           onMouseLeave={() => handleMouseLeave(2)}
+          onClick={() => setDataScienceBox(true)}
         >
           <Box className="workFlowItemBox">
             <Box className="logoBG logoBackground2">
@@ -109,7 +110,7 @@ export default function WorkFlow({ setEnrollBox }) {
           </Box>
           <Box className="hoverBtnBox">
             <Box sx={{ marginTop: "16px", display: hoveredItems[2] ? "block" : "none" }} className="workFlowItemBox btnBox">
-              <WorkFlowBtn onClick={() => setDataScienceBox(true)} BtnText="View Details" BorderColor="#dc5cfff2" />
+              <WorkFlowBtn backgroundColor="#efb8ff" BtnText="View Details" BorderColor="#dc5cfff2" />
             </Box>
           </Box>
           <Box className="workFlowItemBox companyLogoBox">
@@ -124,19 +125,20 @@ export default function WorkFlow({ setEnrollBox }) {
         <Box className="workFlowItem workFlowItem3"
           onMouseEnter={() => handleMouseEnter(3)}
           onMouseLeave={() => handleMouseLeave(3)}
+          onClick={() => setElectricVehicleBox(true)}
         >
           <Box className="workFlowItemBox">
             <Box className="logoBG logoBackground3">
               <img className="vector1Logo" src={vector3} />
             </Box>
           </Box>
-          <Box sx={{ marginTop: "10px", marginBottom: "42px" }} className="workFlowItemBox">
+          <Box sx={{ marginTop: "10px", marginBottom: "31px" }} className="workFlowItemBox">
             <Typography sx={{ marginBottom: "6px" }} className="poppins WorkFlowItemBoxCenterText" variant="h5">Electric Vehicle
               & Design</Typography>
           </Box>
           <Box className="hoverBtnBox h3">
             <Box sx={{ marginBottom: "15px", display: hoveredItems[3] ? "block" : "none" }} className="workFlowItemBox btnBox">
-              <BlueButton onClick={() => setElectricVehicleBox(true)} BtnText="View Details" />
+              <BlueButton BtnText="View Details" />
             </Box>
           </Box>
           <Box className="workFlowItemBox companyLogoBox">
@@ -150,6 +152,7 @@ export default function WorkFlow({ setEnrollBox }) {
         <Box className="workFlowItem workFlowItem4"
           onMouseEnter={() => handleMouseEnter(4)}
           onMouseLeave={() => handleMouseLeave(4)}
+          onClick={() => setAdvanceCarBox(true)}
         >
           <Box className="workFlowItemBox">
             <Box className="logoBG logoBackground4">
@@ -165,7 +168,7 @@ export default function WorkFlow({ setEnrollBox }) {
           </Box>
           <Box className="hoverBtnBox">
             <Box sx={{ marginTop: "16px", display: hoveredItems[4] ? "block" : "none" }} className="workFlowItemBox btnBox">
-              <WorkFlowBtn onClick={() => setAdvanceCarBox(true)} BtnText="View Details" BorderColor="#d37d68" />
+              <WorkFlowBtn backgroundColor="#ebb3a5" BtnText="View Details" BorderColor="#d37d68" />
             </Box>
           </Box>
           <Box className="workFlowItemBox companyLogoBox">

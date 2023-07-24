@@ -35,9 +35,6 @@ export default function Enroll({ enrollBox, setEnrollBox }) {
     program: "",
   });
 
-  console.log(value);
-  console.log(phoneNumber);
-
   const GaduationYears = ["2023", "2024", "2025", "2026", "2027", "2028"];
   const program = [
     "Full Stack Development",
@@ -79,7 +76,12 @@ export default function Enroll({ enrollBox, setEnrollBox }) {
   };
   return (
     <>
-      <Box sx={{ display: enrollBox ? "flex" : "none" }} className="graBox">
+      <Box
+        onClick={(e) => (e.target.id === "graBox" ? setEnrollBox(false) : "")}
+        sx={{ display: enrollBox ? "flex" : "none" }}
+        className="graBox"
+        id="graBox"
+      >
         <Box className="inputBox homeBox homePopupBox">
           <Box className="contactBox">
             <Box sx={{ textAlign: "center" }} className="contactBoxItem">

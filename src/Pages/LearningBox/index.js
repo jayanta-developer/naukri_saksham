@@ -61,14 +61,7 @@ export default function LearningBox() {
         ? "contentTabText poppinsBold"
         : "contentText poppinsBold";
     return (
-      <Box
-        className={className}
-        onClick={(e) => handleTabClick(e, index)}
-        sx={{
-          boxShadow:
-            "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px",
-        }}
-      >
+      <Box className={className} onClick={(e) => handleTabClick(e, index)}>
         <Typography
           className={contentText}
           sx={{
@@ -98,7 +91,7 @@ export default function LearningBox() {
         ONE-STOP LEARNING PLATFORM
       </Typography>
       <Typography
-        className="poppinsBold"
+        className="poppinsBold learningHeader"
         sx={{
           fontWeight: "700",
           textAlign: "center",
@@ -127,8 +120,8 @@ export default function LearningBox() {
           </Box>
           <Box className="media_Text">
             <Typography
-              className="poppinsBold"
-              sx={{ fontWeight: "700", fontSize: "35px" }}
+              className="poppinsBold mediaHeaderText"
+              sx={{ fontWeight: "700" }}
               variant="h5"
             >
               {mediaText[selectedTab].text}

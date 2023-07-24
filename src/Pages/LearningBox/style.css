@@ -4,6 +4,9 @@
   /* background-color: rgba(190, 241, 149, 0.411); */
   background: url(../../Assets/images/learningBg.png);
 }
+.learningHeader {
+  font-size: 33px !important;
+}
 
 .contentBox {
   display: flex;
@@ -27,8 +30,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 5px;
+  margin: 9px;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .contentTabItemOnHover {
   background: #fc0;
@@ -40,6 +44,7 @@
   justify-content: center;
   flex-direction: column;
   margin: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .contentTabText {
   margin-top: 10px !important;
@@ -79,7 +84,13 @@
 .mediaImage {
   width: 89%;
 }
+.mediaHeaderText {
+  font-size: 26px !important;
+}
 @media only screen and (min-width: 600px) {
+  .learningHeader {
+    font-size: 42px !important;
+  }
   .mediaBox {
     display: flex;
     flex-direction: row;
@@ -130,5 +141,8 @@
   }
   .polygon {
     top: 14px;
+  }
+  .mediaHeaderText {
+    font-size: 35px !important;
   }
 }

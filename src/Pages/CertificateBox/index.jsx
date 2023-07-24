@@ -17,7 +17,7 @@ export const CertificateBox = () => {
       </Box>
       <Box className="CertificateText">
         <Typography mb={3} className="poppinsBold mobileHeader"
-          sx={{ fontWeight: "700", fontSize: "42px", lineHeight: "45px" }}
+          sx={{ fontWeight: "700", lineHeight: "45px" }}
           variant="h5">Internationally<br /> Accrediated Certificate with  Over 20+ Points Added in Your Resume</Typography>
 
         <Box className="CertificateTextNumList">

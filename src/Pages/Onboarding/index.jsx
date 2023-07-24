@@ -15,8 +15,8 @@ export default function Onboarding({ setEnrollBox }) {
   return (
     <>
       <Box className="onboardContainer">
-        <Typography mb={1} className="poppinsBold"
-          sx={{ fontWeight: "700", textAlign: "center", fontSize: "42px" }}
+        <Typography mb={1} className="onboardHeader poppinsBold "
+          sx={{ fontWeight: "700", textAlign: "center" }}
           variant="h5"
         >Process of Onboarding</Typography>
         <Box className="stepBox">
@@ -52,7 +52,7 @@ export default function Onboarding({ setEnrollBox }) {
 
 
         <Box className="step4">
-          <Typography className='poppinsBold' sx={{ paddingLeft: "35px", color: "#359CEF", fontWeight: "700", fontSize: "35px", textAlign: "center" }}>STEPS 4</Typography>
+          <Typography className='poppinsBold step4Text' sx={{ paddingLeft: "35px", color: "#359CEF", fontWeight: "700", fontSize: "35px", textAlign: "center" }}>STEPS 4</Typography>
           <Box className="borderContainer">
             <Box className='borderBox'>
               <Box className="leftBorderBox"></Box>

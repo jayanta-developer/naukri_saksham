@@ -136,7 +136,11 @@ const expertCard = (
 export const FullStackDevelopment = (handelClose) => {
   return (
     <>
-      <Box className="grayBackground">
+      <Box
+        id="grayBackground"
+        onClick={(e) => (e.target.id === "grayBackground" ? handelClose() : "")}
+        className="grayBackground"
+      >
         <Box className="popupBox">
           <Box className="popupBoxHeader">
             <Typography variant="h5" className="poppinsBold">
@@ -327,7 +331,11 @@ export const FullStackDevelopment = (handelClose) => {
 export const DataScienceBox = (handelClose) => {
   return (
     <>
-      <Box className="grayBackground">
+      <Box
+        className="grayBackground"
+        id="grayBackground"
+        onClick={(e) => (e.target.id === "grayBackground" ? handelClose() : "")}
+      >
         <Box className="popupBox">
           <Box className="popupBoxHeader">
             <Typography variant="h5" className="poppinsBold">
@@ -505,7 +513,11 @@ export const DataScienceBox = (handelClose) => {
 export const ElectricVehicleBox = (handelClose) => {
   return (
     <>
-      <Box className="grayBackground">
+      <Box
+        className="grayBackground"
+        id="grayBackground"
+        onClick={(e) => (e.target.id === "grayBackground" ? handelClose() : "")}
+      >
         <Box className="popupBox">
           <Box className="popupBoxHeader">
             <Typography variant="h5" className="poppinsBold">
@@ -666,7 +678,11 @@ export const ElectricVehicleBox = (handelClose) => {
 export const AdvanceCarBox = (handelClose) => {
   return (
     <>
-      <Box className="grayBackground">
+      <Box
+        className="grayBackground"
+        id="grayBackground"
+        onClick={(e) => (e.target.id === "grayBackground" ? handelClose() : "")}
+      >
         <Box className="popupBox">
           <Box className="popupBoxHeader">
             <Typography variant="h5" className="poppinsBold">

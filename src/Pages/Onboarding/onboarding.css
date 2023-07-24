@@ -13,8 +13,8 @@
   align-items: center;
 }
 .stepItem {
-  width: 412px;
-  height: 266.026px;
+  width: 355px;
+  height: 222.026px;
   background: #fff;
   border-radius: 16px;
   display: flex;
@@ -24,7 +24,8 @@
   margin-top: 74px;
 }
 .stepItemLOgo {
-  background: #efffe2;
+  /* background: #efffe2; */
+  background-image: url(../../Assets/images/learningBg.png);
   width: 120px;
   height: 120px;
   border-radius: 90px;
@@ -35,7 +36,6 @@
   bottom: 61px;
 }
 .stepItemLogoBox {
-  /* background: #359cef; */
   width: 90px;
   height: 90px;
   border-radius: 90px;
@@ -69,9 +69,21 @@
 .step4 p {
   margin-bottom: 20px;
 }
+.onboardHeader {
+  font-size: 33px !important;
+}
+.step4Text {
+  font-size: 30px !important;
+}
 @media only screen and (min-width: 600px) {
+  .step4Text {
+    font-size: 35px !important;
+  }
   .onboardContainer {
     padding: 68px 0px;
+  }
+  .onboardHeader {
+    font-size: 42px !important;
   }
   .stepBox {
     flex-direction: row;

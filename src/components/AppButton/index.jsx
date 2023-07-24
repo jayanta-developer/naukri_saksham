@@ -70,12 +70,13 @@ export const WhiteButton = ({
 export const WorkFlowBtn = ({
   BtnText,
   BorderColor,
+  backgroundColor,
   onClick
 }) => {
   return (
     <div
       onClick={onClick}
-      style={{ borderColor: BorderColor }}
+      style={{ borderColor: BorderColor, background: backgroundColor }}
       className="workFlow_Btn"
     >
       <Typography sx={{ color: "#0897aa", fontSize: "18px", fontWeight: "500", fontFamily: "Satoshi" }} >

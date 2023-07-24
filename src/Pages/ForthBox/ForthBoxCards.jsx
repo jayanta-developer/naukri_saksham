@@ -130,7 +130,7 @@ export default function ForthBoxCards() {
   return (
     <Box my={3} className="ForthBoxCardContainer">
       <Box className="header">
-        <Typography mb={2} mt={5} className='poppinsBold' sx={{ fontWeight: "700", textAlign: "center", fontSize: "42px" }} variant='h5'>Make Your Parents Proud!</Typography>
+        <Typography mb={2} mt={5} className='poppinsBold ForthBoxHeader' sx={{ fontWeight: "700", textAlign: "center" }} variant='h5'>Make Your Parents Proud!</Typography>
         <Typography mb={3} variant="subtitle2" sx={{ textAlign: "center", fontFamily: "Satoshi", fontSize: "22px", fontWeight: "400" }}>What can be more satisfactory than securing a job with the highest CTC in top companies and become financially independent</Typography>
       </Box>
       <Box className="scrollContainer">
@@ -216,7 +216,8 @@ export default function ForthBoxCards() {
       <Box className="ratingBox">
         <Typography mb={2} className="poppinsBold" sx={{ fontWeight: "700", textAlign: "center", color: "#DEB511", fontSize: "23px", }}>Our Ratings</Typography>
         <Typography mb={3} className="poppinsBold" sx={{ fontWeight: "700", textAlign: "center", fontSize: "42px" }} variant="h5">The Voice of Our Success</Typography>
-        <Box className="ratingItemBox">
+
+        <Box className="ratingItemBox scrollWrapper">
           {RatingCard(googleLogo, "4.8/5")}
           {RatingCard(ambitionBox, "4.4/5")}
           {RatingCard(studocu, "4.4/5")}

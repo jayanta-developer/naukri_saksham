@@ -25,10 +25,12 @@
 }
 .mobileHeader {
   text-align: center;
+  font-size: 33px !important;
 }
 @media only screen and (min-width: 600px) {
   .mobileHeader {
     text-align: left;
+    font-size: 42px !important;
   }
   .Certificate_Box {
     display: flex;

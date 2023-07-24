@@ -73,7 +73,21 @@
 .card2featureItem {
   margin-bottom: 10px;
 }
+.mediaHeader {
+  font-size: 33px !important;
+}
+.gridItem2 {
+  margin-left: 40px;
+}
+
 @media only screen and (min-width: 600px) {
+  .gridItem2 {
+    margin-left: 15px;
+  }
+
+  .mediaHeader {
+    font-size: 42px !important;
+  }
   .mediaContainer {
     padding: 40px 0px;
   }

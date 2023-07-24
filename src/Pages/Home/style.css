@@ -29,6 +29,7 @@
   flex-direction: row;
   padding-left: 7vh;
   cursor: pointer;
+  margin-top: 1%;
 }
 
 .mediaGirlImage {
@@ -51,9 +52,9 @@
   margin-top: 23px;
 }
 .aboutBox {
-  padding-top: 10%;
   color: #fff;
-  margin-bottom: 28px;
+  height: 389px;
+  margin-top: 10%;
 }
 .textBox h4 {
   text-align: center;
@@ -92,7 +93,7 @@
 .contactBox {
   border-top: 3px solid #f69400;
   width: 92%;
-  height: 644px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   padding: 21px;
@@ -192,6 +193,9 @@ ul li {
 .secondLineText {
   font-size: 26px !important;
 }
+.forthLine {
+  margin-bottom: 10%;
+}
 .forthLineText {
   text-align: center;
 }
@@ -219,13 +223,14 @@ ul li {
     min-height: 100vh;
     padding-top: 0;
     height: 100vh;
-    min-height: 1070px;
+    /* min-height: 1070px; */
   }
   .homeContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin: 3%;
+    min-width: 1120px;
   }
   .homeBox {
     width: 45%;
@@ -255,6 +260,7 @@ ul li {
   .aboutBox {
     padding-top: 0%;
     padding-left: 4%;
+    margin-top: 0%;
   }
   .inputBoxHeader {
     font-size: 25px !important;

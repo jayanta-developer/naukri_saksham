@@ -24,8 +24,6 @@ export default function Home() {
     program: ""
   })
 
-  console.log(value);
-  console.log(phoneNumber);
 
   const GaduationYears = ["2023", "2024", "2025", "2026", "2027", "2028"];
   const program = ["Full Stack Development", "Data Science & ML/AI", "Electric Vehicles", "CAE Design"]
@@ -71,6 +69,7 @@ export default function Home() {
           <Box className="textBox">
             <Typography
               variant="h4"
+              mb={3}
             >
               NaukriSaksham
             </Typography>
@@ -87,9 +86,10 @@ export default function Home() {
                 <Typography className="secondLineText poppinsBold" variant="h4" sx={{ color: "rgb(255, 204, 0)}" }}>Our path to success!</Typography>
               </Box>
               <Box className="forthLine">
-                <Typography className="poppins forthLineText" variant="h6">Be Naukrisaksham in</Typography>
-                <Typography className="poppins forthLineText" variant="h6">Full stack | Data Science/ML/AI | Electric Vehicles</Typography>
+                <Typography className="poppins forthLineText" variant="h6">Be Naukrisaksham in Full stack | Data Science/ML/AI | Electric Vehicles</Typography>
+                {/* <Typography className="poppins forthLineText" variant="h6">Full stack | Data Science/ML/AI | Electric Vehicles</Typography> */}
               </Box>
+
 
             </Box>
             <Box className="btnMediaBox">

@@ -77,7 +77,7 @@ export default function LastCompanyLogoBox() {
       <Box className="AchieveContainer">
 
 
-        <Box className="certificateCompanyLogo" ref={scrl} onScroll={scrollCheck}>
+        <Box className="certificateCompanyLogo scrollWrapper" ref={scrl} onScroll={scrollCheck}>
           <Box className="CLogo">
             <Typography className='poppins' px={5} variant='caption' sx={{ textAlign: "center", fontSize: "17px" }}>TeaX talk delivered by Mayank Arora</Typography>
             <img className='Cimage' src={TEDx} />

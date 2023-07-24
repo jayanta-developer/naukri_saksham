@@ -39,7 +39,7 @@ export default function App() {
       <About />
       <LastCompanyLogoBox />
       <Footer />
-      <ScrollToTopButton />
+      <ScrollToTopButton setEnrollBox={setEnrollBox} />
       <Call />
       <Enroll enrollBox={enrollBox} setEnrollBox={setEnrollBox} />
     </>

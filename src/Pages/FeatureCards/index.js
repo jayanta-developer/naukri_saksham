@@ -17,7 +17,6 @@ export default function FeatureCards() {
       <Box className="homeItemBox">
         <Typography
           className="header poppinsBold"
-          mt={4}
           sx={{ fontWeight: "700", textAlign: "center", color: "#000" }}
           variant="h5"
         >

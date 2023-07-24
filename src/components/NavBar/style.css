@@ -5,7 +5,6 @@
   background: none;
   padding-top: 20px;
   position: absolute;
-  /* z-index: 999; */
 }
 .navBar {
   width: 88%;
@@ -19,7 +18,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 0px 0px 8px 0px;
+  padding: 0px 0px 16px 0px;
   flex-wrap: wrap;
 }
 .navLink {
@@ -40,16 +39,20 @@
   text-align: center;
 }
 .buttonBox {
-  display: flex;
+  display: none;
   justify-content: center;
 }
 
 @media only screen and (min-width: 600px) {
+  .buttonBox {
+    display: flex;
+  }
   .navContainer {
     background: none;
     width: 100%;
     display: flex;
     justify-content: center;
+    min-width: 890px;
   }
   .navBar {
     width: 88%;

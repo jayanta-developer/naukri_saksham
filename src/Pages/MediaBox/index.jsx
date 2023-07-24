@@ -81,8 +81,8 @@ export default function MediaBox() {
     <Box className="mediaContainer" id="videosBox">
 
       <Box className="videoItem gridItem1  videoItemText">
-        <Typography mb={2} className="boldFont poppinsBold"
-          sx={{ fontWeight: "700", textAlign: "center", fontSize: "42px" }}
+        <Typography mb={2} className="boldFont poppinsBold mediaHeader"
+          sx={{ fontWeight: "700", textAlign: "center" }}
           variant="h5"
         >Students Defining Our Success
         </Typography>
@@ -151,8 +151,8 @@ export default function MediaBox() {
 
       <Box className="MediaTextBox">
         <Box className="textArea">
-          <Typography mb={2} className="poppinsBold"
-            sx={{ fontWeight: "700", textAlign: "center", fontSize: "42px" }} variant="h5">
+          <Typography mb={2} className="poppinsBold mediaHeader"
+            sx={{ fontWeight: "700", textAlign: "center" }} variant="h5">
             Program Features
           </Typography>
           <Typography sx={{ textAlign: "center", fontSize: "22px", fontWeight: "400", fontFamily: "Satoshi" }}>

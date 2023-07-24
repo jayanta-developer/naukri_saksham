@@ -10,7 +10,7 @@ export const scrollToTop = () => {
   });
 };
 
-export const ScrollToTopButton = () => {
+export const ScrollToTopButton = ({ setEnrollBox }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
@@ -31,7 +31,8 @@ export const ScrollToTopButton = () => {
   return (
     <div
       className={`scroll-to-top ${isVisible ? "visible" : ""}`}
-      onClick={scrollToTop}
+      // onClick={scrollToTop}
+      onClick={() => setEnrollBox(true)}
     >
       <Typography className="goUpArrowText poppinsBold">Enroll Now</Typography>
     </div>

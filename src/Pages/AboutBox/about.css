@@ -22,7 +22,28 @@
   flex-direction: row;
   overflow: scroll;
   padding-bottom: 30px;
+
+  flex-wrap: nowrap;
+  height: fit-content;
+  width: max-content;
 }
+
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0) !important;
+  }
+  100.1% {
+    transform: translateX(0) !important;
+  }
+  100% {
+    transform: translateX(-85%) !important;
+  }
+}
+
+.scrollWrapper {
+  animation: scrollLoop 16s linear infinite !important;
+}
+
 .certificateCompanyLogo > * {
   flex: 0 0 300px;
 }
@@ -58,9 +79,16 @@
 .AchieveContainer {
   /* background: rgba(190, 241, 149, 0.411); */
   background: #a1a1a18f;
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 600px) {
+  .certificateCompanyLogo {
+    width: auto;
+  }
+  .scrollWrapper {
+    animation: none !important;
+  }
   .CertificateBox {
     display: flex;
     flex-direction: column;

@@ -4,8 +4,14 @@
   padding: 5%;
   padding-top: 46px;
 }
+.header {
+  padding: 5px;
+}
+.ForthBoxHeader {
+  font-size: 33px !important;
+}
 .placementHeading {
-  font-size: 42px !important;
+  font-size: 33px !important;
 }
 .placementSubHeading {
   margin: 10px 0px !important;
@@ -38,6 +44,7 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 .placementCompanyLogosItem {
   height: 70px;
@@ -82,7 +89,7 @@
   overflow: scroll;
 }
 .cardBox > * {
-  flex: 0 0 413px;
+  flex: 0 0 402px;
 }
 .ForthBoxCard {
   display: flex;
@@ -90,9 +97,10 @@
   justify-content: space-between;
   box-shadow: 0px 5px 30px rgba(116, 116, 116, 0.25);
   border-radius: 5px;
-  margin: 0px 16px;
+  margin: 0px 6px;
   box-shadow: 0px 5px 30px rgba(116, 116, 116, 0.25);
   border-radius: 5px;
+  /* border: 1px solid; */
 }
 .profileBox {
   display: flex;
@@ -112,7 +120,7 @@
 }
 .profileInfo {
   padding: 14px 0px 0px 10px;
-  width: 319px;
+  width: 280px;
 }
 .TextBox {
   padding: 18px 22px 0px 22px;
@@ -158,7 +166,7 @@
   height: 235px;
 }
 .ratingItemBox > * {
-  flex: 0 0 302px;
+  flex: 1 0 302px;
 }
 .ratingItem {
   width: 302px;
@@ -179,16 +187,69 @@
 .whiteArrow {
   width: 40px;
   position: relative;
-  left: 195px;
-  top: 405px;
+  left: 181px;
+  top: 429px;
+}
+
+/* Add the styles for the .ratingItemBox and its parent elements */
+.ratingBox {
+  /* Add styles for the ratingBox */
+  overflow: hidden;
+}
+
+.ratingItemBox {
+  display: flex;
+  /* Adjust flex-wrap to make the rating items wrap to the next line */
+  flex-wrap: nowrap;
+  /* Adjust the height to fit the content of the rating items */
+  height: fit-content;
+  /* Set the width to fit all the rating items side by side */
+  width: max-content;
+}
+
+/* Create the keyframes animation for the auto-scrolling loop */
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100.1% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-73%);
+  }
+}
+
+.scrollWrapper {
+  animation: scrollLoop 16s linear infinite;
+}
+
+.ratingItem {
+  margin-right: 20px;
+}
+
+.companyLogoHeader {
+  font-size: 33px !important;
 }
 @media only screen and (min-width: 600px) {
+  .companyLogoHeader {
+    font-size: 42px !important;
+  }
+  .placementHeading {
+    font-size: 42px !important;
+  }
   .placementItems {
     overflow: unset;
     justify-content: center;
   }
+  .ForthBoxHeader {
+    font-size: 42px !important;
+  }
+  .ForthBoxCard {
+    margin: 0px 16px;
+  }
   .cardBox {
-    width: 1335px;
+    width: 1304px;
     justify-content: left;
     overflow: scroll;
     scroll-behavior: smooth;
@@ -201,6 +262,7 @@
   }
   .placementCompanyLogosItems {
     padding: 0px 130px;
+    margin-bottom: 30px;
   }
   .placementCompanyLogosItem {
     width: 226px;
@@ -240,12 +302,18 @@
     cursor: not-allowed;
   }
   .placementCompanyLogosBox {
-    height: 587px;
+    height: 650px;
   }
   .whiteArrow {
     width: 40px;
     position: relative;
-    left: 195px;
+    left: 181px;
     top: 447px;
+  }
+  .scrollWrapper {
+    animation: none;
+  }
+  .ratingItemBox {
+    width: auto;
   }
 }

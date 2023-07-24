@@ -83,7 +83,7 @@
   overflow: scroll;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   height: 140px;
 }
 .projectItems > * {
@@ -192,6 +192,7 @@
     width: 213px;
   }
   .projectItems {
+    justify-content: center;
     overflow: unset;
     flex-direction: row;
     flex-wrap: wrap;
@@ -209,6 +210,7 @@
     overflow-x: hidden;
     overflow-y: hidden;
   }
+
   .popupBoxHeader {
     padding: 0px 18px 0px 30px;
   }
