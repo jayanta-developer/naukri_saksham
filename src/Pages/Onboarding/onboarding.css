@@ -112,6 +112,8 @@
     height: 35px;
     display: flex;
     flex-direction: row;
+    min-width: 585px;
+    max-width: 717px;
   }
   .rightTopBox {
     border-left: 3px solid #124590;

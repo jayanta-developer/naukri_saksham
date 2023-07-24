@@ -43,7 +43,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 5px;
+  margin: 9px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .contentTabText {
@@ -111,12 +111,12 @@
   .contentTabItem {
     width: 235px;
     height: 56px;
-    margin: 0px 14px;
+    margin: 10px 14px;
   }
   .contentTabItemOnHover {
     width: 235px;
     height: 56px;
-    margin: 0px 10px;
+    margin: 10px 14px;
   }
   .mediaCover {
     width: 100%;
