@@ -24,8 +24,8 @@ export default function Achievement() {
             <img style={{ width: "100%", maxWidth: "624px" }} src={coverGirlPhoto} alt="" />
           </Box>
           <Box className="CTextBox">
-            <Typography mb={3} className=" poppinsBold"
-              sx={{ fontWeight: "700", fontSize: "42px" }}
+            <Typography mb={3} className=" poppinsBold aboutHeader"
+              sx={{ fontWeight: "700" }}
               variant="h5">About Capabl</Typography>
             <Typography mb={4} className='poppins' sx={{ fontWeight: "400", fontSize: "18" }}>
               Capabl from Elite Techno Groups, an industry consultant and Ed-Tech backed by 200+ leading MNC's & Startups, is dedicated to creating a top-notch learning ecosystem. Our mission is to bridge the industry-academia gap while considering the complexities of the Indian degree ecosystem.
@@ -40,7 +40,7 @@ export default function Achievement() {
         </Box>
 
         <Box className="certificateCompanyLogoBox">
-          <Typography className="poppinsBold" sx={{ fontWeight: "700", fontSize: "42px", textAlign: "center" }}
+          <Typography className="poppinsBold aboutHeader" sx={{ fontWeight: "700", textAlign: "center" }}
             variant="h5">Awards and Achievements</Typography>
         </Box>
 

@@ -81,8 +81,14 @@
   background: #a1a1a18f;
   overflow: hidden;
 }
+.aboutHeader {
+  font-size: 33px !important;
+}
 
 @media only screen and (min-width: 600px) {
+  .aboutHeader {
+    font-size: 42px !important;
+  }
   .certificateCompanyLogo {
     width: auto;
   }
